@@ -1,0 +1,51 @@
+﻿id,이름,카테고리,보관일수,보관,상비양념,메모,사진,사진 출처
+onion,양파,채소,21,실온(서늘한 곳),,썬 양파는 냉장 3일,https://images.unsplash.com/photo-1757813027601-49030d3162ae?w=1080&q=80&fm=jpg&fit=crop,@pecko
+garlic,마늘,채소,14,냉장,,깐마늘 기준,https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?w=1080&q=80&fm=jpg&fit=crop,team voyas
+green_onion,대파,채소,7,냉장,,씻어서 썰어두면 냉동 가능,https://images.unsplash.com/photo-1654722346666-fc814e4457a5?w=1080&q=80&fm=jpg&fit=crop,David Trinks
+potato,감자,채소,21,실온(서늘한 곳),,싹 나면 도려내기,https://images.unsplash.com/photo-1590165482129-1b8b27698780?w=1080&q=80&fm=jpg&fit=crop,Rodrigo dos Reis
+zucchini,애호박,채소,7,냉장,,,https://images.unsplash.com/photo-1768405741410-71317eceb565?w=1080&q=80&fm=jpg&fit=crop,Elly M
+cabbage,양배추,채소,14,냉장,,자른 단면은 랩으로,https://images.unsplash.com/photo-1780359398730-046b3f654ef2?w=1080&q=80&fm=jpg&fit=crop,jason hu
+carrot,당근,채소,21,냉장,,,https://images.unsplash.com/photo-1763534315367-db5fe9c0dc79?w=1080&q=80&fm=jpg&fit=crop,@nka907
+mushroom,버섯,채소,5,냉장,,새송이·양송이·팽이 공통,https://images.unsplash.com/photo-1760108273033-0d789ef53d70?w=1080&q=80&fm=jpg&fit=crop,Anastasiya Badun
+chili,청양고추,채소,10,냉장,,,https://images.unsplash.com/photo-1599987141071-f5810d32e21a?w=1080&q=80&fm=jpg&fit=crop,Hari Krishnan
+tomato,토마토,채소,7,실온→익으면 냉장,,,https://images.unsplash.com/photo-1582284540020-8acbe03f4924?w=1080&q=80&fm=jpg&fit=crop,engin akyurt
+spinach,시금치,채소,4,냉장,,,https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?w=1080&q=80&fm=jpg&fit=crop,Shutter Sphere Collective
+chicken_leftover,치킨,육류,2,냉장,,남은 배달 치킨. 육류는 보통 냉장 1~2일,https://images.unsplash.com/photo-1764018292116-003fd7d1a0ba?w=1080&q=80&fm=jpg&fit=crop,@barcellosfusion
+chicken_thigh,닭다리살,육류,2,냉장,,,https://images.unsplash.com/photo-1759493321741-883fbf9f433c?w=1080&q=80&fm=jpg&fit=crop,Satmar Meats
+pork_jeyuk,돼지고기 앞다리살,육류,2,냉장,,제육용 얇게 썬 것,https://images.unsplash.com/photo-1625144093498-bf62fca631c5?w=1080&q=80&fm=jpg&fit=crop,@towfiqu999999
+pork_belly_thin,대패삼겹살,육류,2,냉장(냉동이면 30일),,,https://images.unsplash.com/photo-1768528355780-a06f80911c1a?w=1080&q=80&fm=jpg&fit=crop,Lee Milo
+spam,스팸,가공·기타,3,개봉 후 냉장,,미개봉은 실온 오래 감,https://images.unsplash.com/photo-1782141269072-0440b640ae02?w=1080&q=80&fm=jpg&fit=crop,@chwdy
+sausage,소시지,가공·기타,7,개봉 후 냉장,,,https://images.unsplash.com/photo-1551135020-39e4ca508d9b?w=1080&q=80&fm=jpg&fit=crop,@rachedda
+bacon,베이컨,가공·기타,5,개봉 후 냉장,,,https://images.unsplash.com/photo-1779649577828-a0dc5f7bb095?w=1080&q=80&fm=jpg&fit=crop,Lucas
+tuna_can,참치캔,가공·기타,,실온(개봉 후 냉장 1일),,,https://images.unsplash.com/photo-1771249372958-a5a44b3b58de?w=1080&q=80&fm=jpg&fit=crop,Andrei Sidorov
+fish_cake,어묵,가공·기타,5,냉장,,,https://images.unsplash.com/photo-1790317776552-c0d42f8ee8ca?w=1080&q=80&fm=jpg&fit=crop,Irfan Syahmi
+frozen_dumpling,냉동만두,가공·기타,,냉동,,,https://images.unsplash.com/photo-1769610712810-ec91babfccd3?w=1080&q=80&fm=jpg&fit=crop,atelierbyvineeth
+frozen_cutlet,냉동 돈가스,가공·기타,,냉동,,,https://images.unsplash.com/photo-1770966666346-fbfde1f89a33?w=1080&q=80&fm=jpg&fit=crop,Zhang Ziyu
+egg,계란,유제품·계란,21,냉장,,,https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=1080&q=80&fm=jpg&fit=crop,Erol Ahmed
+milk,우유,유제품·계란,5,개봉 후 냉장,,,https://images.unsplash.com/photo-1550583724-b2692b85b150?w=1080&q=80&fm=jpg&fit=crop,Eiliv Aceron
+butter,버터,유제품·계란,30,냉장,,,https://images.unsplash.com/photo-1719148162837-63d2f256231f?w=1080&q=80&fm=jpg&fit=crop,Marine Le Gac
+cheese_slice,슬라이스 치즈,유제품·계란,14,냉장,,,https://images.unsplash.com/photo-1631379578550-7038263db699?w=1080&q=80&fm=jpg&fit=crop,Azzedine Rouichi
+tofu,두부,가공·기타,3,개봉 후 물에 담가 냉장,,미개봉은 포장지 소비기한,https://images.unsplash.com/photo-1722635940350-d1b2e5129379?w=1080&q=80&fm=jpg&fit=crop,Kamala Bright
+rice,밥,곡류·면,2,냉장(냉동이면 30일),,즉석밥은 실온 오래 감,https://images.unsplash.com/photo-1644131447497-8723db691320?w=1080&q=80&fm=jpg&fit=crop,Markus Winkler
+bread,식빵,곡류·면,4,실온,,냉동하면 30일,https://images.unsplash.com/photo-1534620808146-d33bb39128b2?w=1080&q=80&fm=jpg&fit=crop,Louise Lyshøj
+pasta,파스타면,곡류·면,,실온,,,https://images.unsplash.com/photo-1622973536968-3ead9e780960?w=1080&q=80&fm=jpg&fit=crop,Homescreenify
+ramen,라면,곡류·면,,실온,,,https://images.unsplash.com/photo-1612927601601-6638404737ce?w=1080&q=80&fm=jpg&fit=crop,ikhsan baihaqi
+udon,우동면,곡류·면,14,냉장,,,https://images.unsplash.com/photo-1558985212-324add95595a?w=1080&q=80&fm=jpg&fit=crop,Youjeen Cho
+tteok,떡볶이떡,곡류·면,7,냉장,,굳으면 물에 불리기,images/tteok.jpg,팀 제공
+flour,부침가루,곡류·면,,실온,O,튀김가루와 다름,https://images.unsplash.com/photo-1549590143-d5855148a9d5?w=1080&q=80&fm=jpg&fit=crop,Mae Mu
+starch,전분,곡류·면,,실온,O,부침가루와 헷갈리기 쉬움,images/starch.jpg,팀 제공
+salt,소금,양념,,실온,O,,https://images.unsplash.com/photo-1763974463967-647601c65961?w=1080&q=80&fm=jpg&fit=crop,Kamakshi subramani
+sugar,설탕,양념,,실온,O,,https://images.unsplash.com/photo-1673791031202-ebc0eea03bf2?w=1080&q=80&fm=jpg&fit=crop,Immo Wegmann
+pepper,후추,양념,,실온,O,,https://images.unsplash.com/photo-1777483997189-9d934b0f177d?w=1080&q=80&fm=jpg&fit=crop,@abank88
+soy_sauce,간장,양념,,실온,O,,https://images.unsplash.com/photo-1499126167718-c87f5c1387e8?w=1080&q=80&fm=jpg&fit=crop,Caroline Attwood
+gochujang,고추장,양념,,냉장,O,,https://images.unsplash.com/photo-1764312899300-e680811f58fb?w=1080&q=80&fm=jpg&fit=crop,@varanga22
+gochugaru,고춧가루,양념,,냉동,O,,https://images.unsplash.com/photo-1741521312102-b1ff2388d3c0?w=1080&q=80&fm=jpg&fit=crop,Zoshua Colah
+doenjang,된장,양념,,냉장,O,,images/doenjang.jpg,팀 제공
+oyster_sauce,굴소스,양념,,개봉 후 냉장,O,,images/oyster_sauce.jpg,팀 제공
+ketchup,케찹,양념,,개봉 후 냉장,O,,https://images.unsplash.com/photo-1569790554690-1c0877b2fc6c?w=1080&q=80&fm=jpg&fit=crop,Matt Popovich
+mayo,마요네즈,양념,,개봉 후 냉장,O,,https://images.unsplash.com/photo-1758700835219-0422fdc4dd54?w=1080&q=80&fm=jpg&fit=crop,Fethi Benattallah
+sesame_oil,참기름,양념,,실온,O,,https://images.unsplash.com/photo-1671493229048-4dddd00ca84a?w=1080&q=80&fm=jpg&fit=crop,Denise Chan
+cooking_oil,식용유,양념,,실온,O,,https://images.unsplash.com/photo-1768689033119-c3ac1e437d20?w=1080&q=80&fm=jpg&fit=crop,@xavier_von_erlach
+olive_oil,올리브유,양념,,실온,O,,https://images.unsplash.com/photo-1765118527220-da9c7a560b13?w=1080&q=80&fm=jpg&fit=crop,Asli Dokuzeylul
+kimchi,김치,가공·기타,30,냉장,,시어질수록 볶음·찌개에 좋음,https://images.unsplash.com/photo-1741518957935-3be0a4631a03?w=1080&q=80&fm=jpg&fit=crop,Zoshua Colah
+beer,맥주,주류,,실온·냉장,,,https://images.unsplash.com/photo-1644085159285-5fd924740cb3?w=1080&q=80&fm=jpg&fit=crop,@jangnyg

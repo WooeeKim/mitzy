@@ -1,0 +1,3713 @@
+[
+  {
+    "id": "garlic_chicken_fried_rice",
+    "name": "갈릭치킨볶음밥",
+    "minutes": 15,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": true,
+    "ingredients": [
+      {
+        "id": "rice",
+        "amount": "1공기",
+        "optional": false
+      },
+      {
+        "id": "chicken_leftover",
+        "amount": "2~3조각",
+        "optional": false
+      },
+      {
+        "id": "onion",
+        "amount": "¼개",
+        "optional": false
+      },
+      {
+        "id": "garlic",
+        "amount": "3쪽",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "2숟가락",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "⅓숟가락",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "마늘 3쪽 편 썰기",
+      "양파 ¼개 다지기",
+      "치킨 한입 크기로 자르기",
+      "밥 1공기 꺼내두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 2숟가락, 약불로 마늘 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "마늘 가장자리가 연한 금색",
+          "say": "마늘이 연한 금색이에요. 이제 양파 넣어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "양파 넣고 투명해질 때까지 볶기"
+      },
+      {
+        "n": 3,
+        "text": "치킨 넣고 겉 데우기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "치킨 아랫면 튀김옷 색이 진해짐",
+          "say": "아래가 다시 바삭해졌어요. 한 번 뒤집어요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "밥 넣고 눌러 펴서 볶기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "팬 바닥에서 타닥 소리가 커짐, 밥알 가장자리 갈색",
+          "say": "바닥이 눌기 직전이에요. 한 번 뒤섞어요."
+        }
+      },
+      {
+        "n": 5,
+        "text": "소금 ⅓숟가락으로 간하기"
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "color",
+      "flip",
+      "stick"
+    ],
+    "learn_points": [
+      "마늘은 연한 금색이 되면 다음 재료를 넣는다",
+      "밥은 팬에 눌러 펴서 볶아야 고슬고슬하다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1788090485550-ca71c6d578fb?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1788090485550-ca71c6d578fb?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Zayed Ahmed Zadu",
+      "credit_url": "https://unsplash.com/@zayed_ahmed_zadu?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/ZK8kPP8I4rY",
+      "license": "Unsplash License",
+      "alt": "치킨과 참깨를 얹은 볶음밥"
+    }
+  },
+  {
+    "id": "garlic_fried_rice",
+    "name": "마늘볶음밥",
+    "minutes": 10,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": true,
+    "ingredients": [
+      {
+        "id": "rice",
+        "amount": "1공기",
+        "optional": false
+      },
+      {
+        "id": "garlic",
+        "amount": "5쪽",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "2숟가락",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "1개",
+        "optional": true
+      },
+      {
+        "id": "green_onion",
+        "amount": "약간",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "마늘 5쪽 편 썰기",
+      "밥 1공기 꺼내두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "찬 팬에 기름과 마늘 넣고 약불로 켜기"
+      },
+      {
+        "n": 2,
+        "text": "마늘이 금색이 될 때까지 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "마늘이 금색, 기포가 잦아듦",
+          "say": "지금 금색이에요. 더 가면 써져요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "밥 넣고 눌러 펴서 볶기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "타닥 소리가 커짐",
+          "say": "눌기 전에 섞어요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "팬 가장자리에 간장 ½숟가락 둘러 눌리기"
+      },
+      {
+        "n": 5,
+        "text": "계란후라이를 올려 마무리 (선택)"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "color",
+      "stick"
+    ],
+    "learn_points": [
+      "마늘은 찬 기름부터 약불로 올려야 안 탄다",
+      "간장은 팬 가장자리에 둘러야 불향이 난다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1609570324378-ec0c4c9b6ba8?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1609570324378-ec0c4c9b6ba8?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Jay Nlper",
+      "credit_url": "https://unsplash.com/@itworkonline?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/XciY4hwqnNk",
+      "license": "Unsplash License",
+      "alt": "접시에 담긴 볶음밥"
+    }
+  },
+  {
+    "id": "chicken_onion_stirfry",
+    "name": "치킨 양파볶음",
+    "minutes": 10,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": true,
+    "ingredients": [
+      {
+        "id": "chicken_leftover",
+        "amount": "4~5조각",
+        "optional": false
+      },
+      {
+        "id": "onion",
+        "amount": "½개",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "chili",
+        "amount": "1개",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "양파 ½개 굵게 채썰기",
+      "치킨 뼈 발라 한입 크기로 자르기",
+      "간장 1 + 설탕 ½ + 물 2숟가락 섞어두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 두르고 중불에서 양파 볶기"
+      },
+      {
+        "n": 2,
+        "text": "치킨 넣고 한 면 데우기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "아랫면 튀김옷이 다시 바삭, 색이 진해짐",
+          "say": "이제 뒤집어요. 한 번이면 돼요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "섞어둔 소스 붓고 빠르게 섞기",
+        "sous_chef": {
+          "type": "heat_down",
+          "label": "수솊이 불 줄일 때를 알려줄게요",
+          "cue": "소스가 바글바글 끓기 시작",
+          "say": "소스가 끓어요. 불 줄이고 섞어요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "소스가 거의 졸면 불 끄기"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "flip",
+      "heat_down"
+    ],
+    "learn_points": [
+      "남은 치킨은 뒤집기 한 번만 해야 튀김옷이 안 벗겨진다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1695606452836-c3c6e62d407b?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1695606452836-c3c6e62d407b?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Daniel",
+      "credit_url": "https://unsplash.com/@unsplashbydan?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/6qtE-gJIZ90",
+      "license": "Unsplash License",
+      "alt": "양념 치킨 볶음"
+    }
+  },
+  {
+    "id": "onion_soup",
+    "name": "양파 수프",
+    "minutes": 25,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "볶기",
+      "끓이기"
+    ],
+    "tools": [
+      "냄비"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "onion",
+        "amount": "1개",
+        "optional": false
+      },
+      {
+        "id": "butter",
+        "amount": "1조각(10g)",
+        "optional": false
+      },
+      {
+        "id": "water",
+        "amount": "300ml",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "pepper",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "bread",
+        "amount": "1장",
+        "optional": true
+      },
+      {
+        "id": "cheese_slice",
+        "amount": "1장",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "양파 1개 얇게 채썰기",
+      "식빵은 한입 크기로 자르기 (선택)"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "버터 녹이고 중약불로 양파 볶기"
+      },
+      {
+        "n": 2,
+        "text": "양파가 갈색이 될 때까지 계속 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "양파가 진한 갈색, 바닥에 갈색 막",
+          "say": "이 갈색이 맛이에요. 바닥에 물 조금 부어 긁어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "물 300ml, 간장 넣고 끓이기",
+        "sous_chef": {
+          "type": "boil",
+          "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "cue": "냄비 가장자리 거품이 올라옴",
+          "say": "끓기 시작했어요. 약불로 줄여요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "약불로 10분 끓이고 소금·후추로 간하기"
+      },
+      {
+        "n": 5,
+        "text": "식빵·치즈 올려 마무리 (선택)"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "boil",
+      "color"
+    ],
+    "learn_points": [
+      "양파는 오래 볶아 갈색이 될수록 단맛이 난다",
+      "바닥에 눌은 갈색은 물로 긁어 국물에 녹인다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1549203438-a7696aed4dac?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1549203438-a7696aed4dac?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "sheri silver",
+      "credit_url": "https://unsplash.com/@sheri_silver?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/FjxEnioTNs0",
+      "license": "Unsplash License",
+      "alt": "치즈를 올린 양파 수프"
+    }
+  },
+  {
+    "id": "egg_fried_rice",
+    "name": "계란볶음밥",
+    "minutes": 10,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": true,
+    "ingredients": [
+      {
+        "id": "rice",
+        "amount": "1공기",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "2개",
+        "optional": false
+      },
+      {
+        "id": "green_onion",
+        "amount": "¼대",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "2숟가락",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "대파 송송 썰기",
+      "계란 2개 풀어두기",
+      "밥 1공기 꺼내두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 두르고 약불로 파 볶아 파기름 내기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "파 가장자리가 노릇해지기 직전",
+          "say": "파가 노릇해지기 직전이에요. 계란 부어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "계란 붓고 반쯤 익으면 바로 밥 넣기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "계란이 반쯤 몽글, 아직 촉촉",
+          "say": "반만 익었을 때 밥 넣어요. 지금이에요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "밥을 눌러 펴며 섞어 볶기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "타닥 소리가 커짐",
+          "say": "눌기 전에 뒤섞어요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "간장 ½숟가락, 소금으로 간하기"
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "color",
+      "done",
+      "stick"
+    ],
+    "learn_points": [
+      "파기름은 파가 노릇해지기 직전까지",
+      "계란은 반만 익었을 때 밥을 넣어야 밥알에 코팅된다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1664717698774-84f62382613b?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1664717698774-84f62382613b?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "herry shani",
+      "credit_url": "https://unsplash.com/@herryshani?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/MVMohJBieo4",
+      "license": "Unsplash License",
+      "alt": "파를 올린 계란볶음밥"
+    }
+  },
+  {
+    "id": "kimchi_fried_rice",
+    "name": "김치볶음밥",
+    "minutes": 15,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": true,
+    "ingredients": [
+      {
+        "id": "rice",
+        "amount": "1공기",
+        "optional": false
+      },
+      {
+        "id": "kimchi",
+        "amount": "한 줌(⅓컵)",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "gochugaru",
+        "amount": "½숟가락",
+        "optional": true
+      },
+      {
+        "id": "sugar",
+        "amount": "⅓숟가락",
+        "optional": false
+      },
+      {
+        "id": "sesame_oil",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "1개",
+        "optional": true
+      },
+      {
+        "id": "spam",
+        "amount": "¼캔",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "김치 잘게 썰기",
+      "스팸 깍둑썰기 (선택)",
+      "밥 1공기 꺼내두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 두르고 중불로 김치와 설탕 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "김치가 투명해지고 가장자리가 살짝 진해짐",
+          "say": "김치가 투명해졌어요. 밥 넣을 때예요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "고춧가루 넣고 10초만 볶기",
+        "sous_chef": {
+          "type": "heat_down",
+          "label": "수솊이 불 줄일 때를 알려줄게요",
+          "cue": "고춧가루가 기름에 닿아 색이 짙어짐",
+          "say": "고춧가루는 금방 타요. 불 줄여요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "밥 넣고 눌러 펴서 볶기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "타닥 소리가 커짐",
+          "say": "바닥이 눌기 직전이에요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "불 끄고 참기름 둘러 섞기"
+      },
+      {
+        "n": 5,
+        "text": "계란후라이 올리기 (선택)"
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "color",
+      "heat_down",
+      "stick"
+    ],
+    "learn_points": [
+      "김치는 설탕 조금과 먼저 볶아야 신맛이 덜하다",
+      "고춧가루는 약불에서 짧게"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1600688654899-379ec76aca42?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1600688654899-379ec76aca42?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Emanuel Ekström",
+      "credit_url": "https://unsplash.com/@emanuelekstrom?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/1C_RSVhy32Y",
+      "license": "Unsplash License",
+      "alt": "계란후라이를 올린 볶음밥"
+    }
+  },
+  {
+    "id": "jeyuk",
+    "name": "제육볶음",
+    "minutes": 20,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "pork_jeyuk",
+        "amount": "200g",
+        "optional": false
+      },
+      {
+        "id": "onion",
+        "amount": "½개",
+        "optional": false
+      },
+      {
+        "id": "green_onion",
+        "amount": "¼대",
+        "optional": false
+      },
+      {
+        "id": "gochujang",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "gochugaru",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "garlic",
+        "amount": "2쪽",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "sesame_oil",
+        "amount": "½숟가락",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "양파 채썰기, 대파 어슷썰기",
+      "마늘 다지기",
+      "고추장1·고춧가루1·간장1·설탕1·다진마늘 섞어 양념 만들기",
+      "고기에 양념 버무려 10분 두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 두르고 중불에 양념한 고기 펼쳐 넣기"
+      },
+      {
+        "n": 2,
+        "text": "고기 겉이 하얗게 익을 때까지 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "분홍색이 사라지고 가장자리가 갈색",
+          "say": "분홍색이 거의 없어졌어요. 양파 넣어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "양파 넣고 볶기",
+        "sous_chef": {
+          "type": "heat_down",
+          "label": "수솊이 불 줄일 때를 알려줄게요",
+          "cue": "양념이 바닥에 진하게 눌기 시작, 연기",
+          "say": "양념은 금방 타요. 중약불로 줄여요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "대파 넣고 1분, 참기름으로 마무리",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "대파 숨이 살짝 죽음",
+          "say": "다 됐어요. 불 꺼요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "color",
+      "done",
+      "heat_down"
+    ],
+    "learn_points": [
+      "고추장 양념은 중불 이상에서 금방 탄다",
+      "고기 분홍색이 사라지면 채소를 넣는다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1777598405371-e657109ddd50?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1777598405371-e657109ddd50?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Junel Mujar",
+      "credit_url": "https://unsplash.com/@junelmujar?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/CwhrGhuQJEY",
+      "license": "Unsplash License",
+      "alt": "매운 한국식 돼지고기 볶음"
+    }
+  },
+  {
+    "id": "pork_belly_kimchi",
+    "name": "대패삼겹 김치볶음",
+    "minutes": 15,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "pork_belly_thin",
+        "amount": "150g",
+        "optional": false
+      },
+      {
+        "id": "kimchi",
+        "amount": "한 컵",
+        "optional": false
+      },
+      {
+        "id": "onion",
+        "amount": "¼개",
+        "optional": true
+      },
+      {
+        "id": "sugar",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "gochugaru",
+        "amount": "½숟가락",
+        "optional": true
+      },
+      {
+        "id": "sesame_oil",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "김치 한입 크기로 썰기",
+      "양파 채썰기 (선택)"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 없이 팬에 대패삼겹 펼쳐 굽기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "고기 가장자리가 갈색, 기름이 고임",
+          "say": "기름이 충분히 나왔어요. 김치 넣어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "고기 기름에 김치와 설탕 넣고 볶기"
+      },
+      {
+        "n": 3,
+        "text": "김치가 투명해질 때까지 볶기",
+        "sous_chef": {
+          "type": "heat_down",
+          "label": "수솊이 불 줄일 때를 알려줄게요",
+          "cue": "바닥이 진하게 눌기 시작",
+          "say": "타기 직전이에요. 불 줄여요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "참기름 둘러 마무리"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "color",
+      "heat_down"
+    ],
+    "learn_points": [
+      "대패삼겹은 기름 없이 구워 나온 기름으로 김치를 볶는다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1752826892253-d89531507b1d?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1752826892253-d89531507b1d?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Ruby Huang",
+      "credit_url": "https://unsplash.com/@shan_5463?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/1EcXg-F7KyQ",
+      "license": "Unsplash License",
+      "alt": "팬에서 볶고 있는 매운 볶음"
+    }
+  },
+  {
+    "id": "fried_egg",
+    "name": "계란후라이",
+    "minutes": 5,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "굽기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "egg",
+        "amount": "1~2개",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "계란은 그릇에 먼저 깨두기 (껍질 확인)"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 두르고 중불에서 팬 달구기"
+      },
+      {
+        "n": 2,
+        "text": "계란 넣기",
+        "sous_chef": {
+          "type": "heat_down",
+          "label": "수솊이 불 줄일 때를 알려줄게요",
+          "cue": "흰자 가장자리가 하얗게 굳고 지글거림",
+          "say": "가장자리가 굳었어요. 약불로 줄여요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "흰자가 다 하얘지면 불 끄기 (반숙) / 1분 더 (완숙)",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "노른자 위 투명한 흰자가 하얘짐",
+          "say": "흰자 다 익었어요. 반숙이면 지금 꺼요."
+        }
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "done",
+      "heat_down"
+    ],
+    "learn_points": [
+      "흰자 가장자리가 굳으면 불을 줄인다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1691480184494-d9f822edd4d1?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1691480184494-d9f822edd4d1?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "personalgraphic.com",
+      "credit_url": "https://unsplash.com/@personal_graphic?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/8oNpesw9idE",
+      "license": "Unsplash License",
+      "alt": "흰 접시에 계란 후라이"
+    }
+  },
+  {
+    "id": "scrambled_egg",
+    "name": "스크램블에그",
+    "minutes": 5,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "egg",
+        "amount": "2개",
+        "optional": false
+      },
+      {
+        "id": "milk",
+        "amount": "2숟가락",
+        "optional": true
+      },
+      {
+        "id": "butter",
+        "amount": "1조각(10g)",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "계란 2개 + 우유 + 소금 풀어두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "약불에서 버터 녹이기",
+        "sous_chef": {
+          "type": "heat_down",
+          "label": "수솊이 불 줄일 때를 알려줄게요",
+          "cue": "버터 거품이 갈색으로 변하기 시작",
+          "say": "버터가 타기 직전이에요. 바로 계란 부어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "계란 붓고 주걱으로 크게 밀기"
+      },
+      {
+        "n": 3,
+        "text": "80%만 익었을 때 불 끄기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "몽글몽글, 표면이 아직 촉촉하게 반짝임",
+          "say": "지금 꺼요. 남은 열로 익어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "done",
+      "heat_down"
+    ],
+    "learn_points": [
+      "스크램블은 덜 익었을 때 불을 끈다 (남은 열로 익음)"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1687630433653-e6c9faec95b3?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1687630433653-e6c9faec95b3?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Imad 786",
+      "credit_url": "https://unsplash.com/@imad8321?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/6DXfs2sl5pQ",
+      "license": "Unsplash License",
+      "alt": "그릇에 담긴 스크램블에그"
+    }
+  },
+  {
+    "id": "soy_egg_rice",
+    "name": "간장계란밥",
+    "minutes": 5,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "굽기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": true,
+    "ingredients": [
+      {
+        "id": "rice",
+        "amount": "1공기",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "1개",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "sesame_oil",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "butter",
+        "amount": "1조각",
+        "optional": true
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "밥 1공기 데워두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "계란후라이 반숙으로 굽기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "흰자는 익고 노른자는 볼록",
+          "say": "반숙이에요. 지금 밥 위로 옮겨요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "따뜻한 밥에 후라이·버터 올리기"
+      },
+      {
+        "n": 3,
+        "text": "간장·참기름 둘러 비비기"
+      }
+    ],
+    "sous_chef_moments": 1,
+    "moment_types": [
+      "done"
+    ],
+    "learn_points": [
+      "노른자를 반숙으로 두면 소스 역할을 한다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1774428755031-0991c8901f08?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1774428755031-0991c8901f08?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "You Le",
+      "credit_url": "https://unsplash.com/@le_y0u?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/IlJhW2ScTqw",
+      "license": "Unsplash License",
+      "alt": "계란 프라이를 올린 밥그릇"
+    }
+  },
+  {
+    "id": "tofu_pan_fry",
+    "name": "두부부침",
+    "minutes": 15,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "부치기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "tofu",
+        "amount": "½모",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "2숟가락",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "1숟가락",
+        "optional": true
+      },
+      {
+        "id": "green_onion",
+        "amount": "약간",
+        "optional": true
+      },
+      {
+        "id": "gochugaru",
+        "amount": "약간",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "두부 1cm 두께로 썰기",
+      "키친타월로 물기 꾹 눌러 닦기",
+      "소금 살짝 뿌리기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 두르고 중불에서 팬 달구기"
+      },
+      {
+        "n": 2,
+        "text": "두부 올리고 건드리지 않기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "아랫면 가장자리가 노릇, 팬에서 저절로 떨어짐",
+          "say": "가장자리가 노릇해요. 이제 뒤집어도 안 부서져요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "뒤집어서 반대쪽도 노릇하게",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "양면 노릇한 갈색",
+          "say": "양쪽 다 됐어요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "간장 양념 곁들이기 (선택)"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "done",
+      "flip"
+    ],
+    "learn_points": [
+      "두부는 물기를 닦아야 기름이 덜 튄다",
+      "노릇해지기 전에 뒤집으면 부서진다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1762305194201-077e7e23ccf2?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1762305194201-077e7e23ccf2?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Lee Milo",
+      "credit_url": "https://unsplash.com/@miloleetw?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/N0lnO0gZlW8",
+      "license": "Unsplash License",
+      "alt": "파를 뿌린 노릇한 두부"
+    }
+  },
+  {
+    "id": "tomato_egg",
+    "name": "토마토 계란볶음",
+    "minutes": 10,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "tomato",
+        "amount": "1개",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "2개",
+        "optional": false
+      },
+      {
+        "id": "green_onion",
+        "amount": "약간",
+        "optional": true
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "2숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "⅓숟가락",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "토마토 8등분",
+      "계란 2개 풀어두기",
+      "대파 송송 (선택)"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 두르고 계란 부어 반만 익혀 꺼내두기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "가장자리만 부풀고 가운데는 촉촉",
+          "say": "반만 익었어요. 지금 그릇에 덜어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "같은 팬에 토마토 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "토마토 껍질이 벗겨지고 즙이 나옴",
+          "say": "즙이 나왔어요. 계란 다시 넣어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "계란 다시 넣고 설탕·소금으로 간하기"
+      },
+      {
+        "n": 4,
+        "text": "크게 한두 번만 섞고 불 끄기"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "color",
+      "done"
+    ],
+    "learn_points": [
+      "계란은 반만 익혀 빼뒀다가 마지막에 합친다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1629180052394-bedb0e4445fd?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1629180052394-bedb0e4445fd?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Helen Van",
+      "credit_url": "https://unsplash.com/@uynnha?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/6QE9lltiDvc",
+      "license": "Unsplash License",
+      "alt": "토마토 계란볶음"
+    }
+  },
+  {
+    "id": "omurice",
+    "name": "오므라이스",
+    "minutes": 25,
+    "burners": 1,
+    "level": 3,
+    "method": [
+      "볶기",
+      "굽기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": true,
+    "ingredients": [
+      {
+        "id": "rice",
+        "amount": "1공기",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "2개",
+        "optional": false
+      },
+      {
+        "id": "onion",
+        "amount": "¼개",
+        "optional": false
+      },
+      {
+        "id": "sausage",
+        "amount": "2개",
+        "optional": true
+      },
+      {
+        "id": "ketchup",
+        "amount": "3숟가락",
+        "optional": false
+      },
+      {
+        "id": "butter",
+        "amount": "1조각",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "양파 다지기",
+      "소시지 잘게 썰기",
+      "계란 2개 + 소금 풀어두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "양파·소시지 볶다가 케찹 2숟가락 넣고 볶기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "케찹이 바닥에 눌기 시작",
+          "say": "케찹이 눌기 직전이에요. 밥 넣어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "밥 넣고 볶아서 그릇에 담아두기"
+      },
+      {
+        "n": 3,
+        "text": "팬을 닦고 약불에서 버터 녹이기"
+      },
+      {
+        "n": 4,
+        "text": "계란 부어 가장자리만 익히기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "가장자리는 굳고 가운데는 흐르는 상태",
+          "say": "가운데가 아직 촉촉할 때 불 꺼요."
+        }
+      },
+      {
+        "n": 5,
+        "text": "계란을 밥 위에 덮고 케찹 뿌리기"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "done",
+      "stick"
+    ],
+    "learn_points": [
+      "오므라이스 계란은 가운데가 촉촉할 때 불을 끈다",
+      "케찹은 한 번 볶아야 신맛이 날아간다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1743148509702-2198b23ede1c?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1743148509702-2198b23ede1c?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Leo Okuyama",
+      "credit_url": "https://unsplash.com/@okuyama_leo?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/TdtoE7BE3z8",
+      "license": "Unsplash License",
+      "alt": "오므라이스"
+    }
+  },
+  {
+    "id": "rolled_omelette",
+    "name": "계란말이",
+    "minutes": 15,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "부치기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "egg",
+        "amount": "3개",
+        "optional": false
+      },
+      {
+        "id": "green_onion",
+        "amount": "약간",
+        "optional": true
+      },
+      {
+        "id": "carrot",
+        "amount": "약간",
+        "optional": true
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "대파·당근 잘게 다지기",
+      "계란 3개 + 소금 + 채소 풀어두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 얇게 두르고 약불에 계란물 ⅓ 붓기",
+        "sous_chef": {
+          "type": "heat_down",
+          "label": "수솊이 불 줄일 때를 알려줄게요",
+          "cue": "계란물이 바로 부풀며 지글거림",
+          "say": "너무 세요. 약불로 줄여요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "윗면이 반쯤 굳으면 끝에서부터 말기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "윗면 70%가 굳고 가장자리가 들림",
+          "say": "지금 말아요. 더 익으면 안 붙어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "빈 자리에 남은 계란물 부어 이어 말기"
+      },
+      {
+        "n": 4,
+        "text": "다 말면 굴려가며 겉 익히기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "겉면 연한 노란색 유지, 갈색 반점 없음",
+          "say": "다 됐어요. 2분 식혔다 썰어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "done",
+      "flip",
+      "heat_down"
+    ],
+    "learn_points": [
+      "계란말이는 약불, 윗면이 덜 굳었을 때 말아야 붙는다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1606501129419-38058bd81ddc?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1606501129419-38058bd81ddc?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Max Griss",
+      "credit_url": "https://unsplash.com/@grissphoto?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/stA9e5JdsYo",
+      "license": "Unsplash License",
+      "alt": "계란말이"
+    }
+  },
+  {
+    "id": "spinach_egg",
+    "name": "시금치 계란볶음",
+    "minutes": 10,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "spinach",
+        "amount": "한 줌",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "2개",
+        "optional": false
+      },
+      {
+        "id": "garlic",
+        "amount": "1쪽",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "시금치 씻어 물기 털고 반으로 자르기",
+      "마늘 다지기",
+      "계란 풀어두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "계란 스크램블해서 덜어두기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "몽글하고 촉촉",
+          "say": "덜어둬요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "마늘 볶다가 시금치 넣기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "마늘 향, 연한 금색",
+          "say": "시금치 넣어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "시금치 숨이 죽으면 계란 넣고 소금 간",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "시금치 부피가 절반, 진한 초록",
+          "say": "숨이 죽었어요. 바로 꺼요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "color",
+      "done"
+    ],
+    "learn_points": [
+      "잎채소는 숨만 죽으면 바로 불을 끈다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1579353446482-1005b0adea1d?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1579353446482-1005b0adea1d?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Nisuda Nirmantha",
+      "credit_url": "https://unsplash.com/@nisuda_nirmantha?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/GwYNYFpAcbs",
+      "license": "Unsplash License",
+      "alt": "녹색 채소를 곁들인 계란 요리"
+    }
+  },
+  {
+    "id": "spam_rice_bowl",
+    "name": "스팸구이 덮밥",
+    "minutes": 10,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "굽기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": true,
+    "ingredients": [
+      {
+        "id": "spam",
+        "amount": "⅓캔",
+        "optional": false
+      },
+      {
+        "id": "rice",
+        "amount": "1공기",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "1개",
+        "optional": true
+      },
+      {
+        "id": "mayo",
+        "amount": "약간",
+        "optional": true
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "약간",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "스팸 0.7cm 두께로 썰기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 없이 중불에서 스팸 굽기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "아랫면이 진한 갈색, 지글 소리",
+          "say": "갈색이 됐어요. 뒤집어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "반대쪽도 굽기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "양면 갈색",
+          "say": "다 됐어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "밥 위에 올리고 계란후라이·마요 곁들이기"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "done",
+      "flip"
+    ],
+    "learn_points": [
+      "스팸은 자체 기름으로 굽는다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1602647433549-808d521e3479?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1602647433549-808d521e3479?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Joshua Hoehne",
+      "credit_url": "https://unsplash.com/@joshua_hoehne?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/Wvek906U7_o",
+      "license": "Unsplash License",
+      "alt": "햄과 계란"
+    }
+  },
+  {
+    "id": "sausage_veg",
+    "name": "소시지 야채볶음",
+    "minutes": 15,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "sausage",
+        "amount": "5~6개",
+        "optional": false
+      },
+      {
+        "id": "onion",
+        "amount": "¼개",
+        "optional": false
+      },
+      {
+        "id": "carrot",
+        "amount": "약간",
+        "optional": true
+      },
+      {
+        "id": "cabbage",
+        "amount": "약간",
+        "optional": true
+      },
+      {
+        "id": "ketchup",
+        "amount": "2숟가락",
+        "optional": false
+      },
+      {
+        "id": "oyster_sauce",
+        "amount": "½숟가락",
+        "optional": true
+      },
+      {
+        "id": "sugar",
+        "amount": "⅓숟가락",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "소시지에 칼집 내기",
+      "양파·당근 한입 크기로 썰기",
+      "케찹2 + 굴소스½ + 설탕⅓ + 물1 섞기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "소시지 먼저 굴려가며 굽기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "칼집이 벌어지고 겉이 갈색",
+          "say": "칼집이 벌어졌어요. 채소 넣어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "채소 넣고 볶기"
+      },
+      {
+        "n": 3,
+        "text": "소스 넣고 졸이기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "소스가 끈적, 바닥에 붙기 시작",
+          "say": "소스가 눌기 직전이에요. 불 꺼요."
+        }
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "color",
+      "stick"
+    ],
+    "learn_points": [
+      "칼집이 벌어지면 소시지 속까지 데워진 것"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1592259695987-4aa79c3c34a6?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1592259695987-4aa79c3c34a6?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Amr Taha™",
+      "credit_url": "https://unsplash.com/@amr_taha?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/KtbmX7bBR-U",
+      "license": "Unsplash License",
+      "alt": "소시지와 채소"
+    }
+  },
+  {
+    "id": "zucchini_jeon",
+    "name": "애호박전",
+    "minutes": 15,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "부치기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "zucchini",
+        "amount": "½개",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "1개",
+        "optional": false
+      },
+      {
+        "id": "flour",
+        "amount": "2숟가락",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "2숟가락",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "애호박 0.5cm 동그랗게 썰고 소금 살짝",
+      "5분 뒤 물기 닦기",
+      "부침가루 묻히고 계란물 입히기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 두르고 중약불에서 팬 달구기"
+      },
+      {
+        "n": 2,
+        "text": "애호박 올려 굽기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "계란옷 가장자리가 노릇, 윗면 계란이 굳음",
+          "say": "가장자리가 노릇해요. 뒤집어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "반대쪽도 굽기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "양면 연한 노란빛, 갈색 반점 약간",
+          "say": "다 됐어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "done",
+      "flip"
+    ],
+    "learn_points": [
+      "전은 중약불, 가장자리가 노릇해지면 뒤집는다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1607095591644-9f97a2099c92?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1607095591644-9f97a2099c92?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Max Griss",
+      "credit_url": "https://unsplash.com/@grissphoto?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/qbjkVIixPCY",
+      "license": "Unsplash License",
+      "alt": "채소 부침개"
+    }
+  },
+  {
+    "id": "potato_jeon",
+    "name": "감자채전",
+    "minutes": 20,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "부치기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "potato",
+        "amount": "2개",
+        "optional": false
+      },
+      {
+        "id": "starch",
+        "amount": "1숟가락",
+        "optional": true
+      },
+      {
+        "id": "salt",
+        "amount": "⅓숟가락",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "3숟가락",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "감자 껍질 벗겨 얇게 채썰기",
+      "전분·소금 넣고 버무리기 (물에 헹구지 않기)"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 넉넉히 두르고 중불에서 달구기"
+      },
+      {
+        "n": 2,
+        "text": "감자채를 얇고 넓게 펴서 꾹 누르기"
+      },
+      {
+        "n": 3,
+        "text": "아랫면 노릇하게 굽기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "가장자리 갈색, 팬을 흔들면 통째로 미끄러짐",
+          "say": "통째로 움직여요. 뒤집을 때예요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "기름 조금 더 두르고 반대쪽 굽기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "양면 바삭한 갈색, 소리가 잦아듦",
+          "say": "바삭해요. 꺼요."
+        }
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "done",
+      "flip"
+    ],
+    "learn_points": [
+      "감자 전분이 접착제라 헹구면 안 붙는다",
+      "팬을 흔들어 통째로 움직이면 뒤집을 때"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1783684522943-7ab49ce47d43?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1783684522943-7ab49ce47d43?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "tommao wang",
+      "credit_url": "https://unsplash.com/@tommaomaoer?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/Dut3u5zJ0vE",
+      "license": "Unsplash License",
+      "alt": "노릇한 감자전"
+    }
+  },
+  {
+    "id": "kimchi_jeon",
+    "name": "김치전",
+    "minutes": 15,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "부치기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "kimchi",
+        "amount": "한 컵",
+        "optional": false
+      },
+      {
+        "id": "flour",
+        "amount": "5숟가락",
+        "optional": false
+      },
+      {
+        "id": "water",
+        "amount": "5숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "3숟가락",
+        "optional": false
+      },
+      {
+        "id": "chili",
+        "amount": "1개",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "김치 잘게 썰기",
+      "김치 + 부침가루 + 물 + 설탕 조금 섞기 (주르륵 흐를 정도)"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 넉넉히, 중불에서 팬 달구기"
+      },
+      {
+        "n": 2,
+        "text": "반죽 얇게 펴기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "가장자리가 바삭한 갈색, 윗면 반죽이 반 이상 익음",
+          "say": "가장자리가 바삭해요. 뒤집어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "뒤집고 뒤집개로 꾹 누르기"
+      },
+      {
+        "n": 4,
+        "text": "반대쪽도 바삭하게",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "양면 갈색, 지글 소리가 작아짐",
+          "say": "다 됐어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "done",
+      "flip"
+    ],
+    "learn_points": [
+      "반죽은 얇게 펼쳐야 바삭하다",
+      "뒤집고 나서 꾹 눌러야 고르게 익는다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1540162579464-e90ec977bd67?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1540162579464-e90ec977bd67?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "charlesdeluvio",
+      "credit_url": "https://unsplash.com/@charlesdeluvio?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/GPx4ZYhL6mQ",
+      "license": "Unsplash License",
+      "alt": "접시에 담긴 부침 요리"
+    }
+  },
+  {
+    "id": "french_toast",
+    "name": "프렌치토스트",
+    "minutes": 10,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "굽기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "bread",
+        "amount": "2장",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "1개",
+        "optional": false
+      },
+      {
+        "id": "milk",
+        "amount": "3숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "butter",
+        "amount": "1조각",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "계란 + 우유 + 설탕 + 소금 섞기",
+      "식빵 반으로 자르기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "약불에서 버터 녹이기",
+        "sous_chef": {
+          "type": "heat_down",
+          "label": "수솊이 불 줄일 때를 알려줄게요",
+          "cue": "버터 거품이 갈색으로 변하기 시작",
+          "say": "버터 타기 직전이에요. 빵 올려요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "계란물 적신 빵 굽기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "아랫면 진한 노란 갈색",
+          "say": "색 좋아요. 뒤집어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "반대쪽 굽기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "양면 노릇, 가운데 눌러보면 탄력",
+          "say": "다 됐어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "done",
+      "flip",
+      "heat_down"
+    ],
+    "learn_points": [
+      "버터는 거품이 갈색이 되기 전에 쓴다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1595044643502-616eeebbdff3?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1595044643502-616eeebbdff3?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Crystal Jo",
+      "credit_url": "https://unsplash.com/@crystalsjo?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/Q58N5cBKDZ8",
+      "license": "Unsplash License",
+      "alt": "프렌치토스트"
+    }
+  },
+  {
+    "id": "butter_potato",
+    "name": "버터 감자구이",
+    "minutes": 20,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "전자레인지",
+      "굽기"
+    ],
+    "tools": [
+      "전자레인지",
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "potato",
+        "amount": "2개",
+        "optional": false
+      },
+      {
+        "id": "butter",
+        "amount": "1조각",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "약간",
+        "optional": true
+      },
+      {
+        "id": "pepper",
+        "amount": "약간",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "감자 껍질째 한입 크기로 썰기",
+      "그릇에 물 2숟가락, 랩 씌워 전자레인지 5분"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "팬에 버터 녹이고 익힌 감자 넣기"
+      },
+      {
+        "n": 2,
+        "text": "굴려가며 겉을 굽기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "면마다 노릇한 갈색",
+          "say": "면이 노릇해요. 한 번 굴려요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "소금·설탕·후추로 간하고 불 끄기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "모든 면이 노릇",
+          "say": "다 됐어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "color",
+      "done"
+    ],
+    "learn_points": [
+      "감자는 전자레인지로 속을 먼저 익히면 굽는 시간이 줄어든다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1633959639799-6d3f66e05710?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1633959639799-6d3f66e05710?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Markus Winkler",
+      "credit_url": "https://unsplash.com/@markuswinkler?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/9DEggBoY8CY",
+      "license": "Unsplash License",
+      "alt": "감자와 파슬리를 얹은 흰색 접시"
+    }
+  },
+  {
+    "id": "mushroom_butter",
+    "name": "버섯 버터구이",
+    "minutes": 10,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "굽기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "mushroom",
+        "amount": "한 팩",
+        "optional": false
+      },
+      {
+        "id": "butter",
+        "amount": "1조각",
+        "optional": false
+      },
+      {
+        "id": "garlic",
+        "amount": "2쪽",
+        "optional": true
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "pepper",
+        "amount": "약간",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "버섯 한입 크기로 찢거나 썰기 (물에 씻지 말고 닦기)",
+      "마늘 편 썰기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "중불에서 버섯을 기름 없이 펼쳐 굽기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "아랫면 갈색, 물이 나왔다가 졸아듦",
+          "say": "갈색이 났어요. 이제 뒤집어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "버터·마늘 넣고 섞기",
+        "sous_chef": {
+          "type": "heat_down",
+          "label": "수솊이 불 줄일 때를 알려줄게요",
+          "cue": "버터 거품이 갈색으로",
+          "say": "버터 넣었으면 불 줄여요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "간장 한 바퀴 두르고 불 끄기"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "flip",
+      "heat_down"
+    ],
+    "learn_points": [
+      "버섯은 처음엔 건드리지 말아야 물이 안 나오고 노릇해진다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1733940501793-7e7a15c253f6?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1733940501793-7e7a15c253f6?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Ingmar",
+      "credit_url": "https://unsplash.com/@visualsbying?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/AcUUyHEQMwQ",
+      "license": "Unsplash License",
+      "alt": "팬에서 굽는 버섯"
+    }
+  },
+  {
+    "id": "chicken_thigh_steak",
+    "name": "닭다리살 구이",
+    "minutes": 20,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "굽기"
+    ],
+    "tools": [
+      "프라이팬",
+      "뚜껑"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "chicken_thigh",
+        "amount": "1~2장",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "pepper",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "1숟가락",
+        "optional": true
+      },
+      {
+        "id": "sugar",
+        "amount": "½숟가락",
+        "optional": true
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "닭다리살 키친타월로 물기 닦기",
+      "소금·후추 뿌리기",
+      "(선택) 간장1 + 설탕½ + 물2 섞기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "껍질 쪽을 아래로, 중약불에서 굽기"
+      },
+      {
+        "n": 2,
+        "text": "껍질이 바삭해질 때까지 그대로 두기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "껍질 노릇한 갈색, 옆면 ⅔가 하얗게 익음",
+          "say": "옆면이 ⅔ 익었어요. 뒤집어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "뒤집고 뚜껑 덮어 3분",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "두꺼운 부분 투명한 육즙, 분홍색 없음",
+          "say": "속까지 익었어요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "(선택) 소스 붓고 졸이기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "소스가 끈적, 거품이 커짐",
+          "say": "소스가 졸았어요. 불 꺼요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "done",
+      "flip",
+      "stick"
+    ],
+    "learn_points": [
+      "닭 껍질은 처음부터 끝까지 한 번만 뒤집는다",
+      "옆면이 ⅔ 하얘지면 뒤집을 때"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1583579366395-c0a857d2182a?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1583579366395-c0a857d2182a?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Markus Winkler",
+      "credit_url": "https://unsplash.com/@markuswinkler?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/8U3MxqPEmJI",
+      "license": "Unsplash License",
+      "alt": "구운 닭고기"
+    }
+  },
+  {
+    "id": "pan_dumpling",
+    "name": "군만두",
+    "minutes": 10,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "굽기"
+    ],
+    "tools": [
+      "프라이팬",
+      "뚜껑"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "frozen_dumpling",
+        "amount": "6~8개",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "2숟가락",
+        "optional": false
+      },
+      {
+        "id": "water",
+        "amount": "3숟가락",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "만두 해동하지 않고 그대로"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 두르고 만두 바닥면 굽기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "바닥이 노릇한 갈색",
+          "say": "바닥이 노릇해요. 물 부어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "물 3숟가락 붓고 바로 뚜껑 덮기",
+        "sous_chef": {
+          "type": "boil",
+          "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "cue": "치익 소리, 김이 가득",
+          "say": "약불로 줄이고 그대로 둬요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "물이 다 날아가면 뚜껑 열어 바삭하게",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "물소리가 기름 지글 소리로 바뀜",
+          "say": "물 소리가 기름 소리로 바뀌었어요. 다 됐어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "boil",
+      "color",
+      "done"
+    ],
+    "learn_points": [
+      "물 소리가 기름 지글 소리로 바뀌면 다 된 것"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1638502521795-89107ac5e246?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1638502521795-89107ac5e246?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Huyen Bui",
+      "credit_url": "https://unsplash.com/@huyenbui30?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/9SH7zCIANXw",
+      "license": "Unsplash License",
+      "alt": "구운 만두"
+    }
+  },
+  {
+    "id": "tonkatsu",
+    "name": "돈가스 부침튀김",
+    "minutes": 15,
+    "burners": 1,
+    "level": 3,
+    "method": [
+      "튀기기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "frozen_cutlet",
+        "amount": "1장",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "팬 바닥 1cm",
+        "optional": false
+      },
+      {
+        "id": "cabbage",
+        "amount": "약간",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "양배추 얇게 채썰어 찬물에 담가두기 (선택)",
+      "기름 옆에 키친타월 깔아두기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "팬에 기름 1cm, 중불로 데우기",
+        "sous_chef": {
+          "type": "heat_down",
+          "label": "수솊이 불 줄일 때를 알려줄게요",
+          "cue": "빵가루 한 알이 바로 떠오르며 거품",
+          "say": "기름이 준비됐어요. 돈가스 넣고 중약불로 줄여요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "돈가스 넣고 한 면 튀기기",
+        "sous_chef": {
+          "type": "flip",
+          "label": "수솊이 뒤집을 때를 봐줄게요",
+          "cue": "가장자리 튀김옷이 황금색",
+          "say": "황금색이에요. 뒤집어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "반대쪽 튀기기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "양면 황금 갈색, 거품이 작아지고 소리가 높아짐",
+          "say": "거품이 작아졌어요. 건져요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "키친타월에 세워 기름 빼기"
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "done",
+      "flip",
+      "heat_down"
+    ],
+    "learn_points": [
+      "기름 온도는 빵가루를 떨어뜨려 확인한다",
+      "거품이 작아지고 소리가 높아지면 다 익은 것"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1677743540715-d4fe04852225?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1677743540715-d4fe04852225?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@grantlee",
+      "credit_url": "https://unsplash.com/@grantlee?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/TFHV_c7dSi8",
+      "license": "Unsplash License",
+      "alt": "돈가스"
+    }
+  },
+  {
+    "id": "ramen_egg",
+    "name": "계란라면",
+    "minutes": 7,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "끓이기"
+    ],
+    "tools": [
+      "냄비"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "ramen",
+        "amount": "1봉",
+        "optional": false
+      },
+      {
+        "id": "water",
+        "amount": "550ml",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "1개",
+        "optional": true
+      },
+      {
+        "id": "green_onion",
+        "amount": "약간",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "대파 송송 (선택)"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "물 550ml 끓이기",
+        "sous_chef": {
+          "type": "boil",
+          "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "cue": "큰 기포가 계속 올라옴",
+          "say": "물이 끓어요. 면이랑 수프 넣어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "면·수프 넣고 2분",
+        "sous_chef": {
+          "type": "boil",
+          "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "cue": "거품이 냄비 가장자리까지 올라옴",
+          "say": "넘치기 직전이에요. 불 살짝 줄여요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "계란 넣고 젓지 않기"
+      },
+      {
+        "n": 4,
+        "text": "총 4분에 불 끄기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "면이 풀리고 국물이 탁해짐",
+          "say": "4분 됐어요. 꼬들면 지금이에요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "boil",
+      "done"
+    ],
+    "learn_points": [
+      "계란을 넣고 젓지 않으면 국물이 맑다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1644082653870-3eaacc76c5c2?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1644082653870-3eaacc76c5c2?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Mufid Majnun",
+      "credit_url": "https://unsplash.com/@mufidpwt?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/VJ9XM0BLEXw",
+      "license": "Unsplash License",
+      "alt": "계란을 얹은 라면"
+    }
+  },
+  {
+    "id": "kimchi_stew",
+    "name": "김치찌개",
+    "minutes": 25,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "볶기",
+      "끓이기"
+    ],
+    "tools": [
+      "냄비"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "kimchi",
+        "amount": "한 컵",
+        "optional": false
+      },
+      {
+        "id": "pork_jeyuk",
+        "amount": "100g",
+        "optional": true
+      },
+      {
+        "id": "tuna_can",
+        "amount": "½캔",
+        "optional": true
+      },
+      {
+        "id": "tofu",
+        "amount": "⅓모",
+        "optional": false
+      },
+      {
+        "id": "green_onion",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "gochugaru",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "⅓숟가락",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "water",
+        "amount": "300ml",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "김치 한입 크기로 썰기",
+      "두부 깍둑썰기",
+      "대파 어슷썰기",
+      "고기 또는 참치 중 하나 준비"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "냄비에 기름, 고기와 김치 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "김치가 투명, 고기 겉이 하얗게",
+          "say": "김치가 투명해졌어요. 물 부어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "물 300ml, 고춧가루·설탕 넣고 끓이기",
+        "sous_chef": {
+          "type": "boil",
+          "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "cue": "거품이 가장자리까지",
+          "say": "끓어 넘치기 전에 중약불로 줄여요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "중약불로 10분 끓이기"
+      },
+      {
+        "n": 4,
+        "text": "두부·대파 넣고 3분 더",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "두부가 국물 색으로 물듦",
+          "say": "다 됐어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "boil",
+      "color",
+      "done"
+    ],
+    "learn_points": [
+      "김치를 먼저 볶으면 국물이 진해진다",
+      "찌개는 끓어오르면 중약불로 오래"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1777113310299-c3e41dec4e0f?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1777113310299-c3e41dec4e0f?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "note thanun",
+      "credit_url": "https://unsplash.com/@notethanun?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/_dE1Z3gS0P0",
+      "license": "Unsplash License",
+      "alt": "끓는 한국식 찌개"
+    }
+  },
+  {
+    "id": "doenjang_stew",
+    "name": "된장찌개",
+    "minutes": 20,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "끓이기"
+    ],
+    "tools": [
+      "냄비"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "doenjang",
+        "amount": "1.5숟가락",
+        "optional": false
+      },
+      {
+        "id": "tofu",
+        "amount": "⅓모",
+        "optional": false
+      },
+      {
+        "id": "zucchini",
+        "amount": "¼개",
+        "optional": false
+      },
+      {
+        "id": "onion",
+        "amount": "¼개",
+        "optional": false
+      },
+      {
+        "id": "potato",
+        "amount": "½개",
+        "optional": true
+      },
+      {
+        "id": "chili",
+        "amount": "½개",
+        "optional": true
+      },
+      {
+        "id": "garlic",
+        "amount": "1쪽",
+        "optional": false
+      },
+      {
+        "id": "water",
+        "amount": "300ml",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "감자·애호박·양파·두부 깍둑썰기",
+      "마늘 다지기, 고추 송송"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "물 300ml에 된장 풀고 감자 넣어 끓이기",
+        "sous_chef": {
+          "type": "boil",
+          "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "cue": "거품이 가장자리까지 올라옴",
+          "say": "넘치기 전이에요. 중불로 줄여요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "애호박·양파·마늘 넣고 5분"
+      },
+      {
+        "n": 3,
+        "text": "두부·고추 넣고 3분",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "애호박이 반투명, 감자가 젓가락에 쑥",
+          "say": "다 됐어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "boil",
+      "done"
+    ],
+    "learn_points": [
+      "단단한 재료(감자)부터 넣는다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1746718547557-1a0e05bed94b?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1746718547557-1a0e05bed94b?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "lee seunghyub",
+      "credit_url": "https://unsplash.com/@sobalc?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/RGixR6QAk3o",
+      "license": "Unsplash License",
+      "alt": "뚝배기에서 끓는 찌개"
+    }
+  },
+  {
+    "id": "tteokbokki",
+    "name": "떡볶이",
+    "minutes": 20,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "졸이기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "tteok",
+        "amount": "한 줌(150g)",
+        "optional": false
+      },
+      {
+        "id": "fish_cake",
+        "amount": "1장",
+        "optional": true
+      },
+      {
+        "id": "green_onion",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "gochujang",
+        "amount": "1.5숟가락",
+        "optional": false
+      },
+      {
+        "id": "gochugaru",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "water",
+        "amount": "250ml",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "1개(삶은 것)",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "굳은 떡은 물에 10분 불리기",
+      "어묵 세모로 썰기, 대파 어슷썰기",
+      "고추장·고춧가루·설탕·간장 섞기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "물 250ml에 양념 풀고 끓이기",
+        "sous_chef": {
+          "type": "boil",
+          "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "cue": "양념 거품이 바글바글",
+          "say": "끓었어요. 떡 넣어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "떡·어묵 넣고 중불로 졸이기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "국물이 걸쭉, 떡이 바닥에 붙기 시작",
+          "say": "바닥에 붙어요. 한 번 저어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "국물이 반으로 줄면 대파 넣기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "국물이 떡에 코팅될 만큼 걸쭉",
+          "say": "이 정도면 됐어요. 불 꺼요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "boil",
+      "done",
+      "stick"
+    ],
+    "learn_points": [
+      "졸이는 요리는 국물이 걸쭉해지면 바닥을 자주 저어야 한다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1635363638580-c2809d049eee?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1635363638580-c2809d049eee?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Marcin Skalij",
+      "credit_url": "https://unsplash.com/@m_skalij?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/w_2vlvTgk7E",
+      "license": "Unsplash License",
+      "alt": "떡볶이"
+    }
+  },
+  {
+    "id": "fishcake_stirfry",
+    "name": "어묵볶음",
+    "minutes": 10,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "fish_cake",
+        "amount": "2장",
+        "optional": false
+      },
+      {
+        "id": "onion",
+        "amount": "¼개",
+        "optional": true
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "sesame_oil",
+        "amount": "약간",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "어묵 길게 썰기",
+      "양파 채썰기",
+      "간장1 + 설탕½ + 물2 섞기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름 두르고 어묵·양파 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "어묵 가장자리가 살짝 노릇",
+          "say": "노릇해졌어요. 양념 넣어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "양념 넣고 졸이기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "양념이 거의 없어지고 바닥에 붙기 시작",
+          "say": "양념이 다 졸았어요. 불 꺼요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "참기름 둘러 마무리"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "color",
+      "stick"
+    ],
+    "learn_points": [
+      "밑반찬 볶음은 양념이 졸아들면 바로 불을 끈다"
+    ],
+    "photo": {
+      "url": "images/fishcake_stirfry.jpg",
+      "thumb": "images/thumb/fishcake_stirfry.jpg",
+      "credit": "팀 제공",
+      "credit_url": null,
+      "source_url": null,
+      "license": "출처 확인 필요",
+      "alt": "어묵볶음"
+    }
+  },
+  {
+    "id": "potato_braise",
+    "name": "감자조림",
+    "minutes": 25,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "졸이기"
+    ],
+    "tools": [
+      "프라이팬",
+      "뚜껑"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "potato",
+        "amount": "2개",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "2숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "water",
+        "amount": "150ml",
+        "optional": false
+      },
+      {
+        "id": "sesame_oil",
+        "amount": "약간",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "감자 깍둑썰기 후 찬물에 5분 담가 전분 빼기",
+      "간장2 + 설탕1 + 물150ml 섞기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "기름에 감자 겉만 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "감자 겉면이 반투명",
+          "say": "겉이 반투명해요. 양념 부어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "양념 붓고 뚜껑 덮어 중약불 10분",
+        "sous_chef": {
+          "type": "boil",
+          "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "cue": "거품이 뚜껑 밖으로 넘치려 함",
+          "say": "넘치려 해요. 뚜껑 살짝 열어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "뚜껑 열고 국물 졸이기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "국물이 거의 없어지고 바닥에서 타닥",
+          "say": "타기 직전이에요. 불 꺼요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "boil",
+      "color",
+      "stick"
+    ],
+    "learn_points": [
+      "조림은 마지막에 뚜껑을 열어 국물을 날린다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1730793680129-300f76284e20?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1730793680129-300f76284e20?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Leo_Visions",
+      "credit_url": "https://unsplash.com/@leo_visions_?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/ho2DMktCIxI",
+      "license": "Unsplash License",
+      "alt": "그릇에 담긴 감자 요리"
+    }
+  },
+  {
+    "id": "aglio_olio",
+    "name": "알리오올리오",
+    "minutes": 20,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "끓이기",
+      "볶기"
+    ],
+    "tools": [
+      "냄비",
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "pasta",
+        "amount": "1인분(100g)",
+        "optional": false
+      },
+      {
+        "id": "garlic",
+        "amount": "5쪽",
+        "optional": false
+      },
+      {
+        "id": "olive_oil",
+        "amount": "4숟가락",
+        "optional": false
+      },
+      {
+        "id": "chili",
+        "amount": "1개",
+        "optional": true
+      },
+      {
+        "id": "salt",
+        "amount": "1숟가락(면물)",
+        "optional": false
+      },
+      {
+        "id": "pepper",
+        "amount": "약간",
+        "optional": true
+      }
+    ],
+    "prep": [
+      "마늘 편 썰기, 고추 송송",
+      "1구라면 면 먼저 삶아 면물 한 컵 남기고 건지기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "물 1L에 소금 넣고 면 삶기 (봉지 시간 -1분)",
+        "sous_chef": {
+          "type": "boil",
+          "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "cue": "거품이 냄비 위로 차오름",
+          "say": "넘쳐요. 불 조금 줄여요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "면물 한 컵 떠두고 면 건지기"
+      },
+      {
+        "n": 3,
+        "text": "팬에 올리브유와 마늘 넣고 약불로 켜기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "마늘이 연한 금색, 기포가 작아짐",
+          "say": "연한 금색이에요. 고추 넣고 바로 면물 부어요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "면물 ½컵과 면 넣고 흔들며 섞기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "소스가 하얗고 걸쭉하게 면에 붙음",
+          "say": "소스가 면에 붙었어요. 다 됐어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "boil",
+      "color",
+      "done"
+    ],
+    "learn_points": [
+      "면물의 전분이 기름과 섞여야 소스가 된다",
+      "마늘은 연한 금색에서 멈춘다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1693820206774-d4a769355142?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1693820206774-d4a769355142?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Imad 786",
+      "credit_url": "https://unsplash.com/@imad8321?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/Ckka_jsngpM",
+      "license": "Unsplash License",
+      "alt": "오일 파스타"
+    }
+  },
+  {
+    "id": "cream_pasta",
+    "name": "우유 크림파스타",
+    "minutes": 20,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "끓이기",
+      "졸이기"
+    ],
+    "tools": [
+      "냄비",
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "pasta",
+        "amount": "1인분(100g)",
+        "optional": false
+      },
+      {
+        "id": "milk",
+        "amount": "250ml",
+        "optional": false
+      },
+      {
+        "id": "bacon",
+        "amount": "2줄",
+        "optional": true
+      },
+      {
+        "id": "onion",
+        "amount": "¼개",
+        "optional": false
+      },
+      {
+        "id": "cheese_slice",
+        "amount": "1장",
+        "optional": false
+      },
+      {
+        "id": "butter",
+        "amount": "1조각",
+        "optional": false
+      },
+      {
+        "id": "salt",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "pepper",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "양파 채썰기, 베이컨 썰기",
+      "면은 봉지 시간보다 2분 덜 삶아 건지기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "버터에 베이컨·양파 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "베이컨 가장자리가 바삭, 양파 투명",
+          "say": "좋아요. 우유 부어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "우유 붓고 데우기",
+        "sous_chef": {
+          "type": "boil",
+          "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "cue": "가장자리에 작은 거품이 둘러짐",
+          "say": "우유는 확 넘쳐요. 약불로 줄여요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "면·치즈 넣고 졸이기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "소스가 숟가락 뒷면에 묻을 만큼 걸쭉",
+          "say": "이 농도면 됐어요. 불 꺼요."
+        }
+      },
+      {
+        "n": 4,
+        "text": "소금·후추로 간하기"
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "boil",
+      "color",
+      "done"
+    ],
+    "learn_points": [
+      "우유는 가장자리 거품이 보이면 약불 (확 넘친다)",
+      "소스는 식으면서 더 걸쭉해진다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1608756687911-aa1599ab3bd9?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1608756687911-aa1599ab3bd9?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Karolina Kołodziejczak",
+      "credit_url": "https://unsplash.com/@rabbit_in_blue?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/dvgjof0_TP8",
+      "license": "Unsplash License",
+      "alt": "크림 파스타"
+    }
+  },
+  {
+    "id": "udon_stirfry",
+    "name": "볶음우동",
+    "minutes": 15,
+    "burners": 1,
+    "level": 2,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": false,
+    "ingredients": [
+      {
+        "id": "udon",
+        "amount": "1봉",
+        "optional": false
+      },
+      {
+        "id": "cabbage",
+        "amount": "한 줌",
+        "optional": false
+      },
+      {
+        "id": "onion",
+        "amount": "¼개",
+        "optional": false
+      },
+      {
+        "id": "pork_belly_thin",
+        "amount": "80g",
+        "optional": true
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "oyster_sauce",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "1숟가락",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "우동면 뜨거운 물에 30초 풀어 건지기",
+      "양배추·양파 채썰기",
+      "간장1 + 굴소스1 + 설탕½ 섞기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "고기와 채소 센불에 볶기",
+        "sous_chef": {
+          "type": "color",
+          "label": "수솊이 색을 봐줄게요",
+          "cue": "양배추 숨이 반쯤 죽고 가장자리 갈색",
+          "say": "채소 반쯤 익었어요. 면 넣어요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "면과 소스 넣고 빠르게 섞기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "면이 팬에 붙고 소스가 눌기 시작",
+          "say": "붙기 시작해요. 계속 들어서 섞어요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "소스가 면에 다 배면 불 끄기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "팬 바닥에 국물이 안 보임",
+          "say": "다 됐어요."
+        }
+      }
+    ],
+    "sous_chef_moments": 3,
+    "moment_types": [
+      "color",
+      "done",
+      "stick"
+    ],
+    "learn_points": [
+      "볶음면은 면을 미리 풀어둬야 팬에서 안 끊긴다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1694934588452-a1a02b2ec718?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1694934588452-a1a02b2ec718?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Kouji Tsuru",
+      "credit_url": "https://unsplash.com/@pafuxu?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/mubG28c-FM0",
+      "license": "Unsplash License",
+      "alt": "볶음 우동"
+    }
+  },
+  {
+    "id": "tuna_mayo_bowl",
+    "name": "참치마요덮밥",
+    "minutes": 10,
+    "burners": 1,
+    "level": 1,
+    "method": [
+      "볶기"
+    ],
+    "tools": [
+      "프라이팬"
+    ],
+    "uses_leftover": true,
+    "ingredients": [
+      {
+        "id": "rice",
+        "amount": "1공기",
+        "optional": false
+      },
+      {
+        "id": "tuna_can",
+        "amount": "½캔",
+        "optional": false
+      },
+      {
+        "id": "egg",
+        "amount": "1개",
+        "optional": false
+      },
+      {
+        "id": "mayo",
+        "amount": "1숟가락",
+        "optional": false
+      },
+      {
+        "id": "soy_sauce",
+        "amount": "½숟가락",
+        "optional": false
+      },
+      {
+        "id": "sugar",
+        "amount": "약간",
+        "optional": false
+      },
+      {
+        "id": "cooking_oil",
+        "amount": "약간",
+        "optional": false
+      }
+    ],
+    "prep": [
+      "참치 기름 빼기",
+      "간장½ + 설탕 약간 섞기"
+    ],
+    "steps": [
+      {
+        "n": 1,
+        "text": "계란 스크램블 해서 덜기",
+        "sous_chef": {
+          "type": "done",
+          "label": "수솊이 다 됐을 때 알려줄게요",
+          "cue": "몽글하고 촉촉",
+          "say": "덜어둬요."
+        }
+      },
+      {
+        "n": 2,
+        "text": "같은 팬에 참치·간장 소스 넣고 30초 볶기",
+        "sous_chef": {
+          "type": "stick",
+          "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "cue": "간장이 바닥에 눌기 시작",
+          "say": "눌기 직전이에요. 불 꺼요."
+        }
+      },
+      {
+        "n": 3,
+        "text": "밥 위에 계란·참치·마요 올리기"
+      }
+    ],
+    "sous_chef_moments": 2,
+    "moment_types": [
+      "done",
+      "stick"
+    ],
+    "learn_points": [
+      "간장은 바닥에 닿으면 금방 눌어서 짧게 볶는다"
+    ],
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1608039733145-603c07cad096?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1608039733145-603c07cad096?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Scott Eckersley",
+      "credit_url": "https://unsplash.com/@scotteckersley?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/6a5ZpG9SQHs",
+      "license": "Unsplash License",
+      "alt": "마요를 뿌린 덮밥"
+    }
+  }
+]

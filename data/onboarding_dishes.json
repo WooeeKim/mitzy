@@ -1,0 +1,113 @@
+[
+  {
+    "chip": "간장계란밥",
+    "known_recipes": [
+      "soy_egg_rice",
+      "fried_egg"
+    ],
+    "skills": [
+      "굽기"
+    ],
+    "level": 1
+  },
+  {
+    "chip": "라면",
+    "known_recipes": [
+      "ramen_egg"
+    ],
+    "skills": [
+      "끓이기"
+    ],
+    "level": 1
+  },
+  {
+    "chip": "전자레인지 요리",
+    "known_recipes": [],
+    "skills": [
+      "전자레인지"
+    ],
+    "level": 1
+  },
+  {
+    "chip": "계란후라이",
+    "known_recipes": [
+      "fried_egg"
+    ],
+    "skills": [
+      "굽기"
+    ],
+    "level": 1
+  },
+  {
+    "chip": "볶음밥",
+    "known_recipes": [
+      "egg_fried_rice",
+      "kimchi_fried_rice"
+    ],
+    "skills": [
+      "볶기"
+    ],
+    "level": 1
+  },
+  {
+    "chip": "소시지볶음",
+    "known_recipes": [
+      "sausage_veg"
+    ],
+    "skills": [
+      "볶기"
+    ],
+    "level": 1
+  },
+  {
+    "chip": "계란말이",
+    "known_recipes": [
+      "rolled_omelette"
+    ],
+    "skills": [
+      "부치기"
+    ],
+    "level": 2
+  },
+  {
+    "chip": "두부부침",
+    "known_recipes": [
+      "tofu_pan_fry"
+    ],
+    "skills": [
+      "부치기"
+    ],
+    "level": 1
+  },
+  {
+    "chip": "제육볶음",
+    "known_recipes": [
+      "jeyuk"
+    ],
+    "skills": [
+      "볶기"
+    ],
+    "level": 2
+  },
+  {
+    "chip": "파스타",
+    "known_recipes": [
+      "aglio_olio"
+    ],
+    "skills": [
+      "끓이기",
+      "볶기"
+    ],
+    "level": 2
+  },
+  {
+    "chip": "튀김류",
+    "known_recipes": [
+      "tonkatsu"
+    ],
+    "skills": [
+      "튀기기"
+    ],
+    "level": 3
+  }
+]

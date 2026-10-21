@@ -1,0 +1,902 @@
+[
+  {
+    "id": "onion",
+    "name": "양파",
+    "category": "채소",
+    "shelf_days": 21,
+    "storage": "실온(서늘한 곳)",
+    "is_pantry": false,
+    "note": "썬 양파는 냉장 3일",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1757813027601-49030d3162ae?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1757813027601-49030d3162ae?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@pecko",
+      "credit_url": "https://unsplash.com/@pecko?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/r1ju831CZ8M",
+      "license": "Unsplash License",
+      "alt": "신선한 노란색과 흰색 양파 더미"
+    }
+  },
+  {
+    "id": "garlic",
+    "name": "마늘",
+    "category": "채소",
+    "shelf_days": 14,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": "깐마늘 기준",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "team voyas",
+      "credit_url": "https://unsplash.com/@voyas?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/vIiye0QDryo",
+      "license": "Unsplash License",
+      "alt": "마늘 듬뿍"
+    }
+  },
+  {
+    "id": "green_onion",
+    "name": "대파",
+    "category": "채소",
+    "shelf_days": 7,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": "씻어서 썰어두면 냉동 가능",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1654722346666-fc814e4457a5?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1654722346666-fc814e4457a5?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "David Trinks",
+      "credit_url": "https://unsplash.com/@dtrinksrph?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/bym2Hsm-JF8",
+      "license": "Unsplash License",
+      "alt": "나무 상자 위에 앉아 있는 파 더미"
+    }
+  },
+  {
+    "id": "potato",
+    "name": "감자",
+    "category": "채소",
+    "shelf_days": 21,
+    "storage": "실온(서늘한 곳)",
+    "is_pantry": false,
+    "note": "싹 나면 도려내기",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1590165482129-1b8b27698780?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1590165482129-1b8b27698780?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Rodrigo dos Reis",
+      "credit_url": "https://unsplash.com/@rodreis?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/h3AkzboxK4Q",
+      "license": "Unsplash License",
+      "alt": "매끈한 껍질을 가진 생 노란 감자 더미"
+    }
+  },
+  {
+    "id": "zucchini",
+    "name": "애호박",
+    "category": "채소",
+    "shelf_days": 7,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1768405741410-71317eceb565?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1768405741410-71317eceb565?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Elly M",
+      "credit_url": "https://unsplash.com/@ellyendeavours?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/A5i6R0hcFL4",
+      "license": "Unsplash License",
+      "alt": "정원에서 긴 초록 호박을 손에 쥐고 있는 모습"
+    }
+  },
+  {
+    "id": "cabbage",
+    "name": "양배추",
+    "category": "채소",
+    "shelf_days": 14,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": "자른 단면은 랩으로",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1780359398730-046b3f654ef2?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1780359398730-046b3f654ef2?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "jason hu",
+      "credit_url": "https://unsplash.com/@hujason?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/kWmirZJUsBc",
+      "license": "Unsplash License",
+      "alt": "정원에서 자라는 신선한 초록 양배추"
+    }
+  },
+  {
+    "id": "carrot",
+    "name": "당근",
+    "category": "채소",
+    "shelf_days": 21,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1763534315367-db5fe9c0dc79?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1763534315367-db5fe9c0dc79?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@nka907",
+      "credit_url": "https://unsplash.com/@nka907?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/sruz8Ao6RZM",
+      "license": "Unsplash License",
+      "alt": "신선한 주황색 당근 더미"
+    }
+  },
+  {
+    "id": "mushroom",
+    "name": "버섯",
+    "category": "채소",
+    "shelf_days": 5,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": "새송이·양송이·팽이 공통",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1760108273033-0d789ef53d70?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1760108273033-0d789ef53d70?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Anastasiya Badun",
+      "credit_url": "https://unsplash.com/@badun?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/4neQmf4qvxc",
+      "license": "Unsplash License",
+      "alt": "많은 왕느타리버섯을 가까이서 볼 수 있습니다"
+    }
+  },
+  {
+    "id": "chili",
+    "name": "청양고추",
+    "category": "채소",
+    "shelf_days": 10,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1599987141071-f5810d32e21a?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1599987141071-f5810d32e21a?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Hari Krishnan",
+      "credit_url": "https://unsplash.com/@hari_470?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/f1BMuugVyyM",
+      "license": "Unsplash License",
+      "alt": "흰색 표면에 녹색 고추"
+    }
+  },
+  {
+    "id": "tomato",
+    "name": "토마토",
+    "category": "채소",
+    "shelf_days": 7,
+    "storage": "실온→익으면 냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1582284540020-8acbe03f4924?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1582284540020-8acbe03f4924?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "engin akyurt",
+      "credit_url": "https://unsplash.com/@enginakyurt?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/eb26eV-ys_k",
+      "license": "Unsplash License",
+      "alt": "갈색 나무 테이블에 빨간 토마토"
+    }
+  },
+  {
+    "id": "spinach",
+    "name": "시금치",
+    "category": "채소",
+    "shelf_days": 4,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Shutter Sphere Collective",
+      "credit_url": "https://unsplash.com/@shutterspherecollective?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/6AAptb2kBak",
+      "license": "Unsplash License",
+      "alt": "얇은 줄기가 달린 신선한 초록 시금치 잎 더미"
+    }
+  },
+  {
+    "id": "chicken_leftover",
+    "name": "치킨",
+    "category": "육류",
+    "shelf_days": 2,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": "남은 배달 치킨. 육류는 보통 냉장 1~2일",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1764018292116-003fd7d1a0ba?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1764018292116-003fd7d1a0ba?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@barcellosfusion",
+      "credit_url": "https://unsplash.com/@barcellosfusion?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/Sj6oEgQGZBY",
+      "license": "Unsplash License",
+      "alt": "바삭한 프라이드 치킨과 접시에 담긴 저녁 롤"
+    }
+  },
+  {
+    "id": "chicken_thigh",
+    "name": "닭다리살",
+    "category": "육류",
+    "shelf_days": 2,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1759493321741-883fbf9f433c?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1759493321741-883fbf9f433c?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Satmar Meats",
+      "credit_url": "https://unsplash.com/@satmarmeatsbp?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/1pj56A6OQgA",
+      "license": "Unsplash License",
+      "alt": "나무 판자에 야채를 곁들인 생닭고기 조각"
+    }
+  },
+  {
+    "id": "pork_jeyuk",
+    "name": "돼지고기 앞다리살",
+    "category": "육류",
+    "shelf_days": 2,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": "제육용 얇게 썬 것",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1625144093498-bf62fca631c5?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1625144093498-bf62fca631c5?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@towfiqu999999",
+      "credit_url": "https://unsplash.com/@towfiqu999999?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/9J9uxuoIM9A",
+      "license": "Unsplash License",
+      "alt": "갈색 나무 도마에 얇게 썬 고기"
+    }
+  },
+  {
+    "id": "pork_belly_thin",
+    "name": "대패삼겹살",
+    "category": "육류",
+    "shelf_days": 2,
+    "storage": "냉장(냉동이면 30일)",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1768528355780-a06f80911c1a?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1768528355780-a06f80911c1a?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Lee Milo",
+      "credit_url": "https://unsplash.com/@miloleetw?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/zPAypSxuhI8",
+      "license": "Unsplash License",
+      "alt": "얇게 썬 생삼겹살을 접시에 담았다"
+    }
+  },
+  {
+    "id": "spam",
+    "name": "스팸",
+    "category": "가공·기타",
+    "shelf_days": 3,
+    "storage": "개봉 후 냉장",
+    "is_pantry": false,
+    "note": "미개봉은 실온 오래 감",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1782141269072-0440b640ae02?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1782141269072-0440b640ae02?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@chwdy",
+      "credit_url": "https://unsplash.com/@chwdy?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/QnUCnHZrOQk",
+      "license": "Unsplash License",
+      "alt": "스팸통이 쌓여 있는 벽"
+    }
+  },
+  {
+    "id": "sausage",
+    "name": "소시지",
+    "category": "가공·기타",
+    "shelf_days": 7,
+    "storage": "개봉 후 냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1551135020-39e4ca508d9b?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1551135020-39e4ca508d9b?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@rachedda",
+      "credit_url": "https://unsplash.com/@rachedda?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/MhI8HVjqJf8",
+      "license": "Unsplash License",
+      "alt": "둥근 회색 팬에 익힌 소시지"
+    }
+  },
+  {
+    "id": "bacon",
+    "name": "베이컨",
+    "category": "가공·기타",
+    "shelf_days": 5,
+    "storage": "개봉 후 냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1779649577828-a0dc5f7bb095?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1779649577828-a0dc5f7bb095?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Lucas",
+      "credit_url": "https://unsplash.com/@steinman_photography?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/7oBtznwaP6o",
+      "license": "Unsplash License",
+      "alt": "바삭한 베이컨 조각을 뜨거운 기름과 함께 팬에 튀기세요"
+    }
+  },
+  {
+    "id": "tuna_can",
+    "name": "참치캔",
+    "category": "가공·기타",
+    "shelf_days": null,
+    "storage": "실온(개봉 후 냉장 1일)",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1771249372958-a5a44b3b58de?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1771249372958-a5a44b3b58de?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Andrei Sidorov",
+      "credit_url": "https://unsplash.com/@acidagfc?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/OVHzD-qXzT0",
+      "license": "Unsplash License",
+      "alt": "가게 진열창에 진열된 참치와 정어리 통조림"
+    }
+  },
+  {
+    "id": "fish_cake",
+    "name": "어묵",
+    "category": "가공·기타",
+    "shelf_days": 5,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1790317776552-c0d42f8ee8ca?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1790317776552-c0d42f8ee8ca?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Irfan Syahmi",
+      "credit_url": "https://unsplash.com/@ifanshmy?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/iri686Lj5KA",
+      "license": "Unsplash License",
+      "alt": "나무 꼬치에 꽂힌 어묵이 큰 금속 냄비에서 끓고 있는 거리 노점"
+    }
+  },
+  {
+    "id": "frozen_dumpling",
+    "name": "냉동만두",
+    "category": "가공·기타",
+    "shelf_days": null,
+    "storage": "냉동",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1769610712810-ec91babfccd3?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1769610712810-ec91babfccd3?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "atelierbyvineeth",
+      "credit_url": "https://unsplash.com/@atelierbyvineeth?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/szlnBOdoWVw",
+      "license": "Unsplash License",
+      "alt": "팬에서 구운 만두"
+    }
+  },
+  {
+    "id": "frozen_cutlet",
+    "name": "냉동 돈가스",
+    "category": "가공·기타",
+    "shelf_days": null,
+    "storage": "냉동",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1770966666346-fbfde1f89a33?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1770966666346-fbfde1f89a33?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Zhang Ziyu",
+      "credit_url": "https://unsplash.com/@rs1497?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/iWECIywKdpo",
+      "license": "Unsplash License",
+      "alt": "바삭한 돼지고기 커틀릿에 잘게 썬 양배추와 반찬"
+    }
+  },
+  {
+    "id": "egg",
+    "name": "계란",
+    "category": "유제품·계란",
+    "shelf_days": 21,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Erol Ahmed",
+      "credit_url": "https://unsplash.com/@erol?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/leOh1CzRZVQ",
+      "license": "Unsplash License",
+      "alt": "판지 상자에 담긴 갈색 달걀"
+    }
+  },
+  {
+    "id": "milk",
+    "name": "우유",
+    "category": "유제품·계란",
+    "shelf_days": 5,
+    "storage": "개봉 후 냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Eiliv Aceron",
+      "credit_url": "https://unsplash.com/@shootdelicious?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/_8bnn1GqX70",
+      "license": "Unsplash License",
+      "alt": "유리잔에 우유를 붓는 사람"
+    }
+  },
+  {
+    "id": "butter",
+    "name": "버터",
+    "category": "유제품·계란",
+    "shelf_days": 30,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1719148162837-63d2f256231f?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1719148162837-63d2f256231f?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Marine Le Gac",
+      "credit_url": "https://unsplash.com/@plustrenn?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/4X7eA9zN8mg",
+      "license": "Unsplash License",
+      "alt": "흰 접시 위에 놓인 버터 한 조각"
+    }
+  },
+  {
+    "id": "cheese_slice",
+    "name": "슬라이스 치즈",
+    "category": "유제품·계란",
+    "shelf_days": 14,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1631379578550-7038263db699?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1631379578550-7038263db699?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Azzedine Rouichi",
+      "credit_url": "https://unsplash.com/@rouichi?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/YW_5rJvAdKw",
+      "license": "Unsplash License",
+      "alt": "겹겹이 쌓인 치즈"
+    }
+  },
+  {
+    "id": "tofu",
+    "name": "두부",
+    "category": "가공·기타",
+    "shelf_days": 3,
+    "storage": "개봉 후 물에 담가 냉장",
+    "is_pantry": false,
+    "note": "미개봉은 포장지 소비기한",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1722635940350-d1b2e5129379?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1722635940350-d1b2e5129379?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Kamala Bright",
+      "credit_url": "https://unsplash.com/@riosamba?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/SGSJOJcEIL8",
+      "license": "Unsplash License",
+      "alt": "도마 위에 놓인 두부 큐브 더미"
+    }
+  },
+  {
+    "id": "rice",
+    "name": "밥",
+    "category": "곡류·면",
+    "shelf_days": 2,
+    "storage": "냉장(냉동이면 30일)",
+    "is_pantry": false,
+    "note": "즉석밥은 실온 오래 감",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1644131447497-8723db691320?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1644131447497-8723db691320?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Markus Winkler",
+      "credit_url": "https://unsplash.com/@markuswinkler?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/ysxmxPaeiIc",
+      "license": "Unsplash License",
+      "alt": "검은 참깨를 곁들인 흰 쌀밥 한 그릇"
+    }
+  },
+  {
+    "id": "bread",
+    "name": "식빵",
+    "category": "곡류·면",
+    "shelf_days": 4,
+    "storage": "실온",
+    "is_pantry": false,
+    "note": "냉동하면 30일",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1534620808146-d33bb39128b2?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1534620808146-d33bb39128b2?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Louise Lyshøj",
+      "credit_url": "https://unsplash.com/@louiogbearnaisen?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/WHJTaLqonkU",
+      "license": "Unsplash License",
+      "alt": "흰색 표면에 얇게 썬 빵"
+    }
+  },
+  {
+    "id": "pasta",
+    "name": "파스타면",
+    "category": "곡류·면",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1622973536968-3ead9e780960?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1622973536968-3ead9e780960?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Homescreenify",
+      "credit_url": "https://unsplash.com/@homescreenify?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/sA3wymYqyaI",
+      "license": "Unsplash License",
+      "alt": "흰색 세라믹 접시에 스파게티"
+    }
+  },
+  {
+    "id": "ramen",
+    "name": "라면",
+    "category": "곡류·면",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1612927601601-6638404737ce?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1612927601601-6638404737ce?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "ikhsan baihaqi",
+      "credit_url": "https://unsplash.com/@his_and?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/RwAXb8Hv_sU",
+      "license": "Unsplash License",
+      "alt": "계란, 고추, 파가 얹힌 라면 한 그릇"
+    }
+  },
+  {
+    "id": "udon",
+    "name": "우동면",
+    "category": "곡류·면",
+    "shelf_days": 14,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1558985212-324add95595a?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1558985212-324add95595a?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Youjeen Cho",
+      "credit_url": "https://unsplash.com/@youjeencho?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/1zlLiOT81Jw",
+      "license": "Unsplash License",
+      "alt": "검은 그릇에 담긴 국수"
+    }
+  },
+  {
+    "id": "tteok",
+    "name": "떡볶이떡",
+    "category": "곡류·면",
+    "shelf_days": 7,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": "굳으면 물에 불리기",
+    "photo": {
+      "url": "images/tteok.jpg",
+      "thumb": "images/thumb/tteok.jpg",
+      "credit": "팀 제공",
+      "credit_url": null,
+      "source_url": null,
+      "license": "출처 확인 필요",
+      "alt": "떡볶이떡"
+    }
+  },
+  {
+    "id": "flour",
+    "name": "부침가루",
+    "category": "곡류·면",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": true,
+    "note": "튀김가루와 다름",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1549590143-d5855148a9d5?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1549590143-d5855148a9d5?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Mae Mu",
+      "credit_url": "https://unsplash.com/@picoftasty?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/rgRbqFweGF0",
+      "license": "Unsplash License",
+      "alt": "테이블에 밀가루를 붓는 사람"
+    }
+  },
+  {
+    "id": "starch",
+    "name": "전분",
+    "category": "곡류·면",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": true,
+    "note": "부침가루와 헷갈리기 쉬움",
+    "photo": {
+      "url": "images/starch.jpg",
+      "thumb": "images/thumb/starch.jpg",
+      "credit": "팀 제공",
+      "credit_url": null,
+      "source_url": null,
+      "license": "출처 확인 필요",
+      "alt": "전분"
+    }
+  },
+  {
+    "id": "salt",
+    "name": "소금",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1763974463967-647601c65961?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1763974463967-647601c65961?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Kamakshi subramani",
+      "credit_url": "https://unsplash.com/@prasi898?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/4LIq0p11QgU",
+      "license": "Unsplash License",
+      "alt": "소금이 담긴 숟가락들"
+    }
+  },
+  {
+    "id": "sugar",
+    "name": "설탕",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1673791031202-ebc0eea03bf2?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1673791031202-ebc0eea03bf2?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Immo Wegmann",
+      "credit_url": "https://unsplash.com/@tinkerman?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/gUORqj2KYGE",
+      "license": "Unsplash License",
+      "alt": "설탕이 가득 찬 숟가락"
+    }
+  },
+  {
+    "id": "pepper",
+    "name": "후추",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1777483997189-9d934b0f177d?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1777483997189-9d934b0f177d?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@abank88",
+      "credit_url": "https://unsplash.com/@abank88?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/UPykgofCv8s",
+      "license": "Unsplash License",
+      "alt": "나무 그릇에 담긴 통후추"
+    }
+  },
+  {
+    "id": "soy_sauce",
+    "name": "간장",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1499126167718-c87f5c1387e8?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1499126167718-c87f5c1387e8?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Caroline Attwood",
+      "credit_url": "https://unsplash.com/@_carolineattwood?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/uaMwBQ_wjng",
+      "license": "Unsplash License",
+      "alt": "작은 그릇에 따르는 간장"
+    }
+  },
+  {
+    "id": "gochujang",
+    "name": "고추장",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "냉장",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1764312899300-e680811f58fb?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1764312899300-e680811f58fb?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@varanga22",
+      "credit_url": "https://unsplash.com/@varanga22?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/gie59CNUoqY",
+      "license": "Unsplash License",
+      "alt": "흰 그릇에 담긴 붉은 고추장"
+    }
+  },
+  {
+    "id": "gochugaru",
+    "name": "고춧가루",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "냉동",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1741521312102-b1ff2388d3c0?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1741521312102-b1ff2388d3c0?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Zoshua Colah",
+      "credit_url": "https://unsplash.com/@zoshuacolah?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/MLMq3m1kPZI",
+      "license": "Unsplash License",
+      "alt": "고춧가루 한 병"
+    }
+  },
+  {
+    "id": "doenjang",
+    "name": "된장",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "냉장",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "images/doenjang.jpg",
+      "thumb": "images/thumb/doenjang.jpg",
+      "credit": "팀 제공",
+      "credit_url": null,
+      "source_url": null,
+      "license": "출처 확인 필요",
+      "alt": "된장"
+    }
+  },
+  {
+    "id": "oyster_sauce",
+    "name": "굴소스",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "개봉 후 냉장",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "images/oyster_sauce.jpg",
+      "thumb": "images/thumb/oyster_sauce.jpg",
+      "credit": "팀 제공",
+      "credit_url": null,
+      "source_url": null,
+      "license": "출처 확인 필요",
+      "alt": "굴소스"
+    }
+  },
+  {
+    "id": "ketchup",
+    "name": "케찹",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "개봉 후 냉장",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1569790554690-1c0877b2fc6c?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1569790554690-1c0877b2fc6c?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Matt Popovich",
+      "credit_url": "https://unsplash.com/@mattpopovich?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/7cO4Fquqqak",
+      "license": "Unsplash License",
+      "alt": "토마토 케첩 병"
+    }
+  },
+  {
+    "id": "mayo",
+    "name": "마요네즈",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "개봉 후 냉장",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1758700835219-0422fdc4dd54?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1758700835219-0422fdc4dd54?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Fethi Benattallah",
+      "credit_url": "https://unsplash.com/@fethibenattallah?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/8i6HW6coQCQ",
+      "license": "Unsplash License",
+      "alt": "크리미한 소스가 담긴 나무 그릇"
+    }
+  },
+  {
+    "id": "sesame_oil",
+    "name": "참기름",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1671493229048-4dddd00ca84a?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1671493229048-4dddd00ca84a?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Denise Chan",
+      "credit_url": "https://unsplash.com/@elchan?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/Ci1nQNQDfmA",
+      "license": "Unsplash License",
+      "alt": "테이블 위 갈색 병 두 개"
+    }
+  },
+  {
+    "id": "cooking_oil",
+    "name": "식용유",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1768689033119-c3ac1e437d20?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1768689033119-c3ac1e437d20?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@xavier_von_erlach",
+      "credit_url": "https://unsplash.com/@xavier_von_erlach?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/dDWVq_XEhus",
+      "license": "Unsplash License",
+      "alt": "쏟아지는 황금빛 기름"
+    }
+  },
+  {
+    "id": "olive_oil",
+    "name": "올리브유",
+    "category": "양념",
+    "shelf_days": null,
+    "storage": "실온",
+    "is_pantry": true,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1765118527220-da9c7a560b13?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1765118527220-da9c7a560b13?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Asli Dokuzeylul",
+      "credit_url": "https://unsplash.com/@asli9eylul?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/102NToxkJFA",
+      "license": "Unsplash License",
+      "alt": "그릇에 올리브 오일을 붓는 모습"
+    }
+  },
+  {
+    "id": "kimchi",
+    "name": "김치",
+    "category": "가공·기타",
+    "shelf_days": 30,
+    "storage": "냉장",
+    "is_pantry": false,
+    "note": "시어질수록 볶음·찌개에 좋음",
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1741518957935-3be0a4631a03?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1741518957935-3be0a4631a03?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "Zoshua Colah",
+      "credit_url": "https://unsplash.com/@zoshuacolah?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/ioOxl44C3Wc",
+      "license": "Unsplash License",
+      "alt": "김치병"
+    }
+  },
+  {
+    "id": "beer",
+    "name": "맥주",
+    "category": "주류",
+    "shelf_days": null,
+    "storage": "실온·냉장",
+    "is_pantry": false,
+    "note": null,
+    "photo": {
+      "url": "https://images.unsplash.com/photo-1644085159285-5fd924740cb3?w=1080&q=80&fm=jpg&fit=crop",
+      "thumb": "https://images.unsplash.com/photo-1644085159285-5fd924740cb3?w=400&q=70&fm=jpg&fit=crop",
+      "credit": "@jangnyg",
+      "credit_url": "https://unsplash.com/@jangnyg?utm_source=mitzy&utm_medium=referral",
+      "source_url": "https://unsplash.com/photos/hhxjE6qjKq0",
+      "license": "Unsplash License",
+      "alt": "물방울 맺힌 갈색 맥주병"
+    }
+  }
+]
