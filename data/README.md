@@ -13,6 +13,26 @@ JSON이 원본이고, `csv/` 폴더는 팀원이 엑셀·구글 시트로 열어
 
 데이터를 고칠 때는 `scripts/` 원본을 고친 뒤 `python3 scripts/build.py`를 다시 돌리면 JSON·CSV가 같이 갱신돼요.
 
+## 한/영 전환
+글자가 들어가는 칸마다 영어 칸이 `_en`으로 붙어 있어요. 앱은 언어 설정에 따라 `name` 또는 `name_en`을 고르면 돼요.
+
+```js
+const t = (obj, key) => lang === "en" ? obj[key + "_en"] : obj[key];
+t(recipe, "name")            // "갈릭치킨볶음밥" / "Garlic Chicken Fried Rice"
+t(step.sous_chef, "say")     // 수솊 대사
+```
+
+| 파일 | 영어 칸 |
+|---|---|
+| `ingredients.json` | `name_en` `category_en` `storage_en` `note_en` |
+| `recipes.json` | `name_en` `method_en` `tools_en` `prep_en` `learn_points_en`, 재료마다 `label_en`("1 bowl rice"처럼 양까지 한 줄), 단계마다 `text_en`, 수솊 순간마다 `label_en` `cue_en` `say_en` |
+| `onboarding_dishes.json` | `chip_en` `skills_en` |
+| `meta.json` | `moment_types_en` `levels_en` `categories_en`, `methods`·`tools`(한↔영 표) |
+
+- 영어 이름·문구는 Figma 영어 GUI(iOS 26 Liquid Glass (EN))에 맞췄어요. 수솊은 영어로 **Sous**예요.
+- 영어 원본은 `scripts/en_src.py`예요. 한국어 단계 수와 영어 단계 수가 다르거나, 수솊 순간이 한쪽에만 있으면 `build.py`가 멈추고 알려줘요.
+- 버튼·제목 같은 **화면 문구**는 DB가 아니라 저장소 맨 위 `i18n/` 폴더에 있어요.
+
 ---
 
 ## 재료 (`ingredients.json`)
@@ -30,7 +50,7 @@ JSON이 원본이고, `csv/` 폴더는 팀원이 엑셀·구글 시트로 열어
 }
 ```
 
-- **category**: 채소 · 육류 · 유제품·계란 · 곡류·면 · 양념 · 가공·기타 · 주류
+- **category**: 채소 · 육류 · 유제품·계란 · 기타 · 양념 · 곡류 · 주류 (Figma "내 냉장고" 화면과 같은 이름·순서. 두부·스팸·김치 등은 기타, 면·떡·가루는 곡류)
 - **shelf_days**: 등록한 날부터 며칠 지나면 "곧 상해요"를 띄울지 정하는 기준이에요. `null`이면 오래 가는 재료라 계산에서 빼요.
 - **is_pantry**: 소금·간장·식용유 같은 상비 양념이에요. 레시피 추천에서 "모자란 재료"로 세지 않아요.
 - **치킨** = 남은 배달 치킨이에요. 화면의 갈릭치킨볶음밥이 "치킨 겉 데우기"라서 생닭이 아니라 이미 익은 치킨으로 잡았어요. 생닭은 `chicken_thigh`(닭다리살)예요.

@@ -7,18 +7,95 @@
     "boil": "수솊이 끓어 넘치기 전에 알려줄게요",
     "done": "수솊이 다 됐을 때 알려줄게요"
   },
+  "moment_types_en": {
+    "color": "Sous will watch the color",
+    "flip": "Sous will tell you when to flip",
+    "heat_down": "Sous will tell you when to turn down the heat",
+    "stick": "Sous will warn you before it sticks",
+    "boil": "Sous will warn you before it boils over",
+    "done": "Sous will tell you when it's done"
+  },
   "levels": {
     "1": "한 가지 타이밍만 보면 됨",
     "2": "순서·타이밍 2~3개",
     "3": "불 조절·기름·반죽이 까다로움"
   },
+  "levels_en": {
+    "1": "Just one timing to watch",
+    "2": "2–3 steps or timings",
+    "3": "Tricky heat, oil or batter"
+  },
   "categories": [
     "채소",
     "육류",
     "유제품·계란",
-    "곡류·면",
+    "기타",
     "양념",
-    "가공·기타",
+    "곡류",
     "주류"
+  ],
+  "categories_en": [
+    "Veggies",
+    "Meat",
+    "Dairy & eggs",
+    "Other",
+    "Seasoning",
+    "Grains",
+    "Alcohol"
+  ],
+  "methods": [
+    {
+      "ko": "굽기",
+      "en": "pan-fry",
+      "en_adj": "pan-fried"
+    },
+    {
+      "ko": "볶기",
+      "en": "stir-fry",
+      "en_adj": "stir-fried"
+    },
+    {
+      "ko": "끓이기",
+      "en": "simmer",
+      "en_adj": "simmered"
+    },
+    {
+      "ko": "부치기",
+      "en": "griddle",
+      "en_adj": "griddled"
+    },
+    {
+      "ko": "졸이기",
+      "en": "braise",
+      "en_adj": "braised"
+    },
+    {
+      "ko": "튀기기",
+      "en": "deep-fry",
+      "en_adj": "fried"
+    },
+    {
+      "ko": "전자레인지",
+      "en": "microwave",
+      "en_adj": "microwaved"
+    }
+  ],
+  "tools": [
+    {
+      "ko": "프라이팬",
+      "en": "Frying pan"
+    },
+    {
+      "ko": "냄비",
+      "en": "Pot"
+    },
+    {
+      "ko": "뚜껑",
+      "en": "Lid"
+    },
+    {
+      "ko": "전자레인지",
+      "en": "Microwave"
+    }
   ]
 }

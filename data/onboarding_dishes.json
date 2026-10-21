@@ -8,7 +8,11 @@
     "skills": [
       "굽기"
     ],
-    "level": 1
+    "level": 1,
+    "chip_en": "Soy sauce egg rice",
+    "skills_en": [
+      "pan-fry"
+    ]
   },
   {
     "chip": "라면",
@@ -18,7 +22,11 @@
     "skills": [
       "끓이기"
     ],
-    "level": 1
+    "level": 1,
+    "chip_en": "Ramyeon",
+    "skills_en": [
+      "simmer"
+    ]
   },
   {
     "chip": "전자레인지 요리",
@@ -26,7 +34,11 @@
     "skills": [
       "전자레인지"
     ],
-    "level": 1
+    "level": 1,
+    "chip_en": "Microwave meals",
+    "skills_en": [
+      "microwave"
+    ]
   },
   {
     "chip": "계란후라이",
@@ -36,7 +48,11 @@
     "skills": [
       "굽기"
     ],
-    "level": 1
+    "level": 1,
+    "chip_en": "Fried egg",
+    "skills_en": [
+      "pan-fry"
+    ]
   },
   {
     "chip": "볶음밥",
@@ -47,7 +63,11 @@
     "skills": [
       "볶기"
     ],
-    "level": 1
+    "level": 1,
+    "chip_en": "Fried rice",
+    "skills_en": [
+      "stir-fry"
+    ]
   },
   {
     "chip": "소시지볶음",
@@ -57,7 +77,11 @@
     "skills": [
       "볶기"
     ],
-    "level": 1
+    "level": 1,
+    "chip_en": "Stir-fried sausage",
+    "skills_en": [
+      "stir-fry"
+    ]
   },
   {
     "chip": "계란말이",
@@ -67,7 +91,11 @@
     "skills": [
       "부치기"
     ],
-    "level": 2
+    "level": 2,
+    "chip_en": "Rolled omelet",
+    "skills_en": [
+      "griddle"
+    ]
   },
   {
     "chip": "두부부침",
@@ -77,7 +105,11 @@
     "skills": [
       "부치기"
     ],
-    "level": 1
+    "level": 1,
+    "chip_en": "Pan-fried tofu",
+    "skills_en": [
+      "griddle"
+    ]
   },
   {
     "chip": "제육볶음",
@@ -87,7 +119,11 @@
     "skills": [
       "볶기"
     ],
-    "level": 2
+    "level": 2,
+    "chip_en": "Spicy pork stir-fry",
+    "skills_en": [
+      "stir-fry"
+    ]
   },
   {
     "chip": "파스타",
@@ -98,7 +134,12 @@
       "끓이기",
       "볶기"
     ],
-    "level": 2
+    "level": 2,
+    "chip_en": "Pasta",
+    "skills_en": [
+      "simmer",
+      "stir-fry"
+    ]
   },
   {
     "chip": "튀김류",
@@ -108,6 +149,10 @@
     "skills": [
       "튀기기"
     ],
-    "level": 3
+    "level": 3,
+    "chip_en": "Fried foods",
+    "skills_en": [
+      "deep-fry"
+    ]
   }
 ]

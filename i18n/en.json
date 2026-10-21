@@ -1,0 +1,218 @@
+{
+  "common": {
+    "next": "Next",
+    "save": "Save",
+    "edit": "Edit",
+    "done": "Done",
+    "undo": "Undo",
+    "view": "View",
+    "locked": "Locked",
+    "not_sure": "Not sure",
+    "sous": "Sous",
+    "minutes": "{{count}} min",
+    "days_short": "{{count}}d",
+    "days_ago_one": "{{count}} day ago",
+    "days_ago_other": "{{count}} days ago",
+    "date": "{{monthShort}} {{day}}",
+    "level": "Level {{level}}",
+    "optional": "(optional)",
+    "language": "Language",
+    "language_ko": "한국어",
+    "language_en": "English",
+    "photo_credit": "Photo: {{credit}}"
+  },
+  "tabs": {
+    "fridge": "Fridge",
+    "recipes": "Recipes",
+    "collection": "Collection"
+  },
+  "kitchen": {
+    "burners": "Burners",
+    "burners_1": "1",
+    "burners_2": "2",
+    "burners_3plus": "3+",
+    "burner_type": "Burner type",
+    "type_gas": "Gas",
+    "type_induction": "Induction",
+    "type_highlight": "Electric",
+    "type_unknown": "Not sure",
+    "tools": "Tools (select all that apply)",
+    "tool_frying_pan": "Frying pan",
+    "tool_pot": "Pot",
+    "tool_air_fryer": "Air fryer",
+    "tool_microwave": "Microwave",
+    "tool_kettle": "Kettle",
+    "tool_custom": "Add your own",
+    "summary": "{{burners}} burner · {{type}}"
+  },
+  "onboarding": {
+    "welcome": {
+      "title": "Hi!\nI'm Sous, your sous-chef",
+      "body": "Let's learn to cook together,\nin the kitchen you actually have",
+      "cta": "Get started"
+    },
+    "kitchen": {
+      "title": "Tell us about your kitchen",
+      "body": "We'll match recipes to your kitchen"
+    },
+    "experience": {
+      "title": "Pick dishes you can make\nwithout a recipe",
+      "body": "We'll set your starting level from these"
+    },
+    "summary": {
+      "title": "All set!",
+      "body": "We'll start with dishes for a kitchen\nwith {{kitchen}}",
+      "burners": "Burners",
+      "tools": "Tools",
+      "start_label": "Where you'll start",
+      "start_value": "Simple {{skills}} dishes",
+      "change_later": "You can change this anytime in Settings",
+      "cta": "Add what's in your fridge"
+    }
+  },
+  "fridge": {
+    "title": "My Fridge",
+    "use_soon": "Use soon",
+    "footnote": "Without a use-by date, we count from the day you added it",
+    "add_photo": "Add by photo or receipt",
+    "add_search": "Search and add",
+    "removed": "{{name}} removed",
+    "search": {
+      "title": "Add manually",
+      "placeholder": "Search ingredients",
+      "all": "All",
+      "selected": "Selected {{count}}",
+      "add_one": "Add {{count}} ingredient",
+      "add_other": "Add {{count}} ingredients"
+    },
+    "photo": {
+      "title": "Add by photo",
+      "body": "Point at ingredients or snap a receipt",
+      "mode_items": "Items",
+      "mode_receipt": "Receipt",
+      "shutter": "Snap"
+    },
+    "detail": {
+      "category": "Category",
+      "added": "Added",
+      "added_value": "{{date}} · {{ago}}",
+      "use_by": "Use-by",
+      "use_by_add": "Add date",
+      "use_by_none": "Not set",
+      "how_title": "How is \"Use soon\" decided?",
+      "how_body": "Without a use-by date, we estimate from the day you added it and the type of food. Enter the date on the package and we'll use that instead.",
+      "dishes_one": "{{count}} dish you can make with {{name}}",
+      "dishes_other": "{{count}} dishes you can make with {{name}}",
+      "remove": "Remove from fridge"
+    },
+    "use_by": {
+      "hint": "Day {{day}} · {{storage_hint}}",
+      "title": "Enter the use-by date on the package",
+      "month": "mo",
+      "day": "day",
+      "unknown": "Not sure"
+    }
+  },
+  "recipes": {
+    "title": "What should I eat?",
+    "basis": "{{kitchen}} · from my fridge",
+    "group_ready": "Ready now",
+    "group_one_more": "One more",
+    "group_two_more": "Two more",
+    "tag_use_soon": "Uses expiring items",
+    "tag_new_challenge": "New challenge",
+    "tag_one_pan": "one pan",
+    "card_meta": "{{minutes}} min · {{method}}"
+  },
+  "recipe": {
+    "i_know_this": "I know this",
+    "meta_one": "{{minutes}} min · {{burners}} burner OK · Sous helps at {{count}} moment",
+    "meta_other": "{{minutes}} min · {{burners}} burner OK · Sous helps at {{count}} moments",
+    "ingredients": "Items",
+    "prep": "Prep before the heat",
+    "steps": "Steps",
+    "start": "Start cooking"
+  },
+  "cooking": {
+    "header": "Cooking · {{time}}",
+    "watching": "Sous is watching",
+    "pause": "Pause",
+    "finish": "Finish",
+    "hold_to_finish": "Hold to finish",
+    "knuckle_hint": "You can tap with a knuckle",
+    "resume": "Resume",
+    "paused_body": "Sous will wait quietly · turn off the heat",
+    "stop": "Stop cooking",
+    "hold_to_stop": "Hold to stop",
+    "disconnected_title": "Lost connection to Sous",
+    "disconnected_body": "You can keep cooking",
+    "reconnect": "Reconnect",
+    "ask_phone": "Ask on phone"
+  },
+  "done": {
+    "title": "Done!",
+    "pick_photo": "Pick a cover photo · Sous took these while you cooked",
+    "preview": "Preview · {{label}}",
+    "photo_finished": "Finished",
+    "take_phone": "Take with phone"
+  },
+  "report": {
+    "header": "{{date}} · {{minutes}} min with Sous",
+    "learned": "What I learned today",
+    "heat_note": "My {{type}}'s medium heat is level {{level}}",
+    "changed": "What changed today",
+    "keep": "Do it this way next time",
+    "used_up": "Anything used up?",
+    "save": "Save"
+  },
+  "unlock": {
+    "title": "New dish unlocked!",
+    "badge": "New",
+    "nth": "#{{count}} in your collection",
+    "share": "Share",
+    "view": "View collection"
+  },
+  "collection": {
+    "title": "My Collection",
+    "progress": "Level {{level}} · {{have}}/{{goal}}",
+    "progress_long": "Level {{level}} · Collection {{have}}/{{goal}}",
+    "to_next_one": "{{count}} more new dish to reach Level {{next}}",
+    "to_next_other": "{{count}} more new dishes to reach Level {{next}}",
+    "times": "×{{count}}",
+    "already_knew": "Already knew this",
+    "add_known": "Add dishes\nI already know",
+    "detail": {
+      "change_photo": "Change photo",
+      "made_one": "Made {{count}} time · mostly {{method}}",
+      "made_other": "Made {{count}} times · mostly {{method}}",
+      "learned": "What I learned",
+      "my_version": "My version · {{minutes}} min",
+      "cook_again": "Cook again"
+    },
+    "photo": {
+      "title": "Change cover photo",
+      "body": "Photos from when you made this dish",
+      "use": "Use this photo"
+    },
+    "known": {
+      "title": "Dishes I know",
+      "body": "These won't show up as \"New\" in picks, and count toward your current level",
+      "search": "Search dishes",
+      "stage_flip": "Flipping",
+      "stage_heat": "Heat control",
+      "custom_title": "Add a dish not on the list",
+      "custom_body": "Just a name and a photo (e.g., your own recipe)",
+      "add_one": "Add {{count}} dish",
+      "add_other": "Add {{count}} dishes"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "kitchen": "My kitchen",
+    "sous": "Sous connection",
+    "connected": "Connected",
+    "notifications": "Notifications",
+    "account": "Account",
+    "moved_hint": "Moved? Set up \"My kitchen\" again for your new kitchen"
+  }
+}

@@ -2,46 +2,59 @@
   {
     "id": "garlic_chicken_fried_rice",
     "name": "갈릭치킨볶음밥",
+    "name_en": "Garlic Chicken Fried Rice",
     "minutes": 15,
     "burners": 1,
     "level": 2,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": true,
     "ingredients": [
       {
         "id": "rice",
         "amount": "1공기",
-        "optional": false
+        "optional": false,
+        "label_en": "1 bowl rice"
       },
       {
         "id": "chicken_leftover",
         "amount": "2~3조각",
-        "optional": false
+        "optional": false,
+        "label_en": "2–3 pieces chicken"
       },
       {
         "id": "onion",
         "amount": "¼개",
-        "optional": false
+        "optional": false,
+        "label_en": "¼ onion"
       },
       {
         "id": "garlic",
         "amount": "3쪽",
-        "optional": false
+        "optional": false,
+        "label_en": "3 garlic cloves"
       },
       {
         "id": "cooking_oil",
         "amount": "2숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "2 tbsp cooking oil"
       },
       {
         "id": "salt",
         "amount": "⅓숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "⅓ tbsp salt"
       }
     ],
     "prep": [
@@ -50,44 +63,64 @@
       "치킨 한입 크기로 자르기",
       "밥 1공기 꺼내두기"
     ],
+    "prep_en": [
+      "Slice 3 garlic cloves",
+      "Dice ¼ onion",
+      "Cut chicken into bite-size pieces",
+      "Set out 1 bowl of rice"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "기름 2숟가락, 약불로 마늘 볶기",
+        "text_en": "2 tbsp oil, fry garlic on low heat",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "마늘 가장자리가 연한 금색",
-          "say": "마늘이 연한 금색이에요. 이제 양파 넣어요."
+          "cue_en": "Garlic edges turn pale gold",
+          "say": "마늘이 연한 금색이에요. 이제 양파 넣어요.",
+          "say_en": "Garlic's pale gold. Add the onion now."
         }
       },
       {
         "n": 2,
-        "text": "양파 넣고 투명해질 때까지 볶기"
+        "text": "양파 넣고 투명해질 때까지 볶기",
+        "text_en": "Add onion, cook until translucent"
       },
       {
         "n": 3,
         "text": "치킨 넣고 겉 데우기",
+        "text_en": "Add chicken, sear the outside",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "치킨 아랫면 튀김옷 색이 진해짐",
-          "say": "아래가 다시 바삭해졌어요. 한 번 뒤집어요."
+          "cue_en": "Underside of the chicken coating darkens",
+          "say": "아래가 다시 바삭해졌어요. 한 번 뒤집어요.",
+          "say_en": "The bottom's crisp again. Flip it once."
         }
       },
       {
         "n": 4,
         "text": "밥 넣고 눌러 펴서 볶기",
+        "text_en": "Add rice, press flat and fry",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "팬 바닥에서 타닥 소리가 커짐, 밥알 가장자리 갈색",
-          "say": "바닥이 눌기 직전이에요. 한 번 뒤섞어요."
+          "cue_en": "Crackling gets louder, rice edges brown",
+          "say": "바닥이 눌기 직전이에요. 한 번 뒤섞어요.",
+          "say_en": "It's about to stick. Toss it once."
         }
       },
       {
         "n": 5,
-        "text": "소금 ⅓숟가락으로 간하기"
+        "text": "소금 ⅓숟가락으로 간하기",
+        "text_en": "Season with ⅓ tbsp salt"
       }
     ],
     "sous_chef_moments": 3,
@@ -97,8 +130,14 @@
       "stick"
     ],
     "learn_points": [
-      "마늘은 연한 금색이 되면 다음 재료를 넣는다",
+      "마늘은 연한 금색이 되면 불을 줄인다",
+      "치킨은 겉이 노릇해지면 뒤집는다",
       "밥은 팬에 눌러 펴서 볶아야 고슬고슬하다"
+    ],
+    "learn_points_en": [
+      "Turn down the heat when garlic turns pale gold",
+      "Flip the chicken once the outside is golden",
+      "Press the rice flat in the pan so it fries, not steams"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1788090485550-ca71c6d578fb?w=1080&q=80&fm=jpg&fit=crop",
@@ -113,84 +152,112 @@
   {
     "id": "garlic_fried_rice",
     "name": "마늘볶음밥",
+    "name_en": "Garlic Fried Rice",
     "minutes": 10,
     "burners": 1,
     "level": 1,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": true,
     "ingredients": [
       {
         "id": "rice",
         "amount": "1공기",
-        "optional": false
+        "optional": false,
+        "label_en": "1 bowl rice"
       },
       {
         "id": "garlic",
         "amount": "5쪽",
-        "optional": false
+        "optional": false,
+        "label_en": "5 garlic cloves"
       },
       {
         "id": "cooking_oil",
         "amount": "2숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "2 tbsp cooking oil"
       },
       {
         "id": "soy_sauce",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp soy sauce"
       },
       {
         "id": "egg",
         "amount": "1개",
-        "optional": true
+        "optional": true,
+        "label_en": "1 egg"
       },
       {
         "id": "green_onion",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little green onion"
       }
     ],
     "prep": [
       "마늘 5쪽 편 썰기",
       "밥 1공기 꺼내두기"
     ],
+    "prep_en": [
+      "Slice 5 garlic cloves",
+      "Set out 1 bowl of rice"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "찬 팬에 기름과 마늘 넣고 약불로 켜기"
+        "text": "찬 팬에 기름과 마늘 넣고 약불로 켜기",
+        "text_en": "Put oil and garlic in a cold pan, then turn on low heat"
       },
       {
         "n": 2,
         "text": "마늘이 금색이 될 때까지 볶기",
+        "text_en": "Fry until the garlic turns golden",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "마늘이 금색, 기포가 잦아듦",
-          "say": "지금 금색이에요. 더 가면 써져요."
+          "cue_en": "Garlic is golden and the bubbling slows",
+          "say": "지금 금색이에요. 더 가면 써져요.",
+          "say_en": "It's golden now. Any longer and it turns bitter."
         }
       },
       {
         "n": 3,
         "text": "밥 넣고 눌러 펴서 볶기",
+        "text_en": "Add rice, press flat and fry",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "타닥 소리가 커짐",
-          "say": "눌기 전에 섞어요."
+          "cue_en": "Crackling gets louder",
+          "say": "눌기 전에 섞어요.",
+          "say_en": "Toss it before it sticks."
         }
       },
       {
         "n": 4,
-        "text": "팬 가장자리에 간장 ½숟가락 둘러 눌리기"
+        "text": "팬 가장자리에 간장 ½숟가락 둘러 눌리기",
+        "text_en": "Drizzle ½ tbsp soy sauce around the edge of the pan"
       },
       {
         "n": 5,
-        "text": "계란후라이를 올려 마무리 (선택)"
+        "text": "계란후라이를 올려 마무리 (선택)",
+        "text_en": "Top with a fried egg (optional)"
       }
     ],
     "sous_chef_moments": 2,
@@ -201,6 +268,10 @@
     "learn_points": [
       "마늘은 찬 기름부터 약불로 올려야 안 탄다",
       "간장은 팬 가장자리에 둘러야 불향이 난다"
+    ],
+    "learn_points_en": [
+      "Start garlic in cold oil on low heat so it doesn't burn",
+      "Pour soy sauce around the pan's edge for a smoky flavor"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1609570324378-ec0c4c9b6ba8?w=1080&q=80&fm=jpg&fit=crop",
@@ -215,46 +286,59 @@
   {
     "id": "chicken_onion_stirfry",
     "name": "치킨 양파볶음",
+    "name_en": "Chicken & Onion Stir-fry",
     "minutes": 10,
     "burners": 1,
     "level": 1,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": true,
     "ingredients": [
       {
         "id": "chicken_leftover",
         "amount": "4~5조각",
-        "optional": false
+        "optional": false,
+        "label_en": "4–5 pieces chicken"
       },
       {
         "id": "onion",
         "amount": "½개",
-        "optional": false
+        "optional": false,
+        "label_en": "½ onion"
       },
       {
         "id": "soy_sauce",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp soy sauce"
       },
       {
         "id": "sugar",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp sugar"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       },
       {
         "id": "chili",
         "amount": "1개",
-        "optional": true
+        "optional": true,
+        "label_en": "1 chili pepper"
       }
     ],
     "prep": [
@@ -262,34 +346,49 @@
       "치킨 뼈 발라 한입 크기로 자르기",
       "간장 1 + 설탕 ½ + 물 2숟가락 섞어두기"
     ],
+    "prep_en": [
+      "Cut ½ onion into thick strips",
+      "Take the chicken off the bone, cut into bite-size pieces",
+      "Mix 1 tbsp soy sauce + ½ tbsp sugar + 2 tbsp water"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "기름 두르고 중불에서 양파 볶기"
+        "text": "기름 두르고 중불에서 양파 볶기",
+        "text_en": "Oil the pan, stir-fry the onion on medium heat"
       },
       {
         "n": 2,
         "text": "치킨 넣고 한 면 데우기",
+        "text_en": "Add chicken, warm one side",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "아랫면 튀김옷이 다시 바삭, 색이 진해짐",
-          "say": "이제 뒤집어요. 한 번이면 돼요."
+          "cue_en": "Coating on the underside crisps up and darkens",
+          "say": "이제 뒤집어요. 한 번이면 돼요.",
+          "say_en": "Flip it now. Just once."
         }
       },
       {
         "n": 3,
         "text": "섞어둔 소스 붓고 빠르게 섞기",
+        "text_en": "Pour in the sauce and toss quickly",
         "sous_chef": {
           "type": "heat_down",
           "label": "수솊이 불 줄일 때를 알려줄게요",
+          "label_en": "Sous will tell you when to turn down the heat",
           "cue": "소스가 바글바글 끓기 시작",
-          "say": "소스가 끓어요. 불 줄이고 섞어요."
+          "cue_en": "Sauce starts bubbling",
+          "say": "소스가 끓어요. 불 줄이고 섞어요.",
+          "say_en": "The sauce is boiling. Turn it down and toss."
         }
       },
       {
         "n": 4,
-        "text": "소스가 거의 졸면 불 끄기"
+        "text": "소스가 거의 졸면 불 끄기",
+        "text_en": "Turn off the heat when the sauce is almost gone"
       }
     ],
     "sous_chef_moments": 2,
@@ -299,6 +398,9 @@
     ],
     "learn_points": [
       "남은 치킨은 뒤집기 한 번만 해야 튀김옷이 안 벗겨진다"
+    ],
+    "learn_points_en": [
+      "Flip leftover chicken only once so the coating stays on"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1695606452836-c3c6e62d407b?w=1080&q=80&fm=jpg&fit=crop",
@@ -313,6 +415,7 @@
   {
     "id": "onion_soup",
     "name": "양파 수프",
+    "name_en": "Onion Soup",
     "minutes": 25,
     "burners": 1,
     "level": 2,
@@ -320,88 +423,118 @@
       "볶기",
       "끓이기"
     ],
+    "method_en": [
+      "stir-fry",
+      "simmer"
+    ],
     "tools": [
       "냄비"
+    ],
+    "tools_en": [
+      "Pot"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "onion",
         "amount": "1개",
-        "optional": false
+        "optional": false,
+        "label_en": "1 onion"
       },
       {
         "id": "butter",
         "amount": "1조각(10g)",
-        "optional": false
+        "optional": false,
+        "label_en": "1 pat butter (10 g)"
       },
       {
         "id": "water",
         "amount": "300ml",
-        "optional": false
+        "optional": false,
+        "label_en": "300 ml water"
       },
       {
         "id": "soy_sauce",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp soy sauce"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       },
       {
         "id": "pepper",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of pepper"
       },
       {
         "id": "bread",
         "amount": "1장",
-        "optional": true
+        "optional": true,
+        "label_en": "1 slice bread"
       },
       {
         "id": "cheese_slice",
         "amount": "1장",
-        "optional": true
+        "optional": true,
+        "label_en": "1 slice cheese"
       }
     ],
     "prep": [
       "양파 1개 얇게 채썰기",
       "식빵은 한입 크기로 자르기 (선택)"
     ],
+    "prep_en": [
+      "Thinly slice 1 onion",
+      "Cut bread into bite-size pieces (optional)"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "버터 녹이고 중약불로 양파 볶기"
+        "text": "버터 녹이고 중약불로 양파 볶기",
+        "text_en": "Melt butter, cook the onion on medium-low heat"
       },
       {
         "n": 2,
         "text": "양파가 갈색이 될 때까지 계속 볶기",
+        "text_en": "Keep cooking until the onion turns brown",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "양파가 진한 갈색, 바닥에 갈색 막",
-          "say": "이 갈색이 맛이에요. 바닥에 물 조금 부어 긁어요."
+          "cue_en": "Onion is deep brown, brown film on the pot",
+          "say": "이 갈색이 맛이에요. 바닥에 물 조금 부어 긁어요.",
+          "say_en": "That brown is the flavor. Add a splash of water and scrape the bottom."
         }
       },
       {
         "n": 3,
         "text": "물 300ml, 간장 넣고 끓이기",
+        "text_en": "Add 300 ml water and soy sauce, bring to a boil",
         "sous_chef": {
           "type": "boil",
           "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it boils over",
           "cue": "냄비 가장자리 거품이 올라옴",
-          "say": "끓기 시작했어요. 약불로 줄여요."
+          "cue_en": "Foam rises at the edge of the pot",
+          "say": "끓기 시작했어요. 약불로 줄여요.",
+          "say_en": "It's boiling. Turn it down to low."
         }
       },
       {
         "n": 4,
-        "text": "약불로 10분 끓이고 소금·후추로 간하기"
+        "text": "약불로 10분 끓이고 소금·후추로 간하기",
+        "text_en": "Simmer 10 min on low, season with salt and pepper"
       },
       {
         "n": 5,
-        "text": "식빵·치즈 올려 마무리 (선택)"
+        "text": "식빵·치즈 올려 마무리 (선택)",
+        "text_en": "Top with bread and cheese (optional)"
       }
     ],
     "sous_chef_moments": 2,
@@ -412,6 +545,10 @@
     "learn_points": [
       "양파는 오래 볶아 갈색이 될수록 단맛이 난다",
       "바닥에 눌은 갈색은 물로 긁어 국물에 녹인다"
+    ],
+    "learn_points_en": [
+      "The longer onions cook and brown, the sweeter they get",
+      "Scrape up the brown bits with water and melt them into the soup"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1549203438-a7696aed4dac?w=1080&q=80&fm=jpg&fit=crop",
@@ -426,46 +563,59 @@
   {
     "id": "egg_fried_rice",
     "name": "계란볶음밥",
+    "name_en": "Egg Fried Rice",
     "minutes": 10,
     "burners": 1,
     "level": 1,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": true,
     "ingredients": [
       {
         "id": "rice",
         "amount": "1공기",
-        "optional": false
+        "optional": false,
+        "label_en": "1 bowl rice"
       },
       {
         "id": "egg",
         "amount": "2개",
-        "optional": false
+        "optional": false,
+        "label_en": "2 eggs"
       },
       {
         "id": "green_onion",
         "amount": "¼대",
-        "optional": false
+        "optional": false,
+        "label_en": "¼ green onion"
       },
       {
         "id": "cooking_oil",
         "amount": "2숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "2 tbsp cooking oil"
       },
       {
         "id": "soy_sauce",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp soy sauce"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       }
     ],
     "prep": [
@@ -473,40 +623,58 @@
       "계란 2개 풀어두기",
       "밥 1공기 꺼내두기"
     ],
+    "prep_en": [
+      "Slice the green onion",
+      "Beat 2 eggs",
+      "Set out 1 bowl of rice"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "기름 두르고 약불로 파 볶아 파기름 내기",
+        "text_en": "Oil the pan, fry green onion on low heat for scallion oil",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "파 가장자리가 노릇해지기 직전",
-          "say": "파가 노릇해지기 직전이에요. 계란 부어요."
+          "cue_en": "Green onion edges just about to brown",
+          "say": "파가 노릇해지기 직전이에요. 계란 부어요.",
+          "say_en": "Almost golden. Pour in the egg."
         }
       },
       {
         "n": 2,
         "text": "계란 붓고 반쯤 익으면 바로 밥 넣기",
+        "text_en": "Pour in the egg, add rice as soon as it's half set",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "계란이 반쯤 몽글, 아직 촉촉",
-          "say": "반만 익었을 때 밥 넣어요. 지금이에요."
+          "cue_en": "Egg is half set, still wet",
+          "say": "반만 익었을 때 밥 넣어요. 지금이에요.",
+          "say_en": "Add the rice while it's half cooked. Now."
         }
       },
       {
         "n": 3,
         "text": "밥을 눌러 펴며 섞어 볶기",
+        "text_en": "Press the rice flat and stir-fry",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "타닥 소리가 커짐",
-          "say": "눌기 전에 뒤섞어요."
+          "cue_en": "Crackling gets louder",
+          "say": "눌기 전에 뒤섞어요.",
+          "say_en": "Toss it before it sticks."
         }
       },
       {
         "n": 4,
-        "text": "간장 ½숟가락, 소금으로 간하기"
+        "text": "간장 ½숟가락, 소금으로 간하기",
+        "text_en": "Season with ½ tbsp soy sauce and salt"
       }
     ],
     "sous_chef_moments": 3,
@@ -517,7 +685,13 @@
     ],
     "learn_points": [
       "파기름은 파가 노릇해지기 직전까지",
+      "밥은 팬에 눌러 펴서 볶기",
       "계란은 반만 익었을 때 밥을 넣어야 밥알에 코팅된다"
+    ],
+    "learn_points_en": [
+      "Scallion oil: stop just before the scallions brown",
+      "Press the rice flat in the pan to fry",
+      "Add rice while the egg is half set so it coats every grain"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1664717698774-84f62382613b?w=1080&q=80&fm=jpg&fit=crop",
@@ -532,56 +706,71 @@
   {
     "id": "kimchi_fried_rice",
     "name": "김치볶음밥",
+    "name_en": "Kimchi Fried Rice",
     "minutes": 15,
     "burners": 1,
     "level": 1,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": true,
     "ingredients": [
       {
         "id": "rice",
         "amount": "1공기",
-        "optional": false
+        "optional": false,
+        "label_en": "1 bowl rice"
       },
       {
         "id": "kimchi",
         "amount": "한 줌(⅓컵)",
-        "optional": false
+        "optional": false,
+        "label_en": "A handful of kimchi (⅓ cup)"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       },
       {
         "id": "gochugaru",
         "amount": "½숟가락",
-        "optional": true
+        "optional": true,
+        "label_en": "½ tbsp chili flakes"
       },
       {
         "id": "sugar",
         "amount": "⅓숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "⅓ tbsp sugar"
       },
       {
         "id": "sesame_oil",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp sesame oil"
       },
       {
         "id": "egg",
         "amount": "1개",
-        "optional": true
+        "optional": true,
+        "label_en": "1 egg"
       },
       {
         "id": "spam",
         "amount": "¼캔",
-        "optional": true
+        "optional": true,
+        "label_en": "¼ can Spam"
       }
     ],
     "prep": [
@@ -589,44 +778,63 @@
       "스팸 깍둑썰기 (선택)",
       "밥 1공기 꺼내두기"
     ],
+    "prep_en": [
+      "Chop the kimchi finely",
+      "Dice the Spam (optional)",
+      "Set out 1 bowl of rice"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "기름 두르고 중불로 김치와 설탕 볶기",
+        "text_en": "Oil the pan, stir-fry kimchi and sugar on medium heat",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "김치가 투명해지고 가장자리가 살짝 진해짐",
-          "say": "김치가 투명해졌어요. 밥 넣을 때예요."
+          "cue_en": "Kimchi turns translucent, edges darken slightly",
+          "say": "김치가 투명해졌어요. 밥 넣을 때예요.",
+          "say_en": "Kimchi's translucent. Time for the rice."
         }
       },
       {
         "n": 2,
         "text": "고춧가루 넣고 10초만 볶기",
+        "text_en": "Add chili flakes and fry for just 10 sec",
         "sous_chef": {
           "type": "heat_down",
           "label": "수솊이 불 줄일 때를 알려줄게요",
+          "label_en": "Sous will tell you when to turn down the heat",
           "cue": "고춧가루가 기름에 닿아 색이 짙어짐",
-          "say": "고춧가루는 금방 타요. 불 줄여요."
+          "cue_en": "Chili flakes darken as they hit the oil",
+          "say": "고춧가루는 금방 타요. 불 줄여요.",
+          "say_en": "Chili flakes burn fast. Turn it down."
         }
       },
       {
         "n": 3,
         "text": "밥 넣고 눌러 펴서 볶기",
+        "text_en": "Add rice, press flat and fry",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "타닥 소리가 커짐",
-          "say": "바닥이 눌기 직전이에요."
+          "cue_en": "Crackling gets louder",
+          "say": "바닥이 눌기 직전이에요.",
+          "say_en": "The bottom's about to stick."
         }
       },
       {
         "n": 4,
-        "text": "불 끄고 참기름 둘러 섞기"
+        "text": "불 끄고 참기름 둘러 섞기",
+        "text_en": "Turn off the heat, drizzle sesame oil and mix"
       },
       {
         "n": 5,
-        "text": "계란후라이 올리기 (선택)"
+        "text": "계란후라이 올리기 (선택)",
+        "text_en": "Top with a fried egg (optional)"
       }
     ],
     "sous_chef_moments": 3,
@@ -638,6 +846,10 @@
     "learn_points": [
       "김치는 설탕 조금과 먼저 볶아야 신맛이 덜하다",
       "고춧가루는 약불에서 짧게"
+    ],
+    "learn_points_en": [
+      "Fry kimchi with a little sugar first to tame the sourness",
+      "Chili flakes: low heat, short time"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1600688654899-379ec76aca42?w=1080&q=80&fm=jpg&fit=crop",
@@ -652,66 +864,83 @@
   {
     "id": "jeyuk",
     "name": "제육볶음",
+    "name_en": "Spicy Pork Stir-fry",
     "minutes": 20,
     "burners": 1,
     "level": 2,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "pork_jeyuk",
         "amount": "200g",
-        "optional": false
+        "optional": false,
+        "label_en": "200 g sliced pork"
       },
       {
         "id": "onion",
         "amount": "½개",
-        "optional": false
+        "optional": false,
+        "label_en": "½ onion"
       },
       {
         "id": "green_onion",
         "amount": "¼대",
-        "optional": false
+        "optional": false,
+        "label_en": "¼ green onion"
       },
       {
         "id": "gochujang",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp gochujang"
       },
       {
         "id": "gochugaru",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp chili flakes"
       },
       {
         "id": "soy_sauce",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp soy sauce"
       },
       {
         "id": "sugar",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp sugar"
       },
       {
         "id": "garlic",
         "amount": "2쪽",
-        "optional": false
+        "optional": false,
+        "label_en": "2 garlic cloves"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       },
       {
         "id": "sesame_oil",
         "amount": "½숟가락",
-        "optional": true
+        "optional": true,
+        "label_en": "½ tbsp sesame oil"
       }
     ],
     "prep": [
@@ -720,39 +949,58 @@
       "고추장1·고춧가루1·간장1·설탕1·다진마늘 섞어 양념 만들기",
       "고기에 양념 버무려 10분 두기"
     ],
+    "prep_en": [
+      "Slice the onion, cut the green onion diagonally",
+      "Mince the garlic",
+      "Mix gochujang 1 · chili flakes 1 · soy sauce 1 · sugar 1 · garlic for the sauce",
+      "Coat the pork in the sauce, rest 10 min"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "기름 두르고 중불에 양념한 고기 펼쳐 넣기"
+        "text": "기름 두르고 중불에 양념한 고기 펼쳐 넣기",
+        "text_en": "Oil the pan, spread the marinated pork on medium heat"
       },
       {
         "n": 2,
         "text": "고기 겉이 하얗게 익을 때까지 볶기",
+        "text_en": "Stir-fry until the outside of the pork turns white",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "분홍색이 사라지고 가장자리가 갈색",
-          "say": "분홍색이 거의 없어졌어요. 양파 넣어요."
+          "cue_en": "Pink is gone, edges browning",
+          "say": "분홍색이 거의 없어졌어요. 양파 넣어요.",
+          "say_en": "Almost no pink left. Add the onion."
         }
       },
       {
         "n": 3,
         "text": "양파 넣고 볶기",
+        "text_en": "Add the onion and stir-fry",
         "sous_chef": {
           "type": "heat_down",
           "label": "수솊이 불 줄일 때를 알려줄게요",
+          "label_en": "Sous will tell you when to turn down the heat",
           "cue": "양념이 바닥에 진하게 눌기 시작, 연기",
-          "say": "양념은 금방 타요. 중약불로 줄여요."
+          "cue_en": "Sauce sticks dark to the pan, smoke",
+          "say": "양념은 금방 타요. 중약불로 줄여요.",
+          "say_en": "Gochujang burns fast. Down to medium-low."
         }
       },
       {
         "n": 4,
         "text": "대파 넣고 1분, 참기름으로 마무리",
+        "text_en": "Add green onion for 1 min, finish with sesame oil",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "대파 숨이 살짝 죽음",
-          "say": "다 됐어요. 불 꺼요."
+          "cue_en": "Green onion just wilts",
+          "say": "다 됐어요. 불 꺼요.",
+          "say_en": "Done. Turn it off."
         }
       }
     ],
@@ -765,6 +1013,10 @@
     "learn_points": [
       "고추장 양념은 중불 이상에서 금방 탄다",
       "고기 분홍색이 사라지면 채소를 넣는다"
+    ],
+    "learn_points_en": [
+      "Gochujang sauce burns quickly on medium heat or higher",
+      "Add vegetables once the pink is gone from the meat"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1777598405371-e657109ddd50?w=1080&q=80&fm=jpg&fit=crop",
@@ -779,80 +1031,107 @@
   {
     "id": "pork_belly_kimchi",
     "name": "대패삼겹 김치볶음",
+    "name_en": "Pork Belly Kimchi Stir-fry",
     "minutes": 15,
     "burners": 1,
     "level": 2,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "pork_belly_thin",
         "amount": "150g",
-        "optional": false
+        "optional": false,
+        "label_en": "150 g thin pork belly"
       },
       {
         "id": "kimchi",
         "amount": "한 컵",
-        "optional": false
+        "optional": false,
+        "label_en": "1 cup kimchi"
       },
       {
         "id": "onion",
         "amount": "¼개",
-        "optional": true
+        "optional": true,
+        "label_en": "¼ onion"
       },
       {
         "id": "sugar",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp sugar"
       },
       {
         "id": "gochugaru",
         "amount": "½숟가락",
-        "optional": true
+        "optional": true,
+        "label_en": "½ tbsp chili flakes"
       },
       {
         "id": "sesame_oil",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A drizzle of sesame oil"
       }
     ],
     "prep": [
       "김치 한입 크기로 썰기",
       "양파 채썰기 (선택)"
     ],
+    "prep_en": [
+      "Cut the kimchi into bite-size pieces",
+      "Slice the onion (optional)"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "기름 없이 팬에 대패삼겹 펼쳐 굽기",
+        "text_en": "Spread the pork belly in a dry pan and cook",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "고기 가장자리가 갈색, 기름이 고임",
-          "say": "기름이 충분히 나왔어요. 김치 넣어요."
+          "cue_en": "Edges brown, fat pools in the pan",
+          "say": "기름이 충분히 나왔어요. 김치 넣어요.",
+          "say_en": "Plenty of fat now. Add the kimchi."
         }
       },
       {
         "n": 2,
-        "text": "고기 기름에 김치와 설탕 넣고 볶기"
+        "text": "고기 기름에 김치와 설탕 넣고 볶기",
+        "text_en": "Stir-fry kimchi and sugar in the pork fat"
       },
       {
         "n": 3,
         "text": "김치가 투명해질 때까지 볶기",
+        "text_en": "Stir-fry until the kimchi is translucent",
         "sous_chef": {
           "type": "heat_down",
           "label": "수솊이 불 줄일 때를 알려줄게요",
+          "label_en": "Sous will tell you when to turn down the heat",
           "cue": "바닥이 진하게 눌기 시작",
-          "say": "타기 직전이에요. 불 줄여요."
+          "cue_en": "Pan bottom starts to stick dark",
+          "say": "타기 직전이에요. 불 줄여요.",
+          "say_en": "About to burn. Turn it down."
         }
       },
       {
         "n": 4,
-        "text": "참기름 둘러 마무리"
+        "text": "참기름 둘러 마무리",
+        "text_en": "Finish with sesame oil"
       }
     ],
     "sous_chef_moments": 2,
@@ -862,6 +1141,9 @@
     ],
     "learn_points": [
       "대패삼겹은 기름 없이 구워 나온 기름으로 김치를 볶는다"
+    ],
+    "learn_points_en": [
+      "Cook thin pork belly without oil, then fry the kimchi in its fat"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1752826892253-d89531507b1d?w=1080&q=80&fm=jpg&fit=crop",
@@ -876,59 +1158,81 @@
   {
     "id": "fried_egg",
     "name": "계란후라이",
+    "name_en": "Fried Egg",
     "minutes": 5,
     "burners": 1,
     "level": 1,
     "method": [
       "굽기"
     ],
+    "method_en": [
+      "pan-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "egg",
         "amount": "1~2개",
-        "optional": false
+        "optional": false,
+        "label_en": "1–2 eggs"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       }
     ],
     "prep": [
       "계란은 그릇에 먼저 깨두기 (껍질 확인)"
     ],
+    "prep_en": [
+      "Crack the eggs into a bowl first (check for shell)"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "기름 두르고 중불에서 팬 달구기"
+        "text": "기름 두르고 중불에서 팬 달구기",
+        "text_en": "Oil the pan, heat on medium"
       },
       {
         "n": 2,
         "text": "계란 넣기",
+        "text_en": "Add the egg",
         "sous_chef": {
           "type": "heat_down",
           "label": "수솊이 불 줄일 때를 알려줄게요",
+          "label_en": "Sous will tell you when to turn down the heat",
           "cue": "흰자 가장자리가 하얗게 굳고 지글거림",
-          "say": "가장자리가 굳었어요. 약불로 줄여요."
+          "cue_en": "White edges set and sizzle",
+          "say": "가장자리가 굳었어요. 약불로 줄여요.",
+          "say_en": "The edges are set. Turn it down to low."
         }
       },
       {
         "n": 3,
         "text": "흰자가 다 하얘지면 불 끄기 (반숙) / 1분 더 (완숙)",
+        "text_en": "Turn off when the white is set (runny) / 1 more min (well done)",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "노른자 위 투명한 흰자가 하얘짐",
-          "say": "흰자 다 익었어요. 반숙이면 지금 꺼요."
+          "cue_en": "Clear white over the yolk turns white",
+          "say": "흰자 다 익었어요. 반숙이면 지금 꺼요.",
+          "say_en": "Whites are cooked. Turn it off now for a runny yolk."
         }
       }
     ],
@@ -939,6 +1243,9 @@
     ],
     "learn_points": [
       "흰자 가장자리가 굳으면 불을 줄인다"
+    ],
+    "learn_points_en": [
+      "Turn down the heat once the white edges set"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1691480184494-d9f822edd4d1?w=1080&q=80&fm=jpg&fit=crop",
@@ -953,64 +1260,87 @@
   {
     "id": "scrambled_egg",
     "name": "스크램블에그",
+    "name_en": "Scrambled Eggs",
     "minutes": 5,
     "burners": 1,
     "level": 1,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "egg",
         "amount": "2개",
-        "optional": false
+        "optional": false,
+        "label_en": "2 eggs"
       },
       {
         "id": "milk",
         "amount": "2숟가락",
-        "optional": true
+        "optional": true,
+        "label_en": "2 tbsp milk"
       },
       {
         "id": "butter",
         "amount": "1조각(10g)",
-        "optional": false
+        "optional": false,
+        "label_en": "1 pat butter (10 g)"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       }
     ],
     "prep": [
       "계란 2개 + 우유 + 소금 풀어두기"
     ],
+    "prep_en": [
+      "Beat 2 eggs with milk and salt"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "약불에서 버터 녹이기",
+        "text_en": "Melt butter on low heat",
         "sous_chef": {
           "type": "heat_down",
           "label": "수솊이 불 줄일 때를 알려줄게요",
+          "label_en": "Sous will tell you when to turn down the heat",
           "cue": "버터 거품이 갈색으로 변하기 시작",
-          "say": "버터가 타기 직전이에요. 바로 계란 부어요."
+          "cue_en": "Butter foam starts turning brown",
+          "say": "버터가 타기 직전이에요. 바로 계란 부어요.",
+          "say_en": "Butter's about to burn. Pour in the eggs now."
         }
       },
       {
         "n": 2,
-        "text": "계란 붓고 주걱으로 크게 밀기"
+        "text": "계란 붓고 주걱으로 크게 밀기",
+        "text_en": "Pour in the eggs, push in big strokes with a spatula"
       },
       {
         "n": 3,
         "text": "80%만 익었을 때 불 끄기",
+        "text_en": "Turn off at 80% done",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "몽글몽글, 표면이 아직 촉촉하게 반짝임",
-          "say": "지금 꺼요. 남은 열로 익어요."
+          "cue_en": "Soft curds, surface still glossy",
+          "say": "지금 꺼요. 남은 열로 익어요.",
+          "say_en": "Turn it off now. The leftover heat will finish it."
         }
       }
     ],
@@ -1021,6 +1351,9 @@
     ],
     "learn_points": [
       "스크램블은 덜 익었을 때 불을 끈다 (남은 열로 익음)"
+    ],
+    "learn_points_en": [
+      "Turn scrambled eggs off before they look done — the leftover heat finishes them"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1687630433653-e6c9faec95b3?w=1080&q=80&fm=jpg&fit=crop",
@@ -1035,69 +1368,91 @@
   {
     "id": "soy_egg_rice",
     "name": "간장계란밥",
+    "name_en": "Soy Sauce Egg Rice",
     "minutes": 5,
     "burners": 1,
     "level": 1,
     "method": [
       "굽기"
     ],
+    "method_en": [
+      "pan-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": true,
     "ingredients": [
       {
         "id": "rice",
         "amount": "1공기",
-        "optional": false
+        "optional": false,
+        "label_en": "1 bowl rice"
       },
       {
         "id": "egg",
         "amount": "1개",
-        "optional": false
+        "optional": false,
+        "label_en": "1 egg"
       },
       {
         "id": "soy_sauce",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp soy sauce"
       },
       {
         "id": "sesame_oil",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp sesame oil"
       },
       {
         "id": "butter",
         "amount": "1조각",
-        "optional": true
+        "optional": true,
+        "label_en": "1 pat butter"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       }
     ],
     "prep": [
       "밥 1공기 데워두기"
     ],
+    "prep_en": [
+      "Warm 1 bowl of rice"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "계란후라이 반숙으로 굽기",
+        "text_en": "Fry an egg with a runny yolk",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "흰자는 익고 노른자는 볼록",
-          "say": "반숙이에요. 지금 밥 위로 옮겨요."
+          "cue_en": "White set, yolk still domed",
+          "say": "반숙이에요. 지금 밥 위로 옮겨요.",
+          "say_en": "Runny yolk. Move it onto the rice now."
         }
       },
       {
         "n": 2,
-        "text": "따뜻한 밥에 후라이·버터 올리기"
+        "text": "따뜻한 밥에 후라이·버터 올리기",
+        "text_en": "Put the egg and butter on the warm rice"
       },
       {
         "n": 3,
-        "text": "간장·참기름 둘러 비비기"
+        "text": "간장·참기름 둘러 비비기",
+        "text_en": "Drizzle soy sauce and sesame oil, then mix"
       }
     ],
     "sous_chef_moments": 1,
@@ -1106,6 +1461,9 @@
     ],
     "learn_points": [
       "노른자를 반숙으로 두면 소스 역할을 한다"
+    ],
+    "learn_points_en": [
+      "A runny yolk works as the sauce"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1774428755031-0991c8901f08?w=1080&q=80&fm=jpg&fit=crop",
@@ -1120,46 +1478,59 @@
   {
     "id": "tofu_pan_fry",
     "name": "두부부침",
+    "name_en": "Pan-fried Tofu",
     "minutes": 15,
     "burners": 1,
     "level": 1,
     "method": [
       "부치기"
     ],
+    "method_en": [
+      "griddle"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "tofu",
         "amount": "½모",
-        "optional": false
+        "optional": false,
+        "label_en": "½ block tofu"
       },
       {
         "id": "cooking_oil",
         "amount": "2숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "2 tbsp cooking oil"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       },
       {
         "id": "soy_sauce",
         "amount": "1숟가락",
-        "optional": true
+        "optional": true,
+        "label_en": "1 tbsp soy sauce"
       },
       {
         "id": "green_onion",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little green onion"
       },
       {
         "id": "gochugaru",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A pinch of chili flakes"
       }
     ],
     "prep": [
@@ -1167,34 +1538,49 @@
       "키친타월로 물기 꾹 눌러 닦기",
       "소금 살짝 뿌리기"
     ],
+    "prep_en": [
+      "Slice tofu 1 cm thick",
+      "Press dry with paper towels",
+      "Sprinkle lightly with salt"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "기름 두르고 중불에서 팬 달구기"
+        "text": "기름 두르고 중불에서 팬 달구기",
+        "text_en": "Oil the pan, heat on medium"
       },
       {
         "n": 2,
         "text": "두부 올리고 건드리지 않기",
+        "text_en": "Lay the tofu in and leave it alone",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "아랫면 가장자리가 노릇, 팬에서 저절로 떨어짐",
-          "say": "가장자리가 노릇해요. 이제 뒤집어도 안 부서져요."
+          "cue_en": "Underside edges golden, releases from the pan",
+          "say": "가장자리가 노릇해요. 이제 뒤집어도 안 부서져요.",
+          "say_en": "Edges are golden. It won't break if you flip now."
         }
       },
       {
         "n": 3,
         "text": "뒤집어서 반대쪽도 노릇하게",
+        "text_en": "Flip and brown the other side",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "양면 노릇한 갈색",
-          "say": "양쪽 다 됐어요."
+          "cue_en": "Both sides golden brown",
+          "say": "양쪽 다 됐어요.",
+          "say_en": "Both sides done."
         }
       },
       {
         "n": 4,
-        "text": "간장 양념 곁들이기 (선택)"
+        "text": "간장 양념 곁들이기 (선택)",
+        "text_en": "Serve with soy dipping sauce (optional)"
       }
     ],
     "sous_chef_moments": 2,
@@ -1205,6 +1591,10 @@
     "learn_points": [
       "두부는 물기를 닦아야 기름이 덜 튄다",
       "노릇해지기 전에 뒤집으면 부서진다"
+    ],
+    "learn_points_en": [
+      "Pat tofu dry so the oil spatters less",
+      "Flip before it's golden and it breaks"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1762305194201-077e7e23ccf2?w=1080&q=80&fm=jpg&fit=crop",
@@ -1219,46 +1609,59 @@
   {
     "id": "tomato_egg",
     "name": "토마토 계란볶음",
+    "name_en": "Tomato & Egg Stir-fry",
     "minutes": 10,
     "burners": 1,
     "level": 2,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "tomato",
         "amount": "1개",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tomato"
       },
       {
         "id": "egg",
         "amount": "2개",
-        "optional": false
+        "optional": false,
+        "label_en": "2 eggs"
       },
       {
         "id": "green_onion",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little green onion"
       },
       {
         "id": "cooking_oil",
         "amount": "2숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "2 tbsp cooking oil"
       },
       {
         "id": "sugar",
         "amount": "⅓숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "⅓ tbsp sugar"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       }
     ],
     "prep": [
@@ -1266,34 +1669,49 @@
       "계란 2개 풀어두기",
       "대파 송송 (선택)"
     ],
+    "prep_en": [
+      "Cut the tomato into 8 wedges",
+      "Beat 2 eggs",
+      "Slice the green onion (optional)"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "기름 두르고 계란 부어 반만 익혀 꺼내두기",
+        "text_en": "Oil the pan, cook the egg halfway and set it aside",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "가장자리만 부풀고 가운데는 촉촉",
-          "say": "반만 익었어요. 지금 그릇에 덜어요."
+          "cue_en": "Edges puff, center still wet",
+          "say": "반만 익었어요. 지금 그릇에 덜어요.",
+          "say_en": "Half done. Move it to a bowl now."
         }
       },
       {
         "n": 2,
         "text": "같은 팬에 토마토 볶기",
+        "text_en": "Stir-fry the tomato in the same pan",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "토마토 껍질이 벗겨지고 즙이 나옴",
-          "say": "즙이 나왔어요. 계란 다시 넣어요."
+          "cue_en": "Skins peel and juice comes out",
+          "say": "즙이 나왔어요. 계란 다시 넣어요.",
+          "say_en": "Juice is out. Add the egg back."
         }
       },
       {
         "n": 3,
-        "text": "계란 다시 넣고 설탕·소금으로 간하기"
+        "text": "계란 다시 넣고 설탕·소금으로 간하기",
+        "text_en": "Return the egg, season with sugar and salt"
       },
       {
         "n": 4,
-        "text": "크게 한두 번만 섞고 불 끄기"
+        "text": "크게 한두 번만 섞고 불 끄기",
+        "text_en": "Fold once or twice, then turn off"
       }
     ],
     "sous_chef_moments": 2,
@@ -1303,6 +1721,9 @@
     ],
     "learn_points": [
       "계란은 반만 익혀 빼뒀다가 마지막에 합친다"
+    ],
+    "learn_points_en": [
+      "Cook the egg halfway, set it aside, and combine at the end"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1629180052394-bedb0e4445fd?w=1080&q=80&fm=jpg&fit=crop",
@@ -1317,6 +1738,7 @@
   {
     "id": "omurice",
     "name": "오므라이스",
+    "name_en": "Omurice",
     "minutes": 25,
     "burners": 1,
     "level": 3,
@@ -1324,50 +1746,65 @@
       "볶기",
       "굽기"
     ],
+    "method_en": [
+      "stir-fry",
+      "pan-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": true,
     "ingredients": [
       {
         "id": "rice",
         "amount": "1공기",
-        "optional": false
+        "optional": false,
+        "label_en": "1 bowl rice"
       },
       {
         "id": "egg",
         "amount": "2개",
-        "optional": false
+        "optional": false,
+        "label_en": "2 eggs"
       },
       {
         "id": "onion",
         "amount": "¼개",
-        "optional": false
+        "optional": false,
+        "label_en": "¼ onion"
       },
       {
         "id": "sausage",
         "amount": "2개",
-        "optional": true
+        "optional": true,
+        "label_en": "2 sausages"
       },
       {
         "id": "ketchup",
         "amount": "3숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "3 tbsp ketchup"
       },
       {
         "id": "butter",
         "amount": "1조각",
-        "optional": false
+        "optional": false,
+        "label_en": "1 pat butter"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       }
     ],
     "prep": [
@@ -1375,38 +1812,54 @@
       "소시지 잘게 썰기",
       "계란 2개 + 소금 풀어두기"
     ],
+    "prep_en": [
+      "Mince the onion",
+      "Chop the sausages",
+      "Beat 2 eggs with salt"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "양파·소시지 볶다가 케찹 2숟가락 넣고 볶기",
+        "text_en": "Stir-fry onion and sausage, add 2 tbsp ketchup",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "케찹이 바닥에 눌기 시작",
-          "say": "케찹이 눌기 직전이에요. 밥 넣어요."
+          "cue_en": "Ketchup starts sticking to the pan",
+          "say": "케찹이 눌기 직전이에요. 밥 넣어요.",
+          "say_en": "The ketchup's about to stick. Add the rice."
         }
       },
       {
         "n": 2,
-        "text": "밥 넣고 볶아서 그릇에 담아두기"
+        "text": "밥 넣고 볶아서 그릇에 담아두기",
+        "text_en": "Add rice, stir-fry, and plate it"
       },
       {
         "n": 3,
-        "text": "팬을 닦고 약불에서 버터 녹이기"
+        "text": "팬을 닦고 약불에서 버터 녹이기",
+        "text_en": "Wipe the pan, melt butter on low heat"
       },
       {
         "n": 4,
         "text": "계란 부어 가장자리만 익히기",
+        "text_en": "Pour in the egg and cook just the edges",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "가장자리는 굳고 가운데는 흐르는 상태",
-          "say": "가운데가 아직 촉촉할 때 불 꺼요."
+          "cue_en": "Edges set, center still runny",
+          "say": "가운데가 아직 촉촉할 때 불 꺼요.",
+          "say_en": "Turn it off while the center's still soft."
         }
       },
       {
         "n": 5,
-        "text": "계란을 밥 위에 덮고 케찹 뿌리기"
+        "text": "계란을 밥 위에 덮고 케찹 뿌리기",
+        "text_en": "Lay the egg over the rice, top with ketchup"
       }
     ],
     "sous_chef_moments": 2,
@@ -1417,6 +1870,10 @@
     "learn_points": [
       "오므라이스 계란은 가운데가 촉촉할 때 불을 끈다",
       "케찹은 한 번 볶아야 신맛이 날아간다"
+    ],
+    "learn_points_en": [
+      "Turn off omurice egg while the center is still soft",
+      "Fry ketchup briefly to cook off the sour edge"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1743148509702-2198b23ede1c?w=1080&q=80&fm=jpg&fit=crop",
@@ -1431,80 +1888,109 @@
   {
     "id": "rolled_omelette",
     "name": "계란말이",
+    "name_en": "Rolled Omelet",
     "minutes": 15,
     "burners": 1,
     "level": 2,
     "method": [
       "부치기"
     ],
+    "method_en": [
+      "griddle"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "egg",
         "amount": "3개",
-        "optional": false
+        "optional": false,
+        "label_en": "3 eggs"
       },
       {
         "id": "green_onion",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little green onion"
       },
       {
         "id": "carrot",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little carrot"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       }
     ],
     "prep": [
       "대파·당근 잘게 다지기",
       "계란 3개 + 소금 + 채소 풀어두기"
     ],
+    "prep_en": [
+      "Finely chop green onion and carrot",
+      "Beat 3 eggs with salt and the vegetables"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "기름 얇게 두르고 약불에 계란물 ⅓ 붓기",
+        "text_en": "Thin layer of oil, pour in ⅓ of the egg on low heat",
         "sous_chef": {
           "type": "heat_down",
           "label": "수솊이 불 줄일 때를 알려줄게요",
+          "label_en": "Sous will tell you when to turn down the heat",
           "cue": "계란물이 바로 부풀며 지글거림",
-          "say": "너무 세요. 약불로 줄여요."
+          "cue_en": "Egg puffs and sizzles right away",
+          "say": "너무 세요. 약불로 줄여요.",
+          "say_en": "Too hot. Turn it down to low."
         }
       },
       {
         "n": 2,
         "text": "윗면이 반쯤 굳으면 끝에서부터 말기",
+        "text_en": "When the top is half set, roll from one end",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "윗면 70%가 굳고 가장자리가 들림",
-          "say": "지금 말아요. 더 익으면 안 붙어요."
+          "cue_en": "Top 70% set, edges lifting",
+          "say": "지금 말아요. 더 익으면 안 붙어요.",
+          "say_en": "Roll now. Any later and it won't stick."
         }
       },
       {
         "n": 3,
-        "text": "빈 자리에 남은 계란물 부어 이어 말기"
+        "text": "빈 자리에 남은 계란물 부어 이어 말기",
+        "text_en": "Pour the rest of the egg into the empty space and keep rolling"
       },
       {
         "n": 4,
         "text": "다 말면 굴려가며 겉 익히기",
+        "text_en": "Once rolled, turn it to cook the outside",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "겉면 연한 노란색 유지, 갈색 반점 없음",
-          "say": "다 됐어요. 2분 식혔다 썰어요."
+          "cue_en": "Outside stays pale yellow, no brown spots",
+          "say": "다 됐어요. 2분 식혔다 썰어요.",
+          "say_en": "Done. Let it cool 2 min before slicing."
         }
       }
     ],
@@ -1516,6 +2002,9 @@
     ],
     "learn_points": [
       "계란말이는 약불, 윗면이 덜 굳었을 때 말아야 붙는다"
+    ],
+    "learn_points_en": [
+      "Low heat, and roll while the top is still soft so the layers stick"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1606501129419-38058bd81ddc?w=1080&q=80&fm=jpg&fit=crop",
@@ -1530,41 +2019,53 @@
   {
     "id": "spinach_egg",
     "name": "시금치 계란볶음",
+    "name_en": "Spinach & Egg Stir-fry",
     "minutes": 10,
     "burners": 1,
     "level": 1,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "spinach",
         "amount": "한 줌",
-        "optional": false
+        "optional": false,
+        "label_en": "A handful of spinach"
       },
       {
         "id": "egg",
         "amount": "2개",
-        "optional": false
+        "optional": false,
+        "label_en": "2 eggs"
       },
       {
         "id": "garlic",
         "amount": "1쪽",
-        "optional": false
+        "optional": false,
+        "label_en": "1 garlic clove"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       }
     ],
     "prep": [
@@ -1572,35 +2073,52 @@
       "마늘 다지기",
       "계란 풀어두기"
     ],
+    "prep_en": [
+      "Wash the spinach, shake dry, cut in half",
+      "Mince the garlic",
+      "Beat the eggs"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "계란 스크램블해서 덜어두기",
+        "text_en": "Scramble the eggs and set aside",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "몽글하고 촉촉",
-          "say": "덜어둬요."
+          "cue_en": "Soft curds, still moist",
+          "say": "덜어둬요.",
+          "say_en": "Set them aside."
         }
       },
       {
         "n": 2,
         "text": "마늘 볶다가 시금치 넣기",
+        "text_en": "Fry the garlic, then add the spinach",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "마늘 향, 연한 금색",
-          "say": "시금치 넣어요."
+          "cue_en": "Garlic smells fragrant, pale gold",
+          "say": "시금치 넣어요.",
+          "say_en": "Add the spinach."
         }
       },
       {
         "n": 3,
         "text": "시금치 숨이 죽으면 계란 넣고 소금 간",
+        "text_en": "When the spinach wilts, add the egg and season with salt",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "시금치 부피가 절반, 진한 초록",
-          "say": "숨이 죽었어요. 바로 꺼요."
+          "cue_en": "Spinach halves in volume, deep green",
+          "say": "숨이 죽었어요. 바로 꺼요.",
+          "say_en": "It's wilted. Turn it off right away."
         }
       }
     ],
@@ -1611,6 +2129,9 @@
     ],
     "learn_points": [
       "잎채소는 숨만 죽으면 바로 불을 끈다"
+    ],
+    "learn_points_en": [
+      "Turn off leafy greens as soon as they wilt"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1579353446482-1005b0adea1d?w=1080&q=80&fm=jpg&fit=crop",
@@ -1625,70 +2146,94 @@
   {
     "id": "spam_rice_bowl",
     "name": "스팸구이 덮밥",
+    "name_en": "Spam Rice Bowl",
     "minutes": 10,
     "burners": 1,
     "level": 1,
     "method": [
       "굽기"
     ],
+    "method_en": [
+      "pan-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": true,
     "ingredients": [
       {
         "id": "spam",
         "amount": "⅓캔",
-        "optional": false
+        "optional": false,
+        "label_en": "⅓ can Spam"
       },
       {
         "id": "rice",
         "amount": "1공기",
-        "optional": false
+        "optional": false,
+        "label_en": "1 bowl rice"
       },
       {
         "id": "egg",
         "amount": "1개",
-        "optional": true
+        "optional": true,
+        "label_en": "1 egg"
       },
       {
         "id": "mayo",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little mayo"
       },
       {
         "id": "soy_sauce",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little soy sauce"
       }
     ],
     "prep": [
       "스팸 0.7cm 두께로 썰기"
     ],
+    "prep_en": [
+      "Slice the Spam 0.7 cm thick"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "기름 없이 중불에서 스팸 굽기",
+        "text_en": "Sear the Spam in a dry pan on medium heat",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "아랫면이 진한 갈색, 지글 소리",
-          "say": "갈색이 됐어요. 뒤집어요."
+          "cue_en": "Underside deep brown, sizzling",
+          "say": "갈색이 됐어요. 뒤집어요.",
+          "say_en": "It's browned. Flip it."
         }
       },
       {
         "n": 2,
         "text": "반대쪽도 굽기",
+        "text_en": "Sear the other side",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "양면 갈색",
-          "say": "다 됐어요."
+          "cue_en": "Both sides brown",
+          "say": "다 됐어요.",
+          "say_en": "Done."
         }
       },
       {
         "n": 3,
-        "text": "밥 위에 올리고 계란후라이·마요 곁들이기"
+        "text": "밥 위에 올리고 계란후라이·마요 곁들이기",
+        "text_en": "Lay it on rice with a fried egg and mayo"
       }
     ],
     "sous_chef_moments": 2,
@@ -1698,6 +2243,9 @@
     ],
     "learn_points": [
       "스팸은 자체 기름으로 굽는다"
+    ],
+    "learn_points_en": [
+      "Spam fries in its own fat"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1602647433549-808d521e3479?w=1080&q=80&fm=jpg&fit=crop",
@@ -1712,56 +2260,71 @@
   {
     "id": "sausage_veg",
     "name": "소시지 야채볶음",
+    "name_en": "Sausage & Veggie Stir-fry",
     "minutes": 15,
     "burners": 1,
     "level": 1,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "sausage",
         "amount": "5~6개",
-        "optional": false
+        "optional": false,
+        "label_en": "5–6 sausages"
       },
       {
         "id": "onion",
         "amount": "¼개",
-        "optional": false
+        "optional": false,
+        "label_en": "¼ onion"
       },
       {
         "id": "carrot",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little carrot"
       },
       {
         "id": "cabbage",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little cabbage"
       },
       {
         "id": "ketchup",
         "amount": "2숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "2 tbsp ketchup"
       },
       {
         "id": "oyster_sauce",
         "amount": "½숟가락",
-        "optional": true
+        "optional": true,
+        "label_en": "½ tbsp oyster sauce"
       },
       {
         "id": "sugar",
         "amount": "⅓숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "⅓ tbsp sugar"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       }
     ],
     "prep": [
@@ -1769,29 +2332,43 @@
       "양파·당근 한입 크기로 썰기",
       "케찹2 + 굴소스½ + 설탕⅓ + 물1 섞기"
     ],
+    "prep_en": [
+      "Score the sausages",
+      "Cut onion and carrot into bite-size pieces",
+      "Mix ketchup 2 + oyster sauce ½ + sugar ⅓ + water 1"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "소시지 먼저 굴려가며 굽기",
+        "text_en": "Roll the sausages around the pan first",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "칼집이 벌어지고 겉이 갈색",
-          "say": "칼집이 벌어졌어요. 채소 넣어요."
+          "cue_en": "Cuts open up, outside browns",
+          "say": "칼집이 벌어졌어요. 채소 넣어요.",
+          "say_en": "The cuts opened. Add the veggies."
         }
       },
       {
         "n": 2,
-        "text": "채소 넣고 볶기"
+        "text": "채소 넣고 볶기",
+        "text_en": "Add the vegetables and stir-fry"
       },
       {
         "n": 3,
         "text": "소스 넣고 졸이기",
+        "text_en": "Add the sauce and reduce",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "소스가 끈적, 바닥에 붙기 시작",
-          "say": "소스가 눌기 직전이에요. 불 꺼요."
+          "cue_en": "Sauce turns sticky, starts clinging to the pan",
+          "say": "소스가 눌기 직전이에요. 불 꺼요.",
+          "say_en": "The sauce is about to stick. Turn it off."
         }
       }
     ],
@@ -1802,6 +2379,9 @@
     ],
     "learn_points": [
       "칼집이 벌어지면 소시지 속까지 데워진 것"
+    ],
+    "learn_points_en": [
+      "When the cuts open up, the sausage is heated through"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1592259695987-4aa79c3c34a6?w=1080&q=80&fm=jpg&fit=crop",
@@ -1816,41 +2396,53 @@
   {
     "id": "zucchini_jeon",
     "name": "애호박전",
+    "name_en": "Zucchini Jeon",
     "minutes": 15,
     "burners": 1,
     "level": 1,
     "method": [
       "부치기"
     ],
+    "method_en": [
+      "griddle"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "zucchini",
         "amount": "½개",
-        "optional": false
+        "optional": false,
+        "label_en": "½ zucchini"
       },
       {
         "id": "egg",
         "amount": "1개",
-        "optional": false
+        "optional": false,
+        "label_en": "1 egg"
       },
       {
         "id": "flour",
         "amount": "2숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "2 tbsp frying mix"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       },
       {
         "id": "cooking_oil",
         "amount": "2숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "2 tbsp cooking oil"
       }
     ],
     "prep": [
@@ -1858,29 +2450,43 @@
       "5분 뒤 물기 닦기",
       "부침가루 묻히고 계란물 입히기"
     ],
+    "prep_en": [
+      "Slice the zucchini into 0.5 cm rounds, salt lightly",
+      "After 5 min, pat dry",
+      "Dust with frying mix, dip in egg"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "기름 두르고 중약불에서 팬 달구기"
+        "text": "기름 두르고 중약불에서 팬 달구기",
+        "text_en": "Oil the pan, heat on medium-low"
       },
       {
         "n": 2,
         "text": "애호박 올려 굽기",
+        "text_en": "Lay the zucchini in and cook",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "계란옷 가장자리가 노릇, 윗면 계란이 굳음",
-          "say": "가장자리가 노릇해요. 뒤집어요."
+          "cue_en": "Egg coating edges golden, top egg set",
+          "say": "가장자리가 노릇해요. 뒤집어요.",
+          "say_en": "Edges are golden. Flip."
         }
       },
       {
         "n": 3,
         "text": "반대쪽도 굽기",
+        "text_en": "Cook the other side",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "양면 연한 노란빛, 갈색 반점 약간",
-          "say": "다 됐어요."
+          "cue_en": "Both sides pale yellow, a few brown spots",
+          "say": "다 됐어요.",
+          "say_en": "Done."
         }
       }
     ],
@@ -1891,6 +2497,9 @@
     ],
     "learn_points": [
       "전은 중약불, 가장자리가 노릇해지면 뒤집는다"
+    ],
+    "learn_points_en": [
+      "Jeon: medium-low heat, flip when the edges turn golden"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1607095591644-9f97a2099c92?w=1080&q=80&fm=jpg&fit=crop",
@@ -1905,69 +2514,94 @@
   {
     "id": "potato_jeon",
     "name": "감자채전",
+    "name_en": "Potato Pancake",
     "minutes": 20,
     "burners": 1,
     "level": 2,
     "method": [
       "부치기"
     ],
+    "method_en": [
+      "griddle"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "potato",
         "amount": "2개",
-        "optional": false
+        "optional": false,
+        "label_en": "2 potatoes"
       },
       {
         "id": "starch",
         "amount": "1숟가락",
-        "optional": true
+        "optional": true,
+        "label_en": "1 tbsp starch"
       },
       {
         "id": "salt",
         "amount": "⅓숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "⅓ tbsp salt"
       },
       {
         "id": "cooking_oil",
         "amount": "3숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "3 tbsp cooking oil"
       }
     ],
     "prep": [
       "감자 껍질 벗겨 얇게 채썰기",
       "전분·소금 넣고 버무리기 (물에 헹구지 않기)"
     ],
+    "prep_en": [
+      "Peel and thinly julienne the potatoes",
+      "Toss with starch and salt (don't rinse)"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "기름 넉넉히 두르고 중불에서 달구기"
+        "text": "기름 넉넉히 두르고 중불에서 달구기",
+        "text_en": "Plenty of oil, heat on medium"
       },
       {
         "n": 2,
-        "text": "감자채를 얇고 넓게 펴서 꾹 누르기"
+        "text": "감자채를 얇고 넓게 펴서 꾹 누르기",
+        "text_en": "Spread the potato thin and wide, press down"
       },
       {
         "n": 3,
         "text": "아랫면 노릇하게 굽기",
+        "text_en": "Brown the underside",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "가장자리 갈색, 팬을 흔들면 통째로 미끄러짐",
-          "say": "통째로 움직여요. 뒤집을 때예요."
+          "cue_en": "Edges brown, slides as one piece when you shake the pan",
+          "say": "통째로 움직여요. 뒤집을 때예요.",
+          "say_en": "It moves as one piece. Time to flip."
         }
       },
       {
         "n": 4,
         "text": "기름 조금 더 두르고 반대쪽 굽기",
+        "text_en": "Add a little more oil, cook the other side",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "양면 바삭한 갈색, 소리가 잦아듦",
-          "say": "바삭해요. 꺼요."
+          "cue_en": "Both sides crisp and brown, the sizzle quiets",
+          "say": "바삭해요. 꺼요.",
+          "say_en": "Crispy. Turn it off."
         }
       }
     ],
@@ -1979,6 +2613,10 @@
     "learn_points": [
       "감자 전분이 접착제라 헹구면 안 붙는다",
       "팬을 흔들어 통째로 움직이면 뒤집을 때"
+    ],
+    "learn_points_en": [
+      "Potato starch is the glue — don't rinse it off",
+      "When it slides as one piece, it's ready to flip"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1783684522943-7ab49ce47d43?w=1080&q=80&fm=jpg&fit=crop",
@@ -1993,79 +2631,106 @@
   {
     "id": "kimchi_jeon",
     "name": "김치전",
+    "name_en": "Kimchi Pancake",
     "minutes": 15,
     "burners": 1,
     "level": 2,
     "method": [
       "부치기"
     ],
+    "method_en": [
+      "griddle"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "kimchi",
         "amount": "한 컵",
-        "optional": false
+        "optional": false,
+        "label_en": "1 cup kimchi"
       },
       {
         "id": "flour",
         "amount": "5숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "5 tbsp frying mix"
       },
       {
         "id": "water",
         "amount": "5숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "5 tbsp water"
       },
       {
         "id": "sugar",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of sugar"
       },
       {
         "id": "cooking_oil",
         "amount": "3숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "3 tbsp cooking oil"
       },
       {
         "id": "chili",
         "amount": "1개",
-        "optional": true
+        "optional": true,
+        "label_en": "1 chili pepper"
       }
     ],
     "prep": [
       "김치 잘게 썰기",
       "김치 + 부침가루 + 물 + 설탕 조금 섞기 (주르륵 흐를 정도)"
     ],
+    "prep_en": [
+      "Chop the kimchi finely",
+      "Mix kimchi + frying mix + water + a little sugar (pourable)"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "기름 넉넉히, 중불에서 팬 달구기"
+        "text": "기름 넉넉히, 중불에서 팬 달구기",
+        "text_en": "Plenty of oil, heat on medium"
       },
       {
         "n": 2,
         "text": "반죽 얇게 펴기",
+        "text_en": "Spread the batter thin",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "가장자리가 바삭한 갈색, 윗면 반죽이 반 이상 익음",
-          "say": "가장자리가 바삭해요. 뒤집어요."
+          "cue_en": "Edges crisp and brown, top more than half set",
+          "say": "가장자리가 바삭해요. 뒤집어요.",
+          "say_en": "Edges are crisp. Flip."
         }
       },
       {
         "n": 3,
-        "text": "뒤집고 뒤집개로 꾹 누르기"
+        "text": "뒤집고 뒤집개로 꾹 누르기",
+        "text_en": "Flip and press down with the spatula"
       },
       {
         "n": 4,
         "text": "반대쪽도 바삭하게",
+        "text_en": "Crisp the other side",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "양면 갈색, 지글 소리가 작아짐",
-          "say": "다 됐어요."
+          "cue_en": "Both sides brown, the sizzle gets quieter",
+          "say": "다 됐어요.",
+          "say_en": "Done."
         }
       }
     ],
@@ -2077,6 +2742,10 @@
     "learn_points": [
       "반죽은 얇게 펼쳐야 바삭하다",
       "뒤집고 나서 꾹 눌러야 고르게 익는다"
+    ],
+    "learn_points_en": [
+      "Spread the batter thin for crispiness",
+      "Press down after flipping so it cooks evenly"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1540162579464-e90ec977bd67?w=1080&q=80&fm=jpg&fit=crop",
@@ -2091,81 +2760,110 @@
   {
     "id": "french_toast",
     "name": "프렌치토스트",
+    "name_en": "French Toast",
     "minutes": 10,
     "burners": 1,
     "level": 1,
     "method": [
       "굽기"
     ],
+    "method_en": [
+      "pan-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "bread",
         "amount": "2장",
-        "optional": false
+        "optional": false,
+        "label_en": "2 slices bread"
       },
       {
         "id": "egg",
         "amount": "1개",
-        "optional": false
+        "optional": false,
+        "label_en": "1 egg"
       },
       {
         "id": "milk",
         "amount": "3숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "3 tbsp milk"
       },
       {
         "id": "sugar",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp sugar"
       },
       {
         "id": "butter",
         "amount": "1조각",
-        "optional": false
+        "optional": false,
+        "label_en": "1 pat butter"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       }
     ],
     "prep": [
       "계란 + 우유 + 설탕 + 소금 섞기",
       "식빵 반으로 자르기"
     ],
+    "prep_en": [
+      "Mix egg, milk, sugar and salt",
+      "Cut the bread in half"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "약불에서 버터 녹이기",
+        "text_en": "Melt butter on low heat",
         "sous_chef": {
           "type": "heat_down",
           "label": "수솊이 불 줄일 때를 알려줄게요",
+          "label_en": "Sous will tell you when to turn down the heat",
           "cue": "버터 거품이 갈색으로 변하기 시작",
-          "say": "버터 타기 직전이에요. 빵 올려요."
+          "cue_en": "Butter foam starts turning brown",
+          "say": "버터 타기 직전이에요. 빵 올려요.",
+          "say_en": "Butter's about to burn. Lay the bread in."
         }
       },
       {
         "n": 2,
         "text": "계란물 적신 빵 굽기",
+        "text_en": "Cook the soaked bread",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "아랫면 진한 노란 갈색",
-          "say": "색 좋아요. 뒤집어요."
+          "cue_en": "Underside deep golden",
+          "say": "색 좋아요. 뒤집어요.",
+          "say_en": "Nice color. Flip."
         }
       },
       {
         "n": 3,
         "text": "반대쪽 굽기",
+        "text_en": "Cook the other side",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "양면 노릇, 가운데 눌러보면 탄력",
-          "say": "다 됐어요."
+          "cue_en": "Both sides golden, springy when pressed",
+          "say": "다 됐어요.",
+          "say_en": "Done."
         }
       }
     ],
@@ -2177,6 +2875,9 @@
     ],
     "learn_points": [
       "버터는 거품이 갈색이 되기 전에 쓴다"
+    ],
+    "learn_points_en": [
+      "Use butter before the foam turns brown"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1595044643502-616eeebbdff3?w=1080&q=80&fm=jpg&fit=crop",
@@ -2191,6 +2892,7 @@
   {
     "id": "butter_potato",
     "name": "버터 감자구이",
+    "name_en": "Butter Potatoes",
     "minutes": 20,
     "burners": 1,
     "level": 1,
@@ -2198,65 +2900,91 @@
       "전자레인지",
       "굽기"
     ],
+    "method_en": [
+      "microwave",
+      "pan-fry"
+    ],
     "tools": [
       "전자레인지",
       "프라이팬"
+    ],
+    "tools_en": [
+      "Microwave",
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "potato",
         "amount": "2개",
-        "optional": false
+        "optional": false,
+        "label_en": "2 potatoes"
       },
       {
         "id": "butter",
         "amount": "1조각",
-        "optional": false
+        "optional": false,
+        "label_en": "1 pat butter"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       },
       {
         "id": "sugar",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A pinch of sugar"
       },
       {
         "id": "pepper",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A pinch of pepper"
       }
     ],
     "prep": [
       "감자 껍질째 한입 크기로 썰기",
       "그릇에 물 2숟가락, 랩 씌워 전자레인지 5분"
     ],
+    "prep_en": [
+      "Cut unpeeled potatoes into bite-size pieces",
+      "2 tbsp water in a bowl, cover, microwave 5 min"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "팬에 버터 녹이고 익힌 감자 넣기"
+        "text": "팬에 버터 녹이고 익힌 감자 넣기",
+        "text_en": "Melt butter, add the cooked potatoes"
       },
       {
         "n": 2,
         "text": "굴려가며 겉을 굽기",
+        "text_en": "Roll them around to brown the outside",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "면마다 노릇한 갈색",
-          "say": "면이 노릇해요. 한 번 굴려요."
+          "cue_en": "Each side golden brown",
+          "say": "면이 노릇해요. 한 번 굴려요.",
+          "say_en": "That side's golden. Roll them."
         }
       },
       {
         "n": 3,
         "text": "소금·설탕·후추로 간하고 불 끄기",
+        "text_en": "Season with salt, sugar, pepper and turn off",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "모든 면이 노릇",
-          "say": "다 됐어요."
+          "cue_en": "All sides golden",
+          "say": "다 됐어요.",
+          "say_en": "Done."
         }
       }
     ],
@@ -2267,6 +2995,9 @@
     ],
     "learn_points": [
       "감자는 전자레인지로 속을 먼저 익히면 굽는 시간이 줄어든다"
+    ],
+    "learn_points_en": [
+      "Microwave potatoes first to cut the pan time"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1633959639799-6d3f66e05710?w=1080&q=80&fm=jpg&fit=crop",
@@ -2281,71 +3012,96 @@
   {
     "id": "mushroom_butter",
     "name": "버섯 버터구이",
+    "name_en": "Butter Mushrooms",
     "minutes": 10,
     "burners": 1,
     "level": 1,
     "method": [
       "굽기"
     ],
+    "method_en": [
+      "pan-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "mushroom",
         "amount": "한 팩",
-        "optional": false
+        "optional": false,
+        "label_en": "1 pack mushrooms"
       },
       {
         "id": "butter",
         "amount": "1조각",
-        "optional": false
+        "optional": false,
+        "label_en": "1 pat butter"
       },
       {
         "id": "garlic",
         "amount": "2쪽",
-        "optional": true
+        "optional": true,
+        "label_en": "2 garlic cloves"
       },
       {
         "id": "soy_sauce",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp soy sauce"
       },
       {
         "id": "pepper",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A pinch of pepper"
       }
     ],
     "prep": [
       "버섯 한입 크기로 찢거나 썰기 (물에 씻지 말고 닦기)",
       "마늘 편 썰기"
     ],
+    "prep_en": [
+      "Tear or slice the mushrooms (wipe, don't wash)",
+      "Slice the garlic"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "중불에서 버섯을 기름 없이 펼쳐 굽기",
+        "text_en": "Spread mushrooms in a dry pan on medium heat",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "아랫면 갈색, 물이 나왔다가 졸아듦",
-          "say": "갈색이 났어요. 이제 뒤집어요."
+          "cue_en": "Underside browns, released water cooks off",
+          "say": "갈색이 났어요. 이제 뒤집어요.",
+          "say_en": "They've browned. Flip now."
         }
       },
       {
         "n": 2,
         "text": "버터·마늘 넣고 섞기",
+        "text_en": "Add butter and garlic, toss",
         "sous_chef": {
           "type": "heat_down",
           "label": "수솊이 불 줄일 때를 알려줄게요",
+          "label_en": "Sous will tell you when to turn down the heat",
           "cue": "버터 거품이 갈색으로",
-          "say": "버터 넣었으면 불 줄여요."
+          "cue_en": "Butter foam turns brown",
+          "say": "버터 넣었으면 불 줄여요.",
+          "say_en": "Butter's in. Turn it down."
         }
       },
       {
         "n": 3,
-        "text": "간장 한 바퀴 두르고 불 끄기"
+        "text": "간장 한 바퀴 두르고 불 끄기",
+        "text_en": "Drizzle soy sauce around and turn off"
       }
     ],
     "sous_chef_moments": 2,
@@ -2355,6 +3111,9 @@
     ],
     "learn_points": [
       "버섯은 처음엔 건드리지 말아야 물이 안 나오고 노릇해진다"
+    ],
+    "learn_points_en": [
+      "Leave mushrooms alone at first so they brown instead of going watery"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1733940501793-7e7a15c253f6?w=1080&q=80&fm=jpg&fit=crop",
@@ -2369,47 +3128,61 @@
   {
     "id": "chicken_thigh_steak",
     "name": "닭다리살 구이",
+    "name_en": "Pan-seared Chicken Thigh",
     "minutes": 20,
     "burners": 1,
     "level": 2,
     "method": [
       "굽기"
     ],
+    "method_en": [
+      "pan-fry"
+    ],
     "tools": [
       "프라이팬",
       "뚜껑"
+    ],
+    "tools_en": [
+      "Frying pan",
+      "Lid"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "chicken_thigh",
         "amount": "1~2장",
-        "optional": false
+        "optional": false,
+        "label_en": "1–2 chicken thighs"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       },
       {
         "id": "pepper",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of pepper"
       },
       {
         "id": "soy_sauce",
         "amount": "1숟가락",
-        "optional": true
+        "optional": true,
+        "label_en": "1 tbsp soy sauce"
       },
       {
         "id": "sugar",
         "amount": "½숟가락",
-        "optional": true
+        "optional": true,
+        "label_en": "½ tbsp sugar"
       },
       {
         "id": "cooking_oil",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A little cooking oil"
       }
     ],
     "prep": [
@@ -2417,39 +3190,57 @@
       "소금·후추 뿌리기",
       "(선택) 간장1 + 설탕½ + 물2 섞기"
     ],
+    "prep_en": [
+      "Pat the chicken thighs dry",
+      "Season with salt and pepper",
+      "(Optional) Mix soy sauce 1 + sugar ½ + water 2"
+    ],
     "steps": [
       {
         "n": 1,
-        "text": "껍질 쪽을 아래로, 중약불에서 굽기"
+        "text": "껍질 쪽을 아래로, 중약불에서 굽기",
+        "text_en": "Skin side down, cook on medium-low"
       },
       {
         "n": 2,
         "text": "껍질이 바삭해질 때까지 그대로 두기",
+        "text_en": "Leave it until the skin is crisp",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "껍질 노릇한 갈색, 옆면 ⅔가 하얗게 익음",
-          "say": "옆면이 ⅔ 익었어요. 뒤집어요."
+          "cue_en": "Skin golden brown, ⅔ of the side turns white",
+          "say": "옆면이 ⅔ 익었어요. 뒤집어요.",
+          "say_en": "⅔ of the side is cooked. Flip."
         }
       },
       {
         "n": 3,
         "text": "뒤집고 뚜껑 덮어 3분",
+        "text_en": "Flip, cover, cook 3 min",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "두꺼운 부분 투명한 육즙, 분홍색 없음",
-          "say": "속까지 익었어요."
+          "cue_en": "Clear juices at the thickest part, no pink",
+          "say": "속까지 익었어요.",
+          "say_en": "Cooked through."
         }
       },
       {
         "n": 4,
         "text": "(선택) 소스 붓고 졸이기",
+        "text_en": "(Optional) Add the sauce and reduce",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "소스가 끈적, 거품이 커짐",
-          "say": "소스가 졸았어요. 불 꺼요."
+          "cue_en": "Sauce turns sticky, bubbles get bigger",
+          "say": "소스가 졸았어요. 불 꺼요.",
+          "say_en": "The sauce has reduced. Turn it off."
         }
       }
     ],
@@ -2462,6 +3253,10 @@
     "learn_points": [
       "닭 껍질은 처음부터 끝까지 한 번만 뒤집는다",
       "옆면이 ⅔ 하얘지면 뒤집을 때"
+    ],
+    "learn_points_en": [
+      "Flip chicken thighs only once, start to finish",
+      "Flip when ⅔ of the side has turned white"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1583579366395-c0a857d2182a?w=1080&q=80&fm=jpg&fit=crop",
@@ -2476,66 +3271,92 @@
   {
     "id": "pan_dumpling",
     "name": "군만두",
+    "name_en": "Pan-fried Dumplings",
     "minutes": 10,
     "burners": 1,
     "level": 1,
     "method": [
       "굽기"
     ],
+    "method_en": [
+      "pan-fry"
+    ],
     "tools": [
       "프라이팬",
       "뚜껑"
+    ],
+    "tools_en": [
+      "Frying pan",
+      "Lid"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "frozen_dumpling",
         "amount": "6~8개",
-        "optional": false
+        "optional": false,
+        "label_en": "6–8 dumplings"
       },
       {
         "id": "cooking_oil",
         "amount": "2숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "2 tbsp cooking oil"
       },
       {
         "id": "water",
         "amount": "3숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "3 tbsp water"
       }
     ],
     "prep": [
       "만두 해동하지 않고 그대로"
     ],
+    "prep_en": [
+      "Use the dumplings straight from frozen"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "기름 두르고 만두 바닥면 굽기",
+        "text_en": "Oil the pan, brown the bottoms",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "바닥이 노릇한 갈색",
-          "say": "바닥이 노릇해요. 물 부어요."
+          "cue_en": "Bottoms golden brown",
+          "say": "바닥이 노릇해요. 물 부어요.",
+          "say_en": "Bottoms are golden. Add water."
         }
       },
       {
         "n": 2,
         "text": "물 3숟가락 붓고 바로 뚜껑 덮기",
+        "text_en": "Add 3 tbsp water and cover right away",
         "sous_chef": {
           "type": "boil",
           "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it boils over",
           "cue": "치익 소리, 김이 가득",
-          "say": "약불로 줄이고 그대로 둬요."
+          "cue_en": "Hissing, pan fills with steam",
+          "say": "약불로 줄이고 그대로 둬요.",
+          "say_en": "Turn it down to low and leave it."
         }
       },
       {
         "n": 3,
         "text": "물이 다 날아가면 뚜껑 열어 바삭하게",
+        "text_en": "When the water's gone, uncover and crisp",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "물소리가 기름 지글 소리로 바뀜",
-          "say": "물 소리가 기름 소리로 바뀌었어요. 다 됐어요."
+          "cue_en": "Water sound changes to an oil sizzle",
+          "say": "물 소리가 기름 소리로 바뀌었어요. 다 됐어요.",
+          "say_en": "The water sound turned to sizzling. Done."
         }
       }
     ],
@@ -2547,6 +3368,9 @@
     ],
     "learn_points": [
       "물 소리가 기름 지글 소리로 바뀌면 다 된 것"
+    ],
+    "learn_points_en": [
+      "When the water sound turns into an oil sizzle, it's done"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1638502521795-89107ac5e246?w=1080&q=80&fm=jpg&fit=crop",
@@ -2561,71 +3385,98 @@
   {
     "id": "tonkatsu",
     "name": "돈가스 부침튀김",
+    "name_en": "Pan-fried Tonkatsu",
     "minutes": 15,
     "burners": 1,
     "level": 3,
     "method": [
       "튀기기"
     ],
+    "method_en": [
+      "deep-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "frozen_cutlet",
         "amount": "1장",
-        "optional": false
+        "optional": false,
+        "label_en": "1 cutlet"
       },
       {
         "id": "cooking_oil",
         "amount": "팬 바닥 1cm",
-        "optional": false
+        "optional": false,
+        "label_en": "1 cm oil in the pan"
       },
       {
         "id": "cabbage",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little cabbage"
       }
     ],
     "prep": [
       "양배추 얇게 채썰어 찬물에 담가두기 (선택)",
       "기름 옆에 키친타월 깔아두기"
     ],
+    "prep_en": [
+      "Thinly shred cabbage and soak in cold water (optional)",
+      "Lay paper towels next to the stove"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "팬에 기름 1cm, 중불로 데우기",
+        "text_en": "1 cm oil in the pan, heat on medium",
         "sous_chef": {
           "type": "heat_down",
           "label": "수솊이 불 줄일 때를 알려줄게요",
+          "label_en": "Sous will tell you when to turn down the heat",
           "cue": "빵가루 한 알이 바로 떠오르며 거품",
-          "say": "기름이 준비됐어요. 돈가스 넣고 중약불로 줄여요."
+          "cue_en": "A breadcrumb floats up right away with bubbles",
+          "say": "기름이 준비됐어요. 돈가스 넣고 중약불로 줄여요.",
+          "say_en": "Oil's ready. Add the cutlet and turn it to medium-low."
         }
       },
       {
         "n": 2,
         "text": "돈가스 넣고 한 면 튀기기",
+        "text_en": "Add the cutlet, fry one side",
         "sous_chef": {
           "type": "flip",
           "label": "수솊이 뒤집을 때를 봐줄게요",
+          "label_en": "Sous will tell you when to flip",
           "cue": "가장자리 튀김옷이 황금색",
-          "say": "황금색이에요. 뒤집어요."
+          "cue_en": "Coating edges turn golden",
+          "say": "황금색이에요. 뒤집어요.",
+          "say_en": "It's golden. Flip."
         }
       },
       {
         "n": 3,
         "text": "반대쪽 튀기기",
+        "text_en": "Fry the other side",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "양면 황금 갈색, 거품이 작아지고 소리가 높아짐",
-          "say": "거품이 작아졌어요. 건져요."
+          "cue_en": "Both sides golden brown, bubbles shrink, the sound gets higher",
+          "say": "거품이 작아졌어요. 건져요.",
+          "say_en": "The bubbles got small. Take it out."
         }
       },
       {
         "n": 4,
-        "text": "키친타월에 세워 기름 빼기"
+        "text": "키친타월에 세워 기름 빼기",
+        "text_en": "Stand it on paper towels to drain"
       }
     ],
     "sous_chef_moments": 3,
@@ -2637,6 +3488,10 @@
     "learn_points": [
       "기름 온도는 빵가루를 떨어뜨려 확인한다",
       "거품이 작아지고 소리가 높아지면 다 익은 것"
+    ],
+    "learn_points_en": [
+      "Test oil temperature with a breadcrumb",
+      "Smaller bubbles and a higher sizzle mean it's cooked"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1677743540715-d4fe04852225?w=1080&q=80&fm=jpg&fit=crop",
@@ -2651,74 +3506,101 @@
   {
     "id": "ramen_egg",
     "name": "계란라면",
+    "name_en": "Ramyeon with Egg",
     "minutes": 7,
     "burners": 1,
     "level": 1,
     "method": [
       "끓이기"
     ],
+    "method_en": [
+      "simmer"
+    ],
     "tools": [
       "냄비"
+    ],
+    "tools_en": [
+      "Pot"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "ramen",
         "amount": "1봉",
-        "optional": false
+        "optional": false,
+        "label_en": "1 pack ramyeon"
       },
       {
         "id": "water",
         "amount": "550ml",
-        "optional": false
+        "optional": false,
+        "label_en": "550 ml water"
       },
       {
         "id": "egg",
         "amount": "1개",
-        "optional": true
+        "optional": true,
+        "label_en": "1 egg"
       },
       {
         "id": "green_onion",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A little green onion"
       }
     ],
     "prep": [
       "대파 송송 (선택)"
     ],
+    "prep_en": [
+      "Slice the green onion (optional)"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "물 550ml 끓이기",
+        "text_en": "Bring 550 ml water to a boil",
         "sous_chef": {
           "type": "boil",
           "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it boils over",
           "cue": "큰 기포가 계속 올라옴",
-          "say": "물이 끓어요. 면이랑 수프 넣어요."
+          "cue_en": "Big bubbles keep rising",
+          "say": "물이 끓어요. 면이랑 수프 넣어요.",
+          "say_en": "Water's boiling. Add the noodles and soup base."
         }
       },
       {
         "n": 2,
         "text": "면·수프 넣고 2분",
+        "text_en": "Add noodles and soup base, 2 min",
         "sous_chef": {
           "type": "boil",
           "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it boils over",
           "cue": "거품이 냄비 가장자리까지 올라옴",
-          "say": "넘치기 직전이에요. 불 살짝 줄여요."
+          "cue_en": "Foam reaches the rim of the pot",
+          "say": "넘치기 직전이에요. 불 살짝 줄여요.",
+          "say_en": "About to boil over. Turn it down a bit."
         }
       },
       {
         "n": 3,
-        "text": "계란 넣고 젓지 않기"
+        "text": "계란 넣고 젓지 않기",
+        "text_en": "Add the egg, don't stir"
       },
       {
         "n": 4,
         "text": "총 4분에 불 끄기",
+        "text_en": "Turn off at 4 min total",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "면이 풀리고 국물이 탁해짐",
-          "say": "4분 됐어요. 꼬들면 지금이에요."
+          "cue_en": "Noodles loosen, broth turns cloudy",
+          "say": "4분 됐어요. 꼬들면 지금이에요.",
+          "say_en": "That's 4 minutes. For chewy noodles, now."
         }
       }
     ],
@@ -2729,6 +3611,9 @@
     ],
     "learn_points": [
       "계란을 넣고 젓지 않으면 국물이 맑다"
+    ],
+    "learn_points_en": [
+      "Don't stir after adding the egg and the broth stays clear"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1644082653870-3eaacc76c5c2?w=1080&q=80&fm=jpg&fit=crop",
@@ -2743,6 +3628,7 @@
   {
     "id": "kimchi_stew",
     "name": "김치찌개",
+    "name_en": "Kimchi Stew",
     "minutes": 25,
     "burners": 1,
     "level": 2,
@@ -2750,55 +3636,71 @@
       "볶기",
       "끓이기"
     ],
+    "method_en": [
+      "stir-fry",
+      "simmer"
+    ],
     "tools": [
       "냄비"
+    ],
+    "tools_en": [
+      "Pot"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "kimchi",
         "amount": "한 컵",
-        "optional": false
+        "optional": false,
+        "label_en": "1 cup kimchi"
       },
       {
         "id": "pork_jeyuk",
         "amount": "100g",
-        "optional": true
+        "optional": true,
+        "label_en": "100 g pork"
       },
       {
         "id": "tuna_can",
         "amount": "½캔",
-        "optional": true
+        "optional": true,
+        "label_en": "½ can tuna"
       },
       {
         "id": "tofu",
         "amount": "⅓모",
-        "optional": false
+        "optional": false,
+        "label_en": "⅓ block tofu"
       },
       {
         "id": "green_onion",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A little green onion"
       },
       {
         "id": "gochugaru",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp chili flakes"
       },
       {
         "id": "sugar",
         "amount": "⅓숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "⅓ tbsp sugar"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       },
       {
         "id": "water",
         "amount": "300ml",
-        "optional": false
+        "optional": false,
+        "label_en": "300 ml water"
       }
     ],
     "prep": [
@@ -2807,39 +3709,58 @@
       "대파 어슷썰기",
       "고기 또는 참치 중 하나 준비"
     ],
+    "prep_en": [
+      "Cut the kimchi into bite-size pieces",
+      "Cube the tofu",
+      "Slice the green onion diagonally",
+      "Use either pork or tuna"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "냄비에 기름, 고기와 김치 볶기",
+        "text_en": "Oil the pot, stir-fry the pork and kimchi",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "김치가 투명, 고기 겉이 하얗게",
-          "say": "김치가 투명해졌어요. 물 부어요."
+          "cue_en": "Kimchi translucent, pork white outside",
+          "say": "김치가 투명해졌어요. 물 부어요.",
+          "say_en": "Kimchi's translucent. Add the water."
         }
       },
       {
         "n": 2,
         "text": "물 300ml, 고춧가루·설탕 넣고 끓이기",
+        "text_en": "Add 300 ml water, chili flakes and sugar, bring to a boil",
         "sous_chef": {
           "type": "boil",
           "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it boils over",
           "cue": "거품이 가장자리까지",
-          "say": "끓어 넘치기 전에 중약불로 줄여요."
+          "cue_en": "Foam reaches the edge",
+          "say": "끓어 넘치기 전에 중약불로 줄여요.",
+          "say_en": "Turn it to medium-low before it boils over."
         }
       },
       {
         "n": 3,
-        "text": "중약불로 10분 끓이기"
+        "text": "중약불로 10분 끓이기",
+        "text_en": "Simmer 10 min on medium-low"
       },
       {
         "n": 4,
         "text": "두부·대파 넣고 3분 더",
+        "text_en": "Add tofu and green onion, 3 more min",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "두부가 국물 색으로 물듦",
-          "say": "다 됐어요."
+          "cue_en": "Tofu takes on the broth's color",
+          "say": "다 됐어요.",
+          "say_en": "Done."
         }
       }
     ],
@@ -2852,6 +3773,10 @@
     "learn_points": [
       "김치를 먼저 볶으면 국물이 진해진다",
       "찌개는 끓어오르면 중약불로 오래"
+    ],
+    "learn_points_en": [
+      "Fry the kimchi first for a deeper broth",
+      "Stew: once it boils, simmer long on medium-low"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1777113310299-c3e41dec4e0f?w=1080&q=80&fm=jpg&fit=crop",
@@ -2866,85 +3791,113 @@
   {
     "id": "doenjang_stew",
     "name": "된장찌개",
+    "name_en": "Doenjang Stew",
     "minutes": 20,
     "burners": 1,
     "level": 1,
     "method": [
       "끓이기"
     ],
+    "method_en": [
+      "simmer"
+    ],
     "tools": [
       "냄비"
+    ],
+    "tools_en": [
+      "Pot"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "doenjang",
         "amount": "1.5숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1.5 tbsp doenjang"
       },
       {
         "id": "tofu",
         "amount": "⅓모",
-        "optional": false
+        "optional": false,
+        "label_en": "⅓ block tofu"
       },
       {
         "id": "zucchini",
         "amount": "¼개",
-        "optional": false
+        "optional": false,
+        "label_en": "¼ zucchini"
       },
       {
         "id": "onion",
         "amount": "¼개",
-        "optional": false
+        "optional": false,
+        "label_en": "¼ onion"
       },
       {
         "id": "potato",
         "amount": "½개",
-        "optional": true
+        "optional": true,
+        "label_en": "½ potato"
       },
       {
         "id": "chili",
         "amount": "½개",
-        "optional": true
+        "optional": true,
+        "label_en": "½ chili pepper"
       },
       {
         "id": "garlic",
         "amount": "1쪽",
-        "optional": false
+        "optional": false,
+        "label_en": "1 garlic clove"
       },
       {
         "id": "water",
         "amount": "300ml",
-        "optional": false
+        "optional": false,
+        "label_en": "300 ml water"
       }
     ],
     "prep": [
       "감자·애호박·양파·두부 깍둑썰기",
       "마늘 다지기, 고추 송송"
     ],
+    "prep_en": [
+      "Cube the potato, zucchini, onion and tofu",
+      "Mince the garlic, slice the chili"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "물 300ml에 된장 풀고 감자 넣어 끓이기",
+        "text_en": "Dissolve doenjang in 300 ml water, add potato, boil",
         "sous_chef": {
           "type": "boil",
           "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it boils over",
           "cue": "거품이 가장자리까지 올라옴",
-          "say": "넘치기 전이에요. 중불로 줄여요."
+          "cue_en": "Foam rises to the edge",
+          "say": "넘치기 전이에요. 중불로 줄여요.",
+          "say_en": "Before it boils over — turn it down to medium."
         }
       },
       {
         "n": 2,
-        "text": "애호박·양파·마늘 넣고 5분"
+        "text": "애호박·양파·마늘 넣고 5분",
+        "text_en": "Add zucchini, onion and garlic, 5 min"
       },
       {
         "n": 3,
         "text": "두부·고추 넣고 3분",
+        "text_en": "Add tofu and chili, 3 min",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "애호박이 반투명, 감자가 젓가락에 쑥",
-          "say": "다 됐어요."
+          "cue_en": "Zucchini translucent, a chopstick slides into the potato",
+          "say": "다 됐어요.",
+          "say_en": "Done."
         }
       }
     ],
@@ -2955,6 +3908,9 @@
     ],
     "learn_points": [
       "단단한 재료(감자)부터 넣는다"
+    ],
+    "learn_points_en": [
+      "Add the firmest ingredients (potato) first"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1746718547557-1a0e05bed94b?w=1080&q=80&fm=jpg&fit=crop",
@@ -2969,61 +3925,77 @@
   {
     "id": "tteokbokki",
     "name": "떡볶이",
+    "name_en": "Tteokbokki",
     "minutes": 20,
     "burners": 1,
     "level": 2,
     "method": [
       "졸이기"
     ],
+    "method_en": [
+      "braise"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "tteok",
         "amount": "한 줌(150g)",
-        "optional": false
+        "optional": false,
+        "label_en": "A handful of rice cakes (150 g)"
       },
       {
         "id": "fish_cake",
         "amount": "1장",
-        "optional": true
+        "optional": true,
+        "label_en": "1 sheet fish cake"
       },
       {
         "id": "green_onion",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A little green onion"
       },
       {
         "id": "gochujang",
         "amount": "1.5숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1.5 tbsp gochujang"
       },
       {
         "id": "gochugaru",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp chili flakes"
       },
       {
         "id": "sugar",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp sugar"
       },
       {
         "id": "soy_sauce",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp soy sauce"
       },
       {
         "id": "water",
         "amount": "250ml",
-        "optional": false
+        "optional": false,
+        "label_en": "250 ml water"
       },
       {
         "id": "egg",
         "amount": "1개(삶은 것)",
-        "optional": true
+        "optional": true,
+        "label_en": "1 boiled egg"
       }
     ],
     "prep": [
@@ -3031,35 +4003,52 @@
       "어묵 세모로 썰기, 대파 어슷썰기",
       "고추장·고춧가루·설탕·간장 섞기"
     ],
+    "prep_en": [
+      "Soak hardened rice cakes in water for 10 min",
+      "Cut fish cake into triangles, green onion diagonally",
+      "Mix gochujang, chili flakes, sugar and soy sauce"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "물 250ml에 양념 풀고 끓이기",
+        "text_en": "Dissolve the sauce in 250 ml water, bring to a boil",
         "sous_chef": {
           "type": "boil",
           "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it boils over",
           "cue": "양념 거품이 바글바글",
-          "say": "끓었어요. 떡 넣어요."
+          "cue_en": "Sauce bubbling hard",
+          "say": "끓었어요. 떡 넣어요.",
+          "say_en": "It's boiling. Add the rice cakes."
         }
       },
       {
         "n": 2,
         "text": "떡·어묵 넣고 중불로 졸이기",
+        "text_en": "Add rice cakes and fish cake, reduce on medium",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "국물이 걸쭉, 떡이 바닥에 붙기 시작",
-          "say": "바닥에 붙어요. 한 번 저어요."
+          "cue_en": "Sauce thickens, rice cakes start sticking to the bottom",
+          "say": "바닥에 붙어요. 한 번 저어요.",
+          "say_en": "It's sticking. Stir once."
         }
       },
       {
         "n": 3,
         "text": "국물이 반으로 줄면 대파 넣기",
+        "text_en": "When the sauce is halved, add the green onion",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "국물이 떡에 코팅될 만큼 걸쭉",
-          "say": "이 정도면 됐어요. 불 꺼요."
+          "cue_en": "Thick enough to coat the rice cakes",
+          "say": "이 정도면 됐어요. 불 꺼요.",
+          "say_en": "That's it. Turn it off."
         }
       }
     ],
@@ -3071,6 +4060,9 @@
     ],
     "learn_points": [
       "졸이는 요리는 국물이 걸쭉해지면 바닥을 자주 저어야 한다"
+    ],
+    "learn_points_en": [
+      "Once a braise thickens, stir the bottom often"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1635363638580-c2809d049eee?w=1080&q=80&fm=jpg&fit=crop",
@@ -3085,46 +4077,59 @@
   {
     "id": "fishcake_stirfry",
     "name": "어묵볶음",
+    "name_en": "Fish Cake Stir-fry",
     "minutes": 10,
     "burners": 1,
     "level": 1,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "fish_cake",
         "amount": "2장",
-        "optional": false
+        "optional": false,
+        "label_en": "2 sheets fish cake"
       },
       {
         "id": "onion",
         "amount": "¼개",
-        "optional": true
+        "optional": true,
+        "label_en": "¼ onion"
       },
       {
         "id": "soy_sauce",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp soy sauce"
       },
       {
         "id": "sugar",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp sugar"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       },
       {
         "id": "sesame_oil",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A drizzle of sesame oil"
       }
     ],
     "prep": [
@@ -3132,30 +4137,44 @@
       "양파 채썰기",
       "간장1 + 설탕½ + 물2 섞기"
     ],
+    "prep_en": [
+      "Cut the fish cake into strips",
+      "Slice the onion",
+      "Mix soy sauce 1 + sugar ½ + water 2"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "기름 두르고 어묵·양파 볶기",
+        "text_en": "Oil the pan, stir-fry fish cake and onion",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "어묵 가장자리가 살짝 노릇",
-          "say": "노릇해졌어요. 양념 넣어요."
+          "cue_en": "Fish cake edges lightly golden",
+          "say": "노릇해졌어요. 양념 넣어요.",
+          "say_en": "Lightly golden. Add the sauce."
         }
       },
       {
         "n": 2,
         "text": "양념 넣고 졸이기",
+        "text_en": "Add the sauce and reduce",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "양념이 거의 없어지고 바닥에 붙기 시작",
-          "say": "양념이 다 졸았어요. 불 꺼요."
+          "cue_en": "Sauce almost gone, starting to stick",
+          "say": "양념이 다 졸았어요. 불 꺼요.",
+          "say_en": "The sauce is reduced. Turn it off."
         }
       },
       {
         "n": 3,
-        "text": "참기름 둘러 마무리"
+        "text": "참기름 둘러 마무리",
+        "text_en": "Finish with sesame oil"
       }
     ],
     "sous_chef_moments": 2,
@@ -3165,6 +4184,9 @@
     ],
     "learn_points": [
       "밑반찬 볶음은 양념이 졸아들면 바로 불을 끈다"
+    ],
+    "learn_points_en": [
+      "Turn off side-dish stir-fries as soon as the sauce reduces"
     ],
     "photo": {
       "url": "images/fishcake_stirfry.jpg",
@@ -3179,82 +4201,112 @@
   {
     "id": "potato_braise",
     "name": "감자조림",
+    "name_en": "Braised Potatoes",
     "minutes": 25,
     "burners": 1,
     "level": 2,
     "method": [
       "졸이기"
     ],
+    "method_en": [
+      "braise"
+    ],
     "tools": [
       "프라이팬",
       "뚜껑"
+    ],
+    "tools_en": [
+      "Frying pan",
+      "Lid"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "potato",
         "amount": "2개",
-        "optional": false
+        "optional": false,
+        "label_en": "2 potatoes"
       },
       {
         "id": "soy_sauce",
         "amount": "2숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "2 tbsp soy sauce"
       },
       {
         "id": "sugar",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp sugar"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       },
       {
         "id": "water",
         "amount": "150ml",
-        "optional": false
+        "optional": false,
+        "label_en": "150 ml water"
       },
       {
         "id": "sesame_oil",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A drizzle of sesame oil"
       }
     ],
     "prep": [
       "감자 깍둑썰기 후 찬물에 5분 담가 전분 빼기",
       "간장2 + 설탕1 + 물150ml 섞기"
     ],
+    "prep_en": [
+      "Cube the potatoes, soak in cold water 5 min to remove starch",
+      "Mix soy sauce 2 + sugar 1 + water 150 ml"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "기름에 감자 겉만 볶기",
+        "text_en": "Sear the potatoes in oil",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "감자 겉면이 반투명",
-          "say": "겉이 반투명해요. 양념 부어요."
+          "cue_en": "Potato surface turns translucent",
+          "say": "겉이 반투명해요. 양념 부어요.",
+          "say_en": "The outside is translucent. Pour in the sauce."
         }
       },
       {
         "n": 2,
         "text": "양념 붓고 뚜껑 덮어 중약불 10분",
+        "text_en": "Pour in the sauce, cover, 10 min on medium-low",
         "sous_chef": {
           "type": "boil",
           "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it boils over",
           "cue": "거품이 뚜껑 밖으로 넘치려 함",
-          "say": "넘치려 해요. 뚜껑 살짝 열어요."
+          "cue_en": "Foam pushes out from under the lid",
+          "say": "넘치려 해요. 뚜껑 살짝 열어요.",
+          "say_en": "It's about to overflow. Crack the lid."
         }
       },
       {
         "n": 3,
         "text": "뚜껑 열고 국물 졸이기",
+        "text_en": "Uncover and reduce the sauce",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "국물이 거의 없어지고 바닥에서 타닥",
-          "say": "타기 직전이에요. 불 꺼요."
+          "cue_en": "Sauce almost gone, crackling from the bottom",
+          "say": "타기 직전이에요. 불 꺼요.",
+          "say_en": "About to burn. Turn it off."
         }
       }
     ],
@@ -3266,6 +4318,9 @@
     ],
     "learn_points": [
       "조림은 마지막에 뚜껑을 열어 국물을 날린다"
+    ],
+    "learn_points_en": [
+      "Uncover at the end of a braise to cook off the sauce"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1730793680129-300f76284e20?w=1080&q=80&fm=jpg&fit=crop",
@@ -3280,6 +4335,7 @@
   {
     "id": "aglio_olio",
     "name": "알리오올리오",
+    "name_en": "Aglio e Olio",
     "minutes": 20,
     "burners": 1,
     "level": 2,
@@ -3287,80 +4343,111 @@
       "끓이기",
       "볶기"
     ],
+    "method_en": [
+      "simmer",
+      "stir-fry"
+    ],
     "tools": [
       "냄비",
       "프라이팬"
+    ],
+    "tools_en": [
+      "Pot",
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "pasta",
         "amount": "1인분(100g)",
-        "optional": false
+        "optional": false,
+        "label_en": "1 serving pasta (100 g)"
       },
       {
         "id": "garlic",
         "amount": "5쪽",
-        "optional": false
+        "optional": false,
+        "label_en": "5 garlic cloves"
       },
       {
         "id": "olive_oil",
         "amount": "4숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "4 tbsp olive oil"
       },
       {
         "id": "chili",
         "amount": "1개",
-        "optional": true
+        "optional": true,
+        "label_en": "1 chili pepper"
       },
       {
         "id": "salt",
         "amount": "1숟가락(면물)",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp salt (for the water)"
       },
       {
         "id": "pepper",
         "amount": "약간",
-        "optional": true
+        "optional": true,
+        "label_en": "A pinch of pepper"
       }
     ],
     "prep": [
       "마늘 편 썰기, 고추 송송",
       "1구라면 면 먼저 삶아 면물 한 컵 남기고 건지기"
     ],
+    "prep_en": [
+      "Slice the garlic and chili",
+      "With 1 burner: cook the pasta first, save a cup of pasta water, drain"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "물 1L에 소금 넣고 면 삶기 (봉지 시간 -1분)",
+        "text_en": "Salt 1 L water, cook pasta (package time −1 min)",
         "sous_chef": {
           "type": "boil",
           "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it boils over",
           "cue": "거품이 냄비 위로 차오름",
-          "say": "넘쳐요. 불 조금 줄여요."
+          "cue_en": "Foam rises over the pot",
+          "say": "넘쳐요. 불 조금 줄여요.",
+          "say_en": "Boiling over. Turn it down a little."
         }
       },
       {
         "n": 2,
-        "text": "면물 한 컵 떠두고 면 건지기"
+        "text": "면물 한 컵 떠두고 면 건지기",
+        "text_en": "Save a cup of pasta water, drain"
       },
       {
         "n": 3,
         "text": "팬에 올리브유와 마늘 넣고 약불로 켜기",
+        "text_en": "Olive oil and garlic in the pan, then turn on low",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "마늘이 연한 금색, 기포가 작아짐",
-          "say": "연한 금색이에요. 고추 넣고 바로 면물 부어요."
+          "cue_en": "Garlic pale gold, bubbles get smaller",
+          "say": "연한 금색이에요. 고추 넣고 바로 면물 부어요.",
+          "say_en": "Pale gold. Add the chili, then the pasta water right away."
         }
       },
       {
         "n": 4,
         "text": "면물 ½컵과 면 넣고 흔들며 섞기",
+        "text_en": "Add ½ cup pasta water and the pasta, shake to mix",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "소스가 하얗고 걸쭉하게 면에 붙음",
-          "say": "소스가 면에 붙었어요. 다 됐어요."
+          "cue_en": "Sauce turns milky and clings to the pasta",
+          "say": "소스가 면에 붙었어요. 다 됐어요.",
+          "say_en": "The sauce is clinging. Done."
         }
       }
     ],
@@ -3373,6 +4460,10 @@
     "learn_points": [
       "면물의 전분이 기름과 섞여야 소스가 된다",
       "마늘은 연한 금색에서 멈춘다"
+    ],
+    "learn_points_en": [
+      "Starch in the pasta water turns the oil into a sauce",
+      "Stop the garlic at pale gold"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1693820206774-d4a769355142?w=1080&q=80&fm=jpg&fit=crop",
@@ -3387,6 +4478,7 @@
   {
     "id": "cream_pasta",
     "name": "우유 크림파스타",
+    "name_en": "Milk Cream Pasta",
     "minutes": 20,
     "burners": 1,
     "level": 2,
@@ -3394,91 +4486,124 @@
       "끓이기",
       "졸이기"
     ],
+    "method_en": [
+      "simmer",
+      "braise"
+    ],
     "tools": [
       "냄비",
       "프라이팬"
+    ],
+    "tools_en": [
+      "Pot",
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "pasta",
         "amount": "1인분(100g)",
-        "optional": false
+        "optional": false,
+        "label_en": "1 serving pasta (100 g)"
       },
       {
         "id": "milk",
         "amount": "250ml",
-        "optional": false
+        "optional": false,
+        "label_en": "250 ml milk"
       },
       {
         "id": "bacon",
         "amount": "2줄",
-        "optional": true
+        "optional": true,
+        "label_en": "2 strips bacon"
       },
       {
         "id": "onion",
         "amount": "¼개",
-        "optional": false
+        "optional": false,
+        "label_en": "¼ onion"
       },
       {
         "id": "cheese_slice",
         "amount": "1장",
-        "optional": false
+        "optional": false,
+        "label_en": "1 slice cheese"
       },
       {
         "id": "butter",
         "amount": "1조각",
-        "optional": false
+        "optional": false,
+        "label_en": "1 pat butter"
       },
       {
         "id": "salt",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of salt"
       },
       {
         "id": "pepper",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of pepper"
       }
     ],
     "prep": [
       "양파 채썰기, 베이컨 썰기",
       "면은 봉지 시간보다 2분 덜 삶아 건지기"
     ],
+    "prep_en": [
+      "Slice the onion, chop the bacon",
+      "Cook pasta 2 min less than the package says, drain"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "버터에 베이컨·양파 볶기",
+        "text_en": "Stir-fry bacon and onion in butter",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "베이컨 가장자리가 바삭, 양파 투명",
-          "say": "좋아요. 우유 부어요."
+          "cue_en": "Bacon edges crisp, onion translucent",
+          "say": "좋아요. 우유 부어요.",
+          "say_en": "Good. Pour in the milk."
         }
       },
       {
         "n": 2,
         "text": "우유 붓고 데우기",
+        "text_en": "Pour in the milk and warm it",
         "sous_chef": {
           "type": "boil",
           "label": "수솊이 끓어 넘치기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it boils over",
           "cue": "가장자리에 작은 거품이 둘러짐",
-          "say": "우유는 확 넘쳐요. 약불로 줄여요."
+          "cue_en": "Small bubbles ring the edge",
+          "say": "우유는 확 넘쳐요. 약불로 줄여요.",
+          "say_en": "Milk boils over fast. Turn it to low."
         }
       },
       {
         "n": 3,
         "text": "면·치즈 넣고 졸이기",
+        "text_en": "Add pasta and cheese, reduce",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "소스가 숟가락 뒷면에 묻을 만큼 걸쭉",
-          "say": "이 농도면 됐어요. 불 꺼요."
+          "cue_en": "Sauce coats the back of a spoon",
+          "say": "이 농도면 됐어요. 불 꺼요.",
+          "say_en": "That's thick enough. Turn it off."
         }
       },
       {
         "n": 4,
-        "text": "소금·후추로 간하기"
+        "text": "소금·후추로 간하기",
+        "text_en": "Season with salt and pepper"
       }
     ],
     "sous_chef_moments": 3,
@@ -3490,6 +4615,10 @@
     "learn_points": [
       "우유는 가장자리 거품이 보이면 약불 (확 넘친다)",
       "소스는 식으면서 더 걸쭉해진다"
+    ],
+    "learn_points_en": [
+      "Milk: turn to low when bubbles ring the edge — it boils over suddenly",
+      "The sauce thickens more as it cools"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1608756687911-aa1599ab3bd9?w=1080&q=80&fm=jpg&fit=crop",
@@ -3504,56 +4633,71 @@
   {
     "id": "udon_stirfry",
     "name": "볶음우동",
+    "name_en": "Stir-fried Udon",
     "minutes": 15,
     "burners": 1,
     "level": 2,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": false,
     "ingredients": [
       {
         "id": "udon",
         "amount": "1봉",
-        "optional": false
+        "optional": false,
+        "label_en": "1 pack udon"
       },
       {
         "id": "cabbage",
         "amount": "한 줌",
-        "optional": false
+        "optional": false,
+        "label_en": "A handful of cabbage"
       },
       {
         "id": "onion",
         "amount": "¼개",
-        "optional": false
+        "optional": false,
+        "label_en": "¼ onion"
       },
       {
         "id": "pork_belly_thin",
         "amount": "80g",
-        "optional": true
+        "optional": true,
+        "label_en": "80 g pork belly"
       },
       {
         "id": "soy_sauce",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp soy sauce"
       },
       {
         "id": "oyster_sauce",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp oyster sauce"
       },
       {
         "id": "sugar",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp sugar"
       },
       {
         "id": "cooking_oil",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp cooking oil"
       }
     ],
     "prep": [
@@ -3561,35 +4705,52 @@
       "양배추·양파 채썰기",
       "간장1 + 굴소스1 + 설탕½ 섞기"
     ],
+    "prep_en": [
+      "Loosen the udon in hot water for 30 sec, drain",
+      "Slice the cabbage and onion",
+      "Mix soy sauce 1 + oyster sauce 1 + sugar ½"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "고기와 채소 센불에 볶기",
+        "text_en": "Stir-fry the meat and vegetables on high heat",
         "sous_chef": {
           "type": "color",
           "label": "수솊이 색을 봐줄게요",
+          "label_en": "Sous will watch the color",
           "cue": "양배추 숨이 반쯤 죽고 가장자리 갈색",
-          "say": "채소 반쯤 익었어요. 면 넣어요."
+          "cue_en": "Cabbage half wilted, edges brown",
+          "say": "채소 반쯤 익었어요. 면 넣어요.",
+          "say_en": "Veggies are half done. Add the noodles."
         }
       },
       {
         "n": 2,
         "text": "면과 소스 넣고 빠르게 섞기",
+        "text_en": "Add noodles and sauce, toss quickly",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "면이 팬에 붙고 소스가 눌기 시작",
-          "say": "붙기 시작해요. 계속 들어서 섞어요."
+          "cue_en": "Noodles cling to the pan, sauce starts sticking",
+          "say": "붙기 시작해요. 계속 들어서 섞어요.",
+          "say_en": "It's sticking. Keep lifting and tossing."
         }
       },
       {
         "n": 3,
         "text": "소스가 면에 다 배면 불 끄기",
+        "text_en": "Turn off once the noodles soak up the sauce",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "팬 바닥에 국물이 안 보임",
-          "say": "다 됐어요."
+          "cue_en": "No liquid left on the pan",
+          "say": "다 됐어요.",
+          "say_en": "Done."
         }
       }
     ],
@@ -3601,6 +4762,9 @@
     ],
     "learn_points": [
       "볶음면은 면을 미리 풀어둬야 팬에서 안 끊긴다"
+    ],
+    "learn_points_en": [
+      "Loosen the noodles first so they don't break in the pan"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1694934588452-a1a02b2ec718?w=1080&q=80&fm=jpg&fit=crop",
@@ -3615,81 +4779,108 @@
   {
     "id": "tuna_mayo_bowl",
     "name": "참치마요덮밥",
+    "name_en": "Tuna Mayo Rice Bowl",
     "minutes": 10,
     "burners": 1,
     "level": 1,
     "method": [
       "볶기"
     ],
+    "method_en": [
+      "stir-fry"
+    ],
     "tools": [
       "프라이팬"
+    ],
+    "tools_en": [
+      "Frying pan"
     ],
     "uses_leftover": true,
     "ingredients": [
       {
         "id": "rice",
         "amount": "1공기",
-        "optional": false
+        "optional": false,
+        "label_en": "1 bowl rice"
       },
       {
         "id": "tuna_can",
         "amount": "½캔",
-        "optional": false
+        "optional": false,
+        "label_en": "½ can tuna"
       },
       {
         "id": "egg",
         "amount": "1개",
-        "optional": false
+        "optional": false,
+        "label_en": "1 egg"
       },
       {
         "id": "mayo",
         "amount": "1숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "1 tbsp mayo"
       },
       {
         "id": "soy_sauce",
         "amount": "½숟가락",
-        "optional": false
+        "optional": false,
+        "label_en": "½ tbsp soy sauce"
       },
       {
         "id": "sugar",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A pinch of sugar"
       },
       {
         "id": "cooking_oil",
         "amount": "약간",
-        "optional": false
+        "optional": false,
+        "label_en": "A little cooking oil"
       }
     ],
     "prep": [
       "참치 기름 빼기",
       "간장½ + 설탕 약간 섞기"
     ],
+    "prep_en": [
+      "Drain the tuna",
+      "Mix ½ tbsp soy sauce + a pinch of sugar"
+    ],
     "steps": [
       {
         "n": 1,
         "text": "계란 스크램블 해서 덜기",
+        "text_en": "Scramble the egg and set aside",
         "sous_chef": {
           "type": "done",
           "label": "수솊이 다 됐을 때 알려줄게요",
+          "label_en": "Sous will tell you when it's done",
           "cue": "몽글하고 촉촉",
-          "say": "덜어둬요."
+          "cue_en": "Soft curds, still moist",
+          "say": "덜어둬요.",
+          "say_en": "Set them aside."
         }
       },
       {
         "n": 2,
         "text": "같은 팬에 참치·간장 소스 넣고 30초 볶기",
+        "text_en": "In the same pan, stir-fry tuna with the soy sauce for 30 sec",
         "sous_chef": {
           "type": "stick",
           "label": "수솊이 눌어붙기 전에 알려줄게요",
+          "label_en": "Sous will warn you before it sticks",
           "cue": "간장이 바닥에 눌기 시작",
-          "say": "눌기 직전이에요. 불 꺼요."
+          "cue_en": "Soy sauce starts sticking",
+          "say": "눌기 직전이에요. 불 꺼요.",
+          "say_en": "About to stick. Turn it off."
         }
       },
       {
         "n": 3,
-        "text": "밥 위에 계란·참치·마요 올리기"
+        "text": "밥 위에 계란·참치·마요 올리기",
+        "text_en": "Top the rice with egg, tuna and mayo"
       }
     ],
     "sous_chef_moments": 2,
@@ -3699,6 +4890,9 @@
     ],
     "learn_points": [
       "간장은 바닥에 닿으면 금방 눌어서 짧게 볶는다"
+    ],
+    "learn_points_en": [
+      "Soy sauce sticks fast once it hits the pan, so keep it short"
     ],
     "photo": {
       "url": "https://images.unsplash.com/photo-1608039733145-603c07cad096?w=1080&q=80&fm=jpg&fit=crop",

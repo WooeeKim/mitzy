@@ -3,6 +3,7 @@ import csv, json, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from ingredients_src import INGREDIENTS, CATEGORIES
 from recipes_src import RECIPES, MOMENT_TYPES
+from en_src import (EN_ING, EN_REC, CATEGORIES_EN, METHODS_EN, TOOLS_EN, MOMENT_TYPES_EN, LEVELS_EN, CHIPS_EN)
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 OUT = os.path.join(ROOT, "data")
@@ -43,10 +44,13 @@ for (iid, name, cat, days, storage, pantry, q, note) in INGREDIENTS:
     assert cat in CATEGORIES, (iid, cat)
     assert iid not in ING_IDS, iid
     ING_IDS.add(iid)
+    name_en, storage_en, note_en = EN_ING[iid]
+    assert (note is None) == (note_en is None), ("note 영어 짝 없음", iid)
     ingredients.append({
-        "id": iid, "name": name, "category": cat,
-        "shelf_days": days, "storage": storage, "is_pantry": pantry,
-        "note": note, "photo": photo("ing:" + iid),
+        "id": iid, "name": name, "name_en": name_en,
+        "category": cat, "category_en": CATEGORIES_EN[cat],
+        "shelf_days": days, "storage": storage, "storage_en": storage_en, "is_pantry": pantry,
+        "note": note, "note_en": note_en, "photo": photo("ing:" + iid),
     })
 # 물은 레시피에만 쓰고 냉장고에는 안 보임
 ING_IDS.add("water")
@@ -58,18 +62,33 @@ for r in RECIPES:
     for (iid, amt, opt) in r["ingredients"]:
         if iid not in ING_IDS:
             problems.append(f"{r['id']}: 모르는 재료 {iid}")
+    en = EN_REC[r["id"]]
+    for k, ek in [("ingredients", "ing"), ("prep", "prep"), ("steps", "steps"), ("learn", "learn")]:
+        if len(r[k]) != len(en[ek]):
+            problems.append(f"{r['id']}: {k} 한국어 {len(r[k])}개 / 영어 {len(en[ek])}개")
     steps = []
-    for i, s in enumerate(r["steps"], 1):
-        steps.append({"n": i, **s})
+    for i, (s, es) in enumerate(zip(r["steps"], en["steps"]), 1):
+        st = {"n": i, "text": s["text"], "text_en": es[0]}
+        if "sous_chef" in s:
+            if len(es) != 3:
+                problems.append(f"{r['id']} {i}단계: 영어에 수솊 cue·say 없음"); continue
+            sc = s["sous_chef"]
+            st["sous_chef"] = {"type": sc["type"], "label": sc["label"], "label_en": MOMENT_TYPES_EN[sc["type"]],
+                               "cue": sc["cue"], "cue_en": es[1], "say": sc["say"], "say_en": es[2]}
+        elif len(es) != 1:
+            problems.append(f"{r['id']} {i}단계: 한국어엔 수솊 순간이 없는데 영어엔 있음")
+        steps.append(st)
     moments = [s["sous_chef"]["type"] for s in steps if "sous_chef" in s]
     recipes.append({
-        "id": r["id"], "name": r["name"],
+        "id": r["id"], "name": r["name"], "name_en": en["name"],
         "minutes": r["minutes"], "burners": r["burners"], "level": r["level"],
-        "method": r["method"], "tools": r["tools"], "uses_leftover": r["leftover"],
-        "ingredients": [{"id": i, "amount": a, "optional": o} for (i, a, o) in r["ingredients"]],
-        "prep": r["prep"], "steps": steps,
+        "method": r["method"], "method_en": [METHODS_EN[m][0] for m in r["method"]],
+        "tools": r["tools"], "tools_en": [TOOLS_EN[t] for t in r["tools"]], "uses_leftover": r["leftover"],
+        "ingredients": [{"id": i, "amount": a, "optional": o, "label_en": le}
+                        for (i, a, o), le in zip(r["ingredients"], en["ing"])],
+        "prep": r["prep"], "prep_en": en["prep"], "steps": steps,
         "sous_chef_moments": len(moments), "moment_types": sorted(set(moments)),
-        "learn_points": r["learn"],
+        "learn_points": r["learn"], "learn_points_en": en["learn"],
         "photo": photo("rec:" + r["id"]),
     })
 ids = [r["id"] for r in recipes]
@@ -92,13 +111,18 @@ onboarding = [
     {"chip": "튀김류",         "known_recipes": ["tonkatsu"],                           "skills": ["튀기기"],       "level": 3},
 ]
 for o in onboarding:
+    o["chip_en"] = CHIPS_EN[o["chip"]]
+    o["skills_en"] = [METHODS_EN[k][0] for k in o["skills"]]
     for k in o["known_recipes"]:
         assert k in ids, k
 
 meta = {
-    "moment_types": MOMENT_TYPES,
+    "moment_types": MOMENT_TYPES, "moment_types_en": MOMENT_TYPES_EN,
     "levels": {"1": "한 가지 타이밍만 보면 됨", "2": "순서·타이밍 2~3개", "3": "불 조절·기름·반죽이 까다로움"},
-    "categories": CATEGORIES,
+    "levels_en": LEVELS_EN,
+    "categories": CATEGORIES, "categories_en": [CATEGORIES_EN[c] for c in CATEGORIES],
+    "methods": [{"ko": k, "en": v[0], "en_adj": v[1]} for k, v in METHODS_EN.items()],
+    "tools": [{"ko": k, "en": v} for k, v in TOOLS_EN.items()],
 }
 
 def dump(name, obj):
@@ -114,18 +138,41 @@ def wcsv(name, header, rows):
     with open(os.path.join(OUT, "csv", name), "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f); w.writerow(header); w.writerows(rows)
 
-wcsv("ingredients.csv", ["id","이름","카테고리","보관일수","보관","상비양념","메모","사진","사진 출처"],
-     [[i["id"],i["name"],i["category"],i["shelf_days"] or "",i["storage"],"O" if i["is_pantry"] else "",
+wcsv("ingredients.csv", ["id","이름","name_en","카테고리","보관일수","보관","상비양념","메모","사진","사진 출처"],
+     [[i["id"],i["name"],i["name_en"],i["category"],i["shelf_days"] or "",i["storage"],"O" if i["is_pantry"] else "",
        i["note"] or "", (i["photo"] or {}).get("url",""), (i["photo"] or {}).get("credit","")] for i in ingredients])
 NAME = {i["id"]: i["name"] for i in ingredients}; NAME["water"] = "물"
-wcsv("recipes.csv", ["id","이름","시간(분)","화구","레벨","조리법","도구","남은음식활용","수솊순간","재료","배운점","사진","사진 출처"],
-     [[r["id"],r["name"],r["minutes"],r["burners"],r["level"]," · ".join(r["method"])," · ".join(r["tools"]),
+wcsv("recipes.csv", ["id","이름","name_en","시간(분)","화구","레벨","조리법","도구","남은음식활용","수솊순간","재료","배운점","사진","사진 출처"],
+     [[r["id"],r["name"],r["name_en"],r["minutes"],r["burners"],r["level"]," · ".join(r["method"])," · ".join(r["tools"]),
        "O" if r["uses_leftover"] else "", r["sous_chef_moments"],
        ", ".join(f"{NAME[x['id']]} {x['amount']}"+("(선택)" if x["optional"] else "") for x in r["ingredients"]),
        " / ".join(r["learn_points"]), (r["photo"] or {}).get("url",""), (r["photo"] or {}).get("credit","")] for r in recipes])
-wcsv("recipe_steps.csv", ["레시피","순서","내용","수솊 타입","수솊이 보는 신호","수솊 대사"],
-     [[r["name"],s["n"],s["text"],(s.get("sous_chef") or {}).get("type",""),(s.get("sous_chef") or {}).get("cue",""),
-       (s.get("sous_chef") or {}).get("say","")] for r in recipes for s in r["steps"]])
+wcsv("recipe_steps.csv", ["레시피","순서","내용","text_en","수솊 타입","수솊이 보는 신호","cue_en","수솊 대사","say_en"],
+     [[r["name"],s["n"],s["text"],s["text_en"]]+[(s.get("sous_chef") or {}).get(k,"") for k in ("type","cue","cue_en","say","say_en")]
+      for r in recipes for s in r["steps"]])
 
 with_photo = sum(1 for x in ingredients + recipes if x["photo"])
 print(f"재료 {len(ingredients)}개, 레시피 {len(recipes)}개, 온보딩 칩 {len(onboarding)}개, 사진 {with_photo}/{len(ingredients)+len(recipes)}")
+
+# ── 앱 문구 i18n/ko.json · en.json (i18next 형식) ──
+import re
+from i18n_src import T
+keys = [k for k, _, _ in T]
+assert len(keys) == len(set(keys)), "i18n 키 중복"
+ph = lambda s: sorted(set(re.findall(r"{{(\w+)}}", s)))
+for k, ko, en_ in T:
+    # 날짜처럼 언어마다 다른 값을 쓰는 곳은 예외
+    if ph(ko) != ph(en_) and k != "common.date":
+        print(f"i18n 경고: {k} 자리표시 다름 {ph(ko)} / {ph(en_)}")
+os.makedirs(os.path.join(ROOT, "i18n"), exist_ok=True)
+for lang, col in (("ko", 1), ("en", 2)):
+    tree = {}
+    for row in T:
+        node = tree
+        *path, last = row[0].split(".")
+        for p in path:
+            node = node.setdefault(p, {})
+        node[last] = row[col]
+    with open(os.path.join(ROOT, "i18n", f"{lang}.json"), "w", encoding="utf-8") as f:
+        json.dump(tree, f, ensure_ascii=False, indent=2)
+print(f"앱 문구 {len(T)}개 → i18n/ko.json, i18n/en.json")
