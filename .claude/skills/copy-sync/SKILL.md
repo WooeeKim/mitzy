@@ -22,8 +22,8 @@ description: Sync screen copy from the repo — scripts/i18n_src.py keys and DB 
 Figma MCP가 연결돼 있어야 해요 (`create_session` fileKey `o35yAGSYCSiuumWErSVqO3`, `use_figma` 전에 figma-use 스킬).
 
 1. **빌드**: `python3 scripts/build.py` — 경고 없이 끝나야 해요.
-2. **Figma 이름 받기**: [`scripts/list-copy.js`](scripts/list-copy.js)를 `use_figma`로 실행하고, 돌아온 배열을 그대로 파일로 저장해요 (예: 스크래치 폴더의 `copy-names.json`).
-3. **목록 만들기**: `python3 scripts/copy_payload.py --existing <copy-names.json>` — 표준 출력의 JSON이 PAYLOAD예요. 마지막 줄(표준 오류)에 개수가 나와요.
+2. **Figma 값 받기**: [`read-copy.js`](../gui-change/scripts/read-copy.js)를 `use_figma`로 실행하고, 돌아온 JSON을 그대로 파일로 저장해요 (예: 스크래치 폴더의 `figma-copy.json`).
+3. **목록 만들기**: `python3 scripts/copy_payload.py --existing <figma-copy.json>` — 표준 출력의 JSON이 PAYLOAD예요. 마지막 줄(표준 오류)에 개수가 나와요.
    - `data/*`는 Figma에 이미 있는 이름만 남겨요. 화면에 안 쓰는 레시피 단계까지 수백 개를 만들지 않으려는 거예요.
 4. **미리 보기**: [`scripts/apply-copy.js`](scripts/apply-copy.js)의 `/*PAYLOAD*/` 자리에 3의 JSON을 통째로 넣고 `MODE = 'dry'`로 실행해요. 아무것도 바뀌지 않고 보고만 해요.
    - `create`: 새 i18n 키, `update`: 값이 바뀐 것, `deleted`: 레포에서 없어졌고 화면에도 안 쓰는 것, `keptInUse`: 레포에서 없어졌는데 화면이 아직 쓰는 것
