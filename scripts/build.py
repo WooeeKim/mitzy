@@ -1,5 +1,5 @@
-"""mitzy DB 빌드: 원본(*_src.py) + 사진(photos.json) → data/*.json, data/csv/*.csv"""
-import csv, json, os, sys
+"""mitzy DB 빌드: 원본(*_src.py) + 사진(photos.json) → data/*.json, i18n/*.json"""
+import json, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from ingredients_src import INGREDIENTS, CATEGORIES
 from recipes_src import RECIPES, MOMENT_TYPES
@@ -7,7 +7,6 @@ from en_src import (EN_ING, EN_REC, CATEGORIES_EN, METHODS_EN, TOOLS_EN, MOMENT_
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 OUT = os.path.join(ROOT, "data")
-os.makedirs(os.path.join(OUT, "csv"), exist_ok=True)
 
 # 사진 (없으면 빈 칸)
 photos_path = os.path.join(ROOT, "scripts", "photos.json")
@@ -132,24 +131,6 @@ dump("ingredients.json", ingredients)
 dump("recipes.json", recipes)
 dump("onboarding_dishes.json", onboarding)
 dump("meta.json", meta)
-
-# ── CSV (팀원이 엑셀·시트로 보기용) ──
-def wcsv(name, header, rows):
-    with open(os.path.join(OUT, "csv", name), "w", encoding="utf-8-sig", newline="") as f:
-        w = csv.writer(f); w.writerow(header); w.writerows(rows)
-
-wcsv("ingredients.csv", ["id","이름","name_en","카테고리","보관일수","보관","상비양념","메모","사진","사진 출처"],
-     [[i["id"],i["name"],i["name_en"],i["category"],i["shelf_days"] or "",i["storage"],"O" if i["is_pantry"] else "",
-       i["note"] or "", (i["photo"] or {}).get("url",""), (i["photo"] or {}).get("credit","")] for i in ingredients])
-NAME = {i["id"]: i["name"] for i in ingredients}; NAME["water"] = "물"
-wcsv("recipes.csv", ["id","이름","name_en","시간(분)","화구","레벨","조리법","도구","남은음식활용","믿쥐순간","재료","배운점","사진","사진 출처"],
-     [[r["id"],r["name"],r["name_en"],r["minutes"],r["burners"],r["level"]," · ".join(r["method"])," · ".join(r["tools"]),
-       "O" if r["uses_leftover"] else "", r["sous_chef_moments"],
-       ", ".join(f"{NAME[x['id']]} {x['amount']}"+("(선택)" if x["optional"] else "") for x in r["ingredients"]),
-       " / ".join(r["learn_points"]), (r["photo"] or {}).get("url",""), (r["photo"] or {}).get("credit","")] for r in recipes])
-wcsv("recipe_steps.csv", ["레시피","순서","내용","text_en","믿쥐 타입","믿쥐가 보는 신호","cue_en","믿쥐 대사","say_en"],
-     [[r["name"],s["n"],s["text"],s["text_en"]]+[(s.get("sous_chef") or {}).get(k,"") for k in ("type","cue","cue_en","say","say_en")]
-      for r in recipes for s in r["steps"]])
 
 with_photo = sum(1 for x in ingredients + recipes if x["photo"])
 print(f"재료 {len(ingredients)}개, 레시피 {len(recipes)}개, 온보딩 칩 {len(onboarding)}개, 사진 {with_photo}/{len(ingredients)+len(recipes)}")
