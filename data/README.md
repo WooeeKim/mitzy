@@ -1,6 +1,6 @@
 # 맛있쥐 DB — 재료 · 레시피 · 사진
 
-앱 화면(FigJam "[시디] Ideation" 보드의 GUI 섹션)과 수솊 AI가 같이 읽는 데이터예요.
+앱 화면(FigJam "[시디] Ideation" 보드의 GUI 섹션)과 믿쥐 AI가 같이 읽는 데이터예요.
 JSON이 원본이고, `csv/` 폴더는 팀원이 엑셀·구글 시트로 열어보는 용도예요.
 
 | 파일 | 내용 | 쓰는 화면 |
@@ -8,7 +8,7 @@ JSON이 원본이고, `csv/` 폴더는 팀원이 엑셀·구글 시트로 열어
 | `ingredients.json` | 재료 50개 | 냉장고 · 재료 검색 · 재료 상세 |
 | `recipes.json` | 레시피 37개 (1인분) | 레시피 추천 · 레시피 상세 · 요리 중 · 리포트 |
 | `onboarding_dishes.json` | "레시피 없이 할 수 있는 요리" 칩 11개 | 온보딩 요리 경험 |
-| `meta.json` | 수솊 순간 타입, 레벨 설명, 카테고리 목록 | 공통 |
+| `meta.json` | 믿쥐 순간 타입, 레벨 설명, 카테고리 목록 | 공통 |
 | `csv/*.csv` | 위 내용을 표로 펼친 것 | 팀 검토용 |
 
 데이터를 고칠 때는 `scripts/` 원본을 고친 뒤 `python3 scripts/build.py`를 다시 돌리면 JSON·CSV가 같이 갱신돼요.
@@ -19,18 +19,18 @@ JSON이 원본이고, `csv/` 폴더는 팀원이 엑셀·구글 시트로 열어
 ```js
 const t = (obj, key) => lang === "en" ? obj[key + "_en"] : obj[key];
 t(recipe, "name")            // "갈릭치킨볶음밥" / "Garlic Chicken Fried Rice"
-t(step.sous_chef, "say")     // 수솊 대사
+t(step.sous_chef, "say")     // 믿쥐 대사
 ```
 
 | 파일 | 영어 칸 |
 |---|---|
 | `ingredients.json` | `name_en` `category_en` `storage_en` `note_en` |
-| `recipes.json` | `name_en` `method_en` `tools_en` `prep_en` `learn_points_en`, 재료마다 `label_en`("1 bowl rice"처럼 양까지 한 줄), 단계마다 `text_en`, 수솊 순간마다 `label_en` `cue_en` `say_en` |
+| `recipes.json` | `name_en` `method_en` `tools_en` `prep_en` `learn_points_en`, 재료마다 `label_en`("1 bowl rice"처럼 양까지 한 줄), 단계마다 `text_en`, 믿쥐 순간마다 `label_en` `cue_en` `say_en` |
 | `onboarding_dishes.json` | `chip_en` `skills_en` |
 | `meta.json` | `moment_types_en` `levels_en` `categories_en`, `methods`·`tools`(한↔영 표) |
 
-- 영어 이름·문구는 Figma 영어 GUI(iOS 26 Liquid Glass (EN))에 맞췄어요. 수솊은 영어로 **Sous**예요.
-- 영어 원본은 `scripts/en_src.py`예요. 한국어 단계 수와 영어 단계 수가 다르거나, 수솊 순간이 한쪽에만 있으면 `build.py`가 멈추고 알려줘요.
+- 영어 이름·문구는 Figma 영어 GUI(iOS 26 Liquid Glass (EN))에 맞췄어요. 이름은 한국어 **믿쥐**, 영어 **Mitzy**예요.
+- 영어 원본은 `scripts/en_src.py`예요. 한국어 단계 수와 영어 단계 수가 다르거나, 믿쥐 순간이 한쪽에만 있으면 `build.py`가 멈추고 알려줘요.
 - 버튼·제목 같은 **화면 문구**는 DB가 아니라 저장소 맨 위 `i18n/` 폴더에 있어요.
 
 ---
@@ -76,7 +76,7 @@ t(step.sous_chef, "say")     // 수솊 대사
   "prep": ["마늘 3쪽 편 썰기", ...],
   "steps": [
     { "n": 1, "text": "기름 2숟가락, 약불로 마늘 볶기",
-      "sous_chef": { "type": "color", "label": "수솊이 색을 봐줄게요",
+      "sous_chef": { "type": "color", "label": "믿쥐가 색을 봐줄게요",
                      "cue": "마늘 가장자리가 연한 금색",
                      "say": "마늘이 연한 금색이에요. 이제 양파 넣어요." } },
     { "n": 2, "text": "양파 넣고 투명해질 때까지 볶기" }
@@ -90,11 +90,11 @@ t(step.sous_chef, "say")     // 수솊 대사
 
 - **level**: 1 = 한 가지 타이밍만 보면 됨 / 2 = 순서·타이밍 2~3개 / 3 = 불 조절·기름·반죽이 까다로움
 - **burners**: 37개 모두 1구로 가능해요. 냄비·팬을 같이 쓰는 파스타는 `prep`에 "면 먼저 삶아 건지기"를 넣어 순서로 해결했어요.
-- **steps[].sous_chef**: 수솊이 개입하는 단계에만 있어요. 레시피 상세의 "수솊이 ~봐줄게요" 줄, 요리 중 음성, 상단의 "수솊이 도와줄 순간 N번"이 모두 여기서 나와요.
+- **steps[].sous_chef**: 믿쥐가 개입하는 단계에만 있어요. 레시피 상세의 "믿쥐가 ~봐줄게요" 줄, 요리 중 음성, 상단의 "믿쥐가 도와줄 순간 N번"이 모두 여기서 나와요.
   - `type` — `color` 색 보기 · `flip` 뒤집기 · `heat_down` 불 줄이기 · `stick` 눌어붙기 전 · `boil` 끓어 넘치기 전 · `done` 다 됐을 때
   - `cue` — 카메라·마이크로 확인할 신호. **AI 프롬프트에 그대로 넣는 용도**예요.
-  - `say` — 수솊 예시 대사. 짧게, 이유와 함께 (슬라이드 16 "WHY").
-- **learn_points**: 리포트의 "오늘 배운 것" 후보예요. 실제로는 그날 수솊이 개입한 단계 것만 골라 보여주면 돼요.
+  - `say` — 믿쥐 예시 대사. 짧게, 이유와 함께 (슬라이드 16 "WHY").
+- **learn_points**: 리포트의 "오늘 배운 것" 후보예요. 실제로는 그날 믿쥐가 개입한 단계 것만 골라 보여주면 돼요.
 
 ### 레시피 추천 분류 (바로 가능 / 하나 더 / 둘 더)
 ```

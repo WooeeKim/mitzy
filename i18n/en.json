@@ -8,7 +8,7 @@
     "view": "View",
     "locked": "Locked",
     "not_sure": "Not sure",
-    "sous": "Sous",
+    "mitzy": "Mitzy",
     "minutes": "{{count}} min",
     "days_short": "{{count}}d",
     "days_ago_one": "{{count}} day ago",
@@ -47,7 +47,7 @@
   },
   "onboarding": {
     "welcome": {
-      "title": "Hi!\nI'm Sous, your sous-chef",
+      "title": "Hi!\nI'm Mitzy, your sous-chef",
       "body": "Let's learn to cook together,\nin the kitchen you actually have",
       "cta": "Get started"
     },
@@ -126,8 +126,8 @@
   },
   "recipe": {
     "i_know_this": "I know this",
-    "meta_one": "{{minutes}} min · {{burners}} burner OK · Sous helps at {{count}} moment",
-    "meta_other": "{{minutes}} min · {{burners}} burner OK · Sous helps at {{count}} moments",
+    "meta_one": "{{minutes}} min · {{burners}} burner OK · Mitzy helps at {{count}} moment",
+    "meta_other": "{{minutes}} min · {{burners}} burner OK · Mitzy helps at {{count}} moments",
     "ingredients": "Items",
     "prep": "Prep before the heat",
     "steps": "Steps",
@@ -135,29 +135,29 @@
   },
   "cooking": {
     "header": "Cooking · {{time}}",
-    "watching": "Sous is watching",
+    "watching": "Mitzy is watching",
     "pause": "Pause",
     "finish": "Finish",
     "hold_to_finish": "Hold to finish",
     "knuckle_hint": "You can tap with a knuckle",
     "resume": "Resume",
-    "paused_body": "Sous will wait quietly · turn off the heat",
+    "paused_body": "Mitzy will wait quietly · turn off the heat",
     "stop": "Stop cooking",
     "hold_to_stop": "Hold to stop",
-    "disconnected_title": "Lost connection to Sous",
+    "disconnected_title": "Lost connection to Mitzy",
     "disconnected_body": "You can keep cooking",
     "reconnect": "Reconnect",
     "ask_phone": "Ask on phone"
   },
   "done": {
     "title": "Done!",
-    "pick_photo": "Pick a cover photo · Sous took these while you cooked",
+    "pick_photo": "Pick a cover photo · Mitzy took these while you cooked",
     "preview": "Preview · {{label}}",
     "photo_finished": "Finished",
     "take_phone": "Take with phone"
   },
   "report": {
-    "header": "{{date}} · {{minutes}} min with Sous",
+    "header": "{{date}} · {{minutes}} min with Mitzy",
     "learned": "What I learned today",
     "heat_note": "My {{type}}'s medium heat is level {{level}}",
     "changed": "What changed today",
@@ -209,7 +209,7 @@
   "settings": {
     "title": "Settings",
     "kitchen": "My kitchen",
-    "sous": "Sous connection",
+    "mitzy": "Mitzy connection",
     "connected": "Connected",
     "notifications": "Notifications",
     "account": "Account",

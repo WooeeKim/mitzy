@@ -1,9 +1,9 @@
 # 맛있쥐 (MouseMouth) — Team 3 · ID40003 Interactive System Design
 
-20대 자취생의 요리를 옆에서 봐주는 보조 셰프 **수솊(Mitzy)** 과 앱.
+20대 자취생의 요리를 옆에서 봐주는 보조 셰프 **믿쥐(Mitzy)** 과 앱.
 
 ## 폴더
-- `data/` — 앱과 수솊 AI가 쓰는 재료·레시피 DB (설명은 [`data/README.md`](data/README.md))
+- `data/` — 앱과 믿쥐 AI가 쓰는 재료·레시피 DB (설명은 [`data/README.md`](data/README.md))
   - `preview.html` — 브라우저로 열면 레시피 37개·재료 50개를 사진과 함께 볼 수 있어요
   - `csv/` — 엑셀·구글 시트로 열어보는 표
 - `i18n/` — 앱 화면 문구 한국어 `ko.json` · 영어 `en.json` (한/영 전환용)

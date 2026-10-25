@@ -355,12 +355,12 @@ METHODS_EN = {"굽기": ("pan-fry", "pan-fried"), "볶기": ("stir-fry", "stir-f
               "전자레인지": ("microwave", "microwaved")}
 TOOLS_EN = {"프라이팬": "Frying pan", "냄비": "Pot", "뚜껑": "Lid", "전자레인지": "Microwave"}
 MOMENT_TYPES_EN = {
-    "color": "Sous will watch the color",
-    "flip": "Sous will tell you when to flip",
-    "heat_down": "Sous will tell you when to turn down the heat",
-    "stick": "Sous will warn you before it sticks",
-    "boil": "Sous will warn you before it boils over",
-    "done": "Sous will tell you when it's done",
+    "color": "Mitzy will watch the color",
+    "flip": "Mitzy will tell you when to flip",
+    "heat_down": "Mitzy will tell you when to turn down the heat",
+    "stick": "Mitzy will warn you before it sticks",
+    "boil": "Mitzy will warn you before it boils over",
+    "done": "Mitzy will tell you when it's done",
 }
 LEVELS_EN = {"1": "Just one timing to watch", "2": "2–3 steps or timings", "3": "Tricky heat, oil or batter"}
 # 온보딩 칩 (한국어 칩 → 영어 칩)

@@ -3,7 +3,7 @@
 # build.py 가 i18n/ko.json, i18n/en.json 으로 나눠 씀 (i18next 형식)
 #   {{name}}  = 앱이 채워 넣는 값
 #   키 끝 _one / _other = 개수에 따라 영어 단수·복수 (한국어는 _other 만 써도 됨)
-# 레시피·재료 이름, 순서, 수솊 대사는 여기 말고 DB(recipes.json 의 *_en 칸)에 있음
+# 레시피·재료 이름, 순서, 믿쥐 대사는 여기 말고 DB(recipes.json 의 *_en 칸)에 있음
 
 T = [
  # ── 공통 ──
@@ -15,7 +15,7 @@ T = [
  ("common.view", "보기", "View"),
  ("common.locked", "잠금", "Locked"),
  ("common.not_sure", "모르겠어요", "Not sure"),
- ("common.sous", "수솊", "Sous"),
+ ("common.mitzy", "믿쥐", "Mitzy"),
  ("common.minutes", "{{count}}분", "{{count}} min"),
  ("common.days_short", "{{count}}일", "{{count}}d"),
  ("common.days_ago_one", "{{count}}일 전", "{{count}} day ago"),
@@ -52,7 +52,7 @@ T = [
  ("kitchen.summary", "{{burners}}구 · {{type}}", "{{burners}} burner · {{type}}"),
 
  # ── 온보딩 ──
- ("onboarding.welcome.title", "안녕하세요!\n저는 보조 셰프 수솊이에요", "Hi!\nI'm Sous, your sous-chef"),
+ ("onboarding.welcome.title", "안녕하세요!\n저는 보조 셰프 믿쥐예요", "Hi!\nI'm Mitzy, your sous-chef"),
  ("onboarding.welcome.body", "자취방 주방에 맞춰\n요리를 같이 배워봐요", "Let's learn to cook together,\nin the kitchen you actually have"),
  ("onboarding.welcome.cta", "시작하기", "Get started"),
  ("onboarding.kitchen.title", "주방을 알려주세요", "Tell us about your kitchen"),
@@ -115,8 +115,8 @@ T = [
  ("recipes.tag_one_pan", "원팬", "one pan"),
  ("recipes.card_meta", "{{minutes}}분 · {{method}}", "{{minutes}} min · {{method}}"),
  ("recipe.i_know_this", "할 줄 알아요", "I know this"),
- ("recipe.meta_one", "{{minutes}}분 · {{burners}}구 가능 · 수솊이 도와줄 순간 {{count}}번", "{{minutes}} min · {{burners}} burner OK · Sous helps at {{count}} moment"),
- ("recipe.meta_other", "{{minutes}}분 · {{burners}}구 가능 · 수솊이 도와줄 순간 {{count}}번", "{{minutes}} min · {{burners}} burner OK · Sous helps at {{count}} moments"),
+ ("recipe.meta_one", "{{minutes}}분 · {{burners}}구 가능 · 믿쥐가 도와줄 순간 {{count}}번", "{{minutes}} min · {{burners}} burner OK · Mitzy helps at {{count}} moment"),
+ ("recipe.meta_other", "{{minutes}}분 · {{burners}}구 가능 · 믿쥐가 도와줄 순간 {{count}}번", "{{minutes}} min · {{burners}} burner OK · Mitzy helps at {{count}} moments"),
  ("recipe.ingredients", "재료", "Items"),
  ("recipe.prep", "불 켜기 전 준비", "Prep before the heat"),
  ("recipe.steps", "순서", "Steps"),
@@ -124,27 +124,27 @@ T = [
 
  # ── 요리 중 ──
  ("cooking.header", "요리 중 · {{time}}", "Cooking · {{time}}"),
- ("cooking.watching", "수솊이 보고 있어요", "Sous is watching"),
+ ("cooking.watching", "믿쥐가 보고 있어요", "Mitzy is watching"),
  ("cooking.pause", "일시정지", "Pause"),
  ("cooking.finish", "요리 끝", "Finish"),
  ("cooking.hold_to_finish", "길게 눌러서 끝내기", "Hold to finish"),
  ("cooking.knuckle_hint", "손가락 관절로 눌러도 돼요", "You can tap with a knuckle"),
  ("cooking.resume", "이어서 하기", "Resume"),
- ("cooking.paused_body", "수솊도 조용히 기다릴게요 · 불은 꺼두세요", "Sous will wait quietly · turn off the heat"),
+ ("cooking.paused_body", "믿쥐도 조용히 기다릴게요 · 불은 꺼두세요", "Mitzy will wait quietly · turn off the heat"),
  ("cooking.stop", "요리 그만두기", "Stop cooking"),
  ("cooking.hold_to_stop", "길게 눌러서 그만두기", "Hold to stop"),
- ("cooking.disconnected_title", "수솊과 연결이 끊겼어요", "Lost connection to Sous"),
+ ("cooking.disconnected_title", "믿쥐와 연결이 끊겼어요", "Lost connection to Mitzy"),
  ("cooking.disconnected_body", "요리는 그대로 이어가도 돼요", "You can keep cooking"),
  ("cooking.reconnect", "다시 연결하기", "Reconnect"),
  ("cooking.ask_phone", "폰으로 물어보기", "Ask on phone"),
 
  # ── 요리 끝 ──
  ("done.title", "완성!", "Done!"),
- ("done.pick_photo", "대표 사진을 골라주세요 · 수솊이 요리 중에 찍었어요", "Pick a cover photo · Sous took these while you cooked"),
+ ("done.pick_photo", "대표 사진을 골라주세요 · 믿쥐가 요리 중에 찍었어요", "Pick a cover photo · Mitzy took these while you cooked"),
  ("done.preview", "고른 사진 미리보기 · {{label}}", "Preview · {{label}}"),
  ("done.photo_finished", "완성", "Finished"),
  ("done.take_phone", "폰으로 찍기", "Take with phone"),
- ("report.header", "{{date}} · 수솊과 {{minutes}}분", "{{date}} · {{minutes}} min with Sous"),
+ ("report.header", "{{date}} · 믿쥐와 {{minutes}}분", "{{date}} · {{minutes}} min with Mitzy"),
  ("report.learned", "오늘 배운 것", "What I learned today"),
  ("report.heat_note", "우리 집 {{type}} 중불은 {{level}}단", "My {{type}}'s medium heat is level {{level}}"),
  ("report.changed", "오늘 바뀐 점", "What changed today"),
@@ -188,7 +188,7 @@ T = [
  # ── 설정 ──
  ("settings.title", "설정", "Settings"),
  ("settings.kitchen", "내 주방", "My kitchen"),
- ("settings.sous", "수솊 연결", "Sous connection"),
+ ("settings.mitzy", "믿쥐 연결", "Mitzy connection"),
  ("settings.connected", "연결됨", "Connected"),
  ("settings.notifications", "알림", "Notifications"),
  ("settings.account", "계정", "Account"),

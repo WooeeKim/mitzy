@@ -1,19 +1,19 @@
 {
   "moment_types": {
-    "color": "수솊이 색을 봐줄게요",
-    "flip": "수솊이 뒤집을 때를 봐줄게요",
-    "heat_down": "수솊이 불 줄일 때를 알려줄게요",
-    "stick": "수솊이 눌어붙기 전에 알려줄게요",
-    "boil": "수솊이 끓어 넘치기 전에 알려줄게요",
-    "done": "수솊이 다 됐을 때 알려줄게요"
+    "color": "믿쥐가 색을 봐줄게요",
+    "flip": "믿쥐가 뒤집을 때를 봐줄게요",
+    "heat_down": "믿쥐가 불 줄일 때를 알려줄게요",
+    "stick": "믿쥐가 눌어붙기 전에 알려줄게요",
+    "boil": "믿쥐가 끓어 넘치기 전에 알려줄게요",
+    "done": "믿쥐가 다 됐을 때 알려줄게요"
   },
   "moment_types_en": {
-    "color": "Sous will watch the color",
-    "flip": "Sous will tell you when to flip",
-    "heat_down": "Sous will tell you when to turn down the heat",
-    "stick": "Sous will warn you before it sticks",
-    "boil": "Sous will warn you before it boils over",
-    "done": "Sous will tell you when it's done"
+    "color": "Mitzy will watch the color",
+    "flip": "Mitzy will tell you when to flip",
+    "heat_down": "Mitzy will tell you when to turn down the heat",
+    "stick": "Mitzy will warn you before it sticks",
+    "boil": "Mitzy will warn you before it boils over",
+    "done": "Mitzy will tell you when it's done"
   },
   "levels": {
     "1": "한 가지 타이밍만 보면 됨",

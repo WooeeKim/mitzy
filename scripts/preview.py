@@ -27,7 +27,7 @@ for r in rec:
     cards.append(f'''<article class="card">{img(r["photo"], "hero")}{credit}
 <h3>{L(r["name"], r["name_en"])}</h3>
 <p class="meta">{L(f'{r["minutes"]}분 · {r["burners"]}구 가능 · 레벨 {r["level"]} · {" · ".join(r["method"])} · 수솊이 도와줄 순간 {r["sous_chef_moments"]}번',
-  f'{r["minutes"]} min · {r["burners"]} burner OK · Level {r["level"]} · {" · ".join(r["method_en"])} · Sous helps at {r["sous_chef_moments"]} moment' + ("s" if r["sous_chef_moments"] != 1 else ""))}</p>
+  f'{r["minutes"]} min · {r["burners"]} burner OK · Level {r["level"]} · {" · ".join(r["method_en"])} · Mitzy helps at {r["sous_chef_moments"]} moment' + ("s" if r["sous_chef_moments"] != 1 else ""))}</p>
 <p class="ing">{ings}</p>
 <details><summary>{L("순서 보기", "Steps")}</summary><ol>{steps}</ol></details></article>''')
 

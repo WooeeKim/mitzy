@@ -8,7 +8,7 @@
     "view": "보기",
     "locked": "잠금",
     "not_sure": "모르겠어요",
-    "sous": "수솊",
+    "mitzy": "믿쥐",
     "minutes": "{{count}}분",
     "days_short": "{{count}}일",
     "days_ago_one": "{{count}}일 전",
@@ -47,7 +47,7 @@
   },
   "onboarding": {
     "welcome": {
-      "title": "안녕하세요!\n저는 보조 셰프 수솊이에요",
+      "title": "안녕하세요!\n저는 보조 셰프 믿쥐예요",
       "body": "자취방 주방에 맞춰\n요리를 같이 배워봐요",
       "cta": "시작하기"
     },
@@ -126,8 +126,8 @@
   },
   "recipe": {
     "i_know_this": "할 줄 알아요",
-    "meta_one": "{{minutes}}분 · {{burners}}구 가능 · 수솊이 도와줄 순간 {{count}}번",
-    "meta_other": "{{minutes}}분 · {{burners}}구 가능 · 수솊이 도와줄 순간 {{count}}번",
+    "meta_one": "{{minutes}}분 · {{burners}}구 가능 · 믿쥐가 도와줄 순간 {{count}}번",
+    "meta_other": "{{minutes}}분 · {{burners}}구 가능 · 믿쥐가 도와줄 순간 {{count}}번",
     "ingredients": "재료",
     "prep": "불 켜기 전 준비",
     "steps": "순서",
@@ -135,29 +135,29 @@
   },
   "cooking": {
     "header": "요리 중 · {{time}}",
-    "watching": "수솊이 보고 있어요",
+    "watching": "믿쥐가 보고 있어요",
     "pause": "일시정지",
     "finish": "요리 끝",
     "hold_to_finish": "길게 눌러서 끝내기",
     "knuckle_hint": "손가락 관절로 눌러도 돼요",
     "resume": "이어서 하기",
-    "paused_body": "수솊도 조용히 기다릴게요 · 불은 꺼두세요",
+    "paused_body": "믿쥐도 조용히 기다릴게요 · 불은 꺼두세요",
     "stop": "요리 그만두기",
     "hold_to_stop": "길게 눌러서 그만두기",
-    "disconnected_title": "수솊과 연결이 끊겼어요",
+    "disconnected_title": "믿쥐와 연결이 끊겼어요",
     "disconnected_body": "요리는 그대로 이어가도 돼요",
     "reconnect": "다시 연결하기",
     "ask_phone": "폰으로 물어보기"
   },
   "done": {
     "title": "완성!",
-    "pick_photo": "대표 사진을 골라주세요 · 수솊이 요리 중에 찍었어요",
+    "pick_photo": "대표 사진을 골라주세요 · 믿쥐가 요리 중에 찍었어요",
     "preview": "고른 사진 미리보기 · {{label}}",
     "photo_finished": "완성",
     "take_phone": "폰으로 찍기"
   },
   "report": {
-    "header": "{{date}} · 수솊과 {{minutes}}분",
+    "header": "{{date}} · 믿쥐와 {{minutes}}분",
     "learned": "오늘 배운 것",
     "heat_note": "우리 집 {{type}} 중불은 {{level}}단",
     "changed": "오늘 바뀐 점",
@@ -209,7 +209,7 @@
   "settings": {
     "title": "설정",
     "kitchen": "내 주방",
-    "sous": "수솊 연결",
+    "mitzy": "믿쥐 연결",
     "connected": "연결됨",
     "notifications": "알림",
     "account": "계정",
