@@ -71,12 +71,12 @@ for r in RECIPES:
         st = {"n": i, "text": s["text"], "text_en": es[0]}
         if "sous_chef" in s:
             if len(es) != 3:
-                problems.append(f"{r['id']} {i}단계: 영어에 수솊 cue·say 없음"); continue
+                problems.append(f"{r['id']} {i}단계: 영어에 믿쥐 cue·say 없음"); continue
             sc = s["sous_chef"]
             st["sous_chef"] = {"type": sc["type"], "label": sc["label"], "label_en": MOMENT_TYPES_EN[sc["type"]],
                                "cue": sc["cue"], "cue_en": es[1], "say": sc["say"], "say_en": es[2]}
         elif len(es) != 1:
-            problems.append(f"{r['id']} {i}단계: 한국어엔 수솊 순간이 없는데 영어엔 있음")
+            problems.append(f"{r['id']} {i}단계: 한국어엔 믿쥐 순간이 없는데 영어엔 있음")
         steps.append(st)
     moments = [s["sous_chef"]["type"] for s in steps if "sous_chef" in s]
     recipes.append({
@@ -142,12 +142,12 @@ wcsv("ingredients.csv", ["id","이름","name_en","카테고리","보관일수","
      [[i["id"],i["name"],i["name_en"],i["category"],i["shelf_days"] or "",i["storage"],"O" if i["is_pantry"] else "",
        i["note"] or "", (i["photo"] or {}).get("url",""), (i["photo"] or {}).get("credit","")] for i in ingredients])
 NAME = {i["id"]: i["name"] for i in ingredients}; NAME["water"] = "물"
-wcsv("recipes.csv", ["id","이름","name_en","시간(분)","화구","레벨","조리법","도구","남은음식활용","수솊순간","재료","배운점","사진","사진 출처"],
+wcsv("recipes.csv", ["id","이름","name_en","시간(분)","화구","레벨","조리법","도구","남은음식활용","믿쥐순간","재료","배운점","사진","사진 출처"],
      [[r["id"],r["name"],r["name_en"],r["minutes"],r["burners"],r["level"]," · ".join(r["method"])," · ".join(r["tools"]),
        "O" if r["uses_leftover"] else "", r["sous_chef_moments"],
        ", ".join(f"{NAME[x['id']]} {x['amount']}"+("(선택)" if x["optional"] else "") for x in r["ingredients"]),
        " / ".join(r["learn_points"]), (r["photo"] or {}).get("url",""), (r["photo"] or {}).get("credit","")] for r in recipes])
-wcsv("recipe_steps.csv", ["레시피","순서","내용","text_en","수솊 타입","수솊이 보는 신호","cue_en","수솊 대사","say_en"],
+wcsv("recipe_steps.csv", ["레시피","순서","내용","text_en","믿쥐 타입","믿쥐가 보는 신호","cue_en","믿쥐 대사","say_en"],
      [[r["name"],s["n"],s["text"],s["text_en"]]+[(s.get("sous_chef") or {}).get(k,"") for k in ("type","cue","cue_en","say","say_en")]
       for r in recipes for s in r["steps"]])
 

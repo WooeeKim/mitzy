@@ -1,16 +1,16 @@
 # 레시피 원본 (1인분 기준)
-# 수솊 도움 순간 타입 — 슬라이드 27 "What Mitzy decides" + GUI 문구 기준
+# 믿쥐 도움 순간 타입 — 슬라이드 27 "What Mitzy decides" + GUI 문구 기준
 MOMENT_TYPES = {
-    "color":     "수솊이 색을 봐줄게요",
-    "flip":      "수솊이 뒤집을 때를 봐줄게요",
-    "heat_down": "수솊이 불 줄일 때를 알려줄게요",
-    "stick":     "수솊이 눌어붙기 전에 알려줄게요",
-    "boil":      "수솊이 끓어 넘치기 전에 알려줄게요",
-    "done":      "수솊이 다 됐을 때 알려줄게요",
+    "color":     "믿쥐가 색을 봐줄게요",
+    "flip":      "믿쥐가 뒤집을 때를 봐줄게요",
+    "heat_down": "믿쥐가 불 줄일 때를 알려줄게요",
+    "stick":     "믿쥐가 눌어붙기 전에 알려줄게요",
+    "boil":      "믿쥐가 끓어 넘치기 전에 알려줄게요",
+    "done":      "믿쥐가 다 됐을 때 알려줄게요",
 }
 
 def S(text, moment=None, cue=None, say=None):
-    """step. moment = MOMENT_TYPES 키, cue = 카메라/마이크로 보는 신호, say = 수솊 예시 대사"""
+    """step. moment = MOMENT_TYPES 키, cue = 카메라/마이크로 보는 신호, say = 믿쥐 예시 대사"""
     d = {"text": text}
     if moment:
         d["sous_chef"] = {"type": moment, "label": MOMENT_TYPES[moment], "cue": cue, "say": say}
