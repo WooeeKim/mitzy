@@ -27,6 +27,13 @@ python3 scripts/build.py && python3 scripts/preview.py
 - 터미널: `python3 -m http.server 8000` 후 같은 주소.
 - 오른쪽 위 버튼으로 한국어/English를 바꿔 두 언어 모두 확인해요.
 
+## 팀원이 하는 일: 수정 요청 한 줄
+- 팀원이 할 일은 **무엇을 고칠지 AI에 한 줄로 쓰는 것**뿐이에요. 예: "재료 상세 버튼을 삭제로 바꿔줘", "레시피 이름 오타 고쳐줘", "Figma에서 고친 문구 레포에 반영해줘".
+- 원본 찾기, Figma와 레포 반영, 검사, 브랜치, PR은 AI가 `.claude/skills/gui-change/SKILL.md` 순서대로 해요. Claude Code가 아닌 AI는 그 파일을 열어 같은 순서로 해요.
+- 처음 한 번만: AI에 Figma MCP 연결, GitHub 로그인(`gh auth login`). 이 둘은 팀원 계정에서 한 번만 하면 돼요.
+- 머지는 레포 관리자가 해요. 팀원은 PR을 열거나 머지하지 않아요.
+- 스크립트: `scripts/gui-start.sh <이름>`(작업 브랜치 만들기), `scripts/gui-finish.sh "<제목>" <설명 파일>`(빌드, 커밋, 푸시, PR).
+
 ## 반복 작업 (스킬)
 | 할 일 | 스킬 | 언제 |
 |---|---|---|
