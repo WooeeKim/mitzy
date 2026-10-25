@@ -54,7 +54,7 @@ finish() {
   python3 scripts/preview.py > /dev/null
 
   # 올려도 되는 곳만 담아요. 그 밖의 파일이 바뀌었으면 멈춰요.
-  local allowed='^(AGENTS\.md|CLAUDE\.md|README\.md|data/|i18n/|design/|scripts/|\.claude/skills/|\.claude/launch\.json)'
+  local allowed='^(AGENTS\.md|CLAUDE\.md|README\.md|data/|i18n/|design-tokens/|scripts/|\.claude/skills/|\.claude/launch\.json)'
   local changed bad
   changed=$( (git diff --name-only; git ls-files --others --exclude-standard) | sort -u )
   if [ -z "$changed" ]; then
