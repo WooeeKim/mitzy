@@ -9,7 +9,7 @@
 ## 폴더
 - `data/` — 재료·레시피 DB (생성 파일), 사진, 출처 ([설명](data/README.md))
 - `i18n/` — 앱 화면 문구 한국어·영어 (생성 파일, [설명](i18n/README.md))
-- `design/` — Figma에서 내보낸 디자인 토큰 (생성 파일)
+- `design-tokens/` — Figma에서 내보낸 디자인 토큰 (생성 파일)
 - `scripts/` — DB 원본(`*_src.py`)과 빌드·도구 스크립트
 - `.claude/skills/` — AI 작업 절차
 

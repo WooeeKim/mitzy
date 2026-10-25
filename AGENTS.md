@@ -12,7 +12,7 @@
 | 화면 문구 (한/영) | `scripts/i18n_src.py` | `i18n/ko.json` · `i18n/en.json` |
 | 사진 | `scripts/photos.json` · `data/images/` | `data/*.json`의 `photo` |
 | 미리보기 모양 | `scripts/preview.py` | `data/preview.html` |
-| 디자인 토큰 | Figma 변수 → `tokens-export` 스킬 | `design/tokens.json` → `design/tokens.css` (`python3 scripts/tokens_css.py`) |
+| 디자인 토큰 | Figma 변수 → `tokens-export` 스킬 | `design-tokens/tokens.json` → `design-tokens/tokens.css` (`python3 scripts/tokens_css.py`) |
 | Figma 화면 문구 | `i18n_src.py` · `data/*.json` → `copy-sync` 스킬 | Figma `Copy` 변수 |
 
 ```bash

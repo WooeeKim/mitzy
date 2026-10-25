@@ -11,7 +11,7 @@ description: Apply one teammate's GUI change request end to end — a Mitzy (믿
 | 바뀌는 것 | 원본 | 다른 쪽 반영 |
 |---|---|---|
 | 화면 문구, 재료·레시피 이름·단계·배운 것 (한/영) | 레포 (`scripts/*_src.py`) | Figma `Copy` (copy-sync 절차) |
-| 색·간격·모서리·글꼴 (변수) | Figma 변수 | 레포 `design/tokens.*` (tokens-export 절차) |
+| 색·간격·모서리·글꼴 (변수) | Figma 변수 | 레포 `design-tokens/tokens.*` (tokens-export 절차) |
 | 화면·컴포넌트 배치 | Figma | 레포는 바뀌는 게 없어요 |
 
 요청이 Figma에서 왔든 레포에서 왔든 같은 규칙을 써요. 해당 항목의 원본을 고친 뒤 다른 쪽에 반영해요.
@@ -44,7 +44,7 @@ scripts/gui.sh start <짧은-이름>   # 예: recipe-button-text
 
 ### 3b. 색·간격·모서리·글꼴 고치기 (Figma가 원본)
 1. figma-use 스킬을 읽고 `use_figma`로 Figma 변수나 프레임을 고쳐요. 규칙은 AGENTS.md 그대로예요.
-2. 변수가 바뀌었으면 `tokens-export` 스킬의 절차로 `design/tokens.json`을 다시 쓰고 `python3 scripts/tokens_css.py`를 돌려요.
+2. 변수가 바뀌었으면 `tokens-export` 스킬의 절차로 `design-tokens/tokens.json`을 다시 쓰고 `python3 scripts/tokens_css.py`를 돌려요.
 
 ### 3c. 화면·컴포넌트 고치기 (Figma가 원본)
 1. figma-use 스킬을 읽고 `use_figma`로 프레임을 고쳐요. 새 부품이 필요하면 `Mitzy/*` 규칙을 따라요.
@@ -86,6 +86,6 @@ scripts/gui.sh finish "<PR 제목>" <PR 설명 파일>
 
 ## 주의
 - 같은 항목을 Figma와 레포에서 둘 다 고쳤으면(`changed`인데 요청이 한쪽만 말하지 않을 때) 어느 쪽이 맞는지 팀원에게 한 번만 물어요. 나머지는 묻지 않아요.
-- 생성 파일(`data/*.json`, `i18n/*.json`, `data/preview.html`, `design/tokens.*`)은 손으로 고치지 않아요. 항상 원본에서 다시 만들어요.
+- 생성 파일(`data/*.json`, `i18n/*.json`, `data/preview.html`, `design-tokens/tokens.*`)은 손으로 고치지 않아요. 항상 원본에서 다시 만들어요.
 - `main`에 직접 올리지 않아요. 항상 `scripts/gui.sh start`로 만든 브랜치에서 작업해요.
 - 한 번에 한 요청만 처리해요. 두 요청이 같은 화면이면 먼저 온 요청을 끝낸 뒤 다음 요청을 시작해요.

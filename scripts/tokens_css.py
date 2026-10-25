@@ -1,11 +1,11 @@
-"""design/tokens.json → design/tokens.css (웹에서 쓰는 CSS 변수)
+"""design-tokens/tokens.json → design-tokens/tokens.css (웹에서 쓰는 CSS 변수)
 tokens.json 은 Figma 변수에서 tokens-export 스킬로 만들어요. 두 파일 모두 직접 고치지 않아요.
 
   python3 scripts/tokens_css.py
 """
 import json, os, re
 ROOT = os.path.join(os.path.dirname(__file__), "..")
-D = os.path.join(ROOT, "design")
+D = os.path.join(ROOT, "design-tokens")
 t = json.load(open(os.path.join(D, "tokens.json"), encoding="utf-8"))
 
 # Figma는 작업용 Noto Sans KR이지만 웹은 최종 글꼴 Pretendard (AGENTS.md 폰트 규칙)
@@ -21,7 +21,7 @@ def slug(s):  # "Title1/Emphasized" → title1-emphasized
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 colors = lambda mode: [f"  --color-{k}: {rgb(v[mode])};" for k, v in t["color"].items()]
-out = ["/* 생성 파일 — design/tokens.json 에서 scripts/tokens_css.py 로 만들어요. 직접 고치지 않아요. */", ":root {"]
+out = ["/* 생성 파일 — design-tokens/tokens.json 에서 scripts/tokens_css.py 로 만들어요. 직접 고치지 않아요. */", ":root {"]
 out += colors("light")
 for group in ("space", "radius", "touch"):
     out += [f"  --{group}-{k}: {v}px;" for k, v in t[group].items()]
