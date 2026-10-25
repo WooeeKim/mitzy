@@ -26,7 +26,7 @@ for r in rec:
     credit = (f'<div class="cr">Photo: {e(r["photo"]["credit"])}' + (" / Unsplash" if r["photo"]["license"] == "Unsplash License" else "") + "</div>") if r["photo"] else ""
     cards.append(f'''<article class="card">{img(r["photo"], "hero")}{credit}
 <h3>{L(r["name"], r["name_en"])}</h3>
-<p class="meta">{L(f'{r["minutes"]}분 · {r["burners"]}구 가능 · 레벨 {r["level"]} · {" · ".join(r["method"])} · 수솊이 도와줄 순간 {r["sous_chef_moments"]}번',
+<p class="meta">{L(f'{r["minutes"]}분 · {r["burners"]}구 가능 · 레벨 {r["level"]} · {" · ".join(r["method"])} · 믿쥐가 도와줄 순간 {r["sous_chef_moments"]}번',
   f'{r["minutes"]} min · {r["burners"]} burner OK · Level {r["level"]} · {" · ".join(r["method_en"])} · Mitzy helps at {r["sous_chef_moments"]} moment' + ("s" if r["sous_chef_moments"] != 1 else ""))}</p>
 <p class="ing">{ings}</p>
 <details><summary>{L("순서 보기", "Steps")}</summary><ol>{steps}</ol></details></article>''')
@@ -36,10 +36,11 @@ tiles = "".join(f'<div class="tile">{img(i["photo"], "timg")}<b>{L(i["name"], i[
                   i["category_en"] + (f' · {i["shelf_days"]}d' if i["shelf_days"] else "")) + "</small></div>" for i in ing)
 
 page = f'''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>맛있쥐 DB 미리보기</title><style>
+<title>맛있쥐 DB 미리보기</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"><style>
 :root{{--bg:#faf8f5;--fg:#1d1d1f;--mut:#6e6e73;--card:#fff;--line:#e5e5ea;--acc:#c2410c}}
 @media (prefers-color-scheme:dark){{:root{{--bg:#111;--fg:#f2f2f2;--mut:#a1a1a6;--card:#1c1c1e;--line:#333;--acc:#fb923c}}}}
-body{{margin:0;font:15px/1.5 -apple-system,"Pretendard",sans-serif;background:var(--bg);color:var(--fg)}}
+body{{margin:0;font:15px/1.5 "Pretendard Variable",Pretendard,-apple-system,system-ui,sans-serif;background:var(--bg);color:var(--fg)}}
 main{{max-width:1100px;margin:0 auto;padding:24px 16px}} h1{{font-size:28px;margin:0 0 4px}} h2{{margin:32px 0 12px}}
 .sub{{color:var(--mut);margin:0 0 16px}}
 .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}}

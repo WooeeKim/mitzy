@@ -22,6 +22,8 @@ T = [
  ("common.days_ago_other", "{{count}}일 전", "{{count}} days ago"),
  ("common.date", "{{month}}월 {{day}}일", "{{monthShort}} {{day}}"),
  ("common.level", "레벨 {{level}}", "Level {{level}}"),
+ ("common.times_one", "{{count}}번", "{{count}} time"),
+ ("common.times_other", "{{count}}번", "{{count}} times"),
  ("common.optional", "(선택)", "(optional)"),
  ("common.language", "언어", "Language"),
  ("common.language_ko", "한국어", "한국어"),
@@ -49,7 +51,7 @@ T = [
  ("kitchen.tool_microwave", "전자레인지", "Microwave"),
  ("kitchen.tool_kettle", "전기포트", "Kettle"),
  ("kitchen.tool_custom", "직접 입력", "Add your own"),
- ("kitchen.summary", "{{burners}}구 · {{type}}", "{{burners}} burner · {{type}}"),
+ ("kitchen.summary", "{{type}} {{burners}}구", "{{burners}}-burner {{type}}"),
 
  # ── 온보딩 ──
  ("onboarding.welcome.title", "안녕하세요!\n저는 보조 셰프 믿쥐예요", "Hi!\nI'm Mitzy, your sous-chef"),
@@ -88,7 +90,7 @@ T = [
  ("fridge.photo.shutter", "찍기", "Snap"),
  ("fridge.detail.category", "카테고리", "Category"),
  ("fridge.detail.added", "등록한 날", "Added"),
- ("fridge.detail.added_value", "{{date}} · {{ago}}", "{{date}} · {{ago}}"),
+ # 등록한 날 값: 왼쪽 common.date, 오른쪽 common.days_ago
  ("fridge.detail.use_by", "소비기한", "Use-by"),
  ("fridge.detail.use_by_add", "입력하기", "Add date"),
  ("fridge.detail.use_by_none", "입력 안 함", "Not set"),
@@ -98,7 +100,7 @@ T = [
  ("fridge.detail.dishes_one", "{{name}}으로 할 수 있는 요리 {{count}}개", "{{count}} dish you can make with {{name}}"),
  ("fridge.detail.dishes_other", "{{name}}으로 할 수 있는 요리 {{count}}개", "{{count}} dishes you can make with {{name}}"),
  ("fridge.detail.remove", "냉장고에서 빼기", "Remove from fridge"),
- ("fridge.use_by.hint", "등록 {{day}}일째 · {{storage_hint}}", "Day {{day}} · {{storage_hint}}"),
+ ("fridge.use_by.since", "등록 {{day}}일째", "Day {{day}}"),  # 재료 이름 오른쪽. 보관 안내 문장은 그 아래 따로
  ("fridge.use_by.title", "포장지의 소비기한을 알려주세요", "Enter the use-by date on the package"),
  ("fridge.use_by.month", "월", "mo"),
  ("fridge.use_by.day", "일", "day"),
@@ -106,31 +108,39 @@ T = [
 
  # ── 레시피 ──
  ("recipes.title", "오늘 뭐 먹지?", "What should I eat?"),
- ("recipes.basis", "{{kitchen}} · 내 냉장고 기준", "{{kitchen}} · from my fridge"),
+ ("recipes.basis", "내 냉장고와 {{kitchen}}에 맞췄어요", "Picks for your fridge and {{kitchen}}"),
  ("recipes.group_ready", "지금 가능", "Ready now"),
  ("recipes.group_one_more", "하나만 더", "One more"),
  ("recipes.group_two_more", "둘만 더", "Two more"),
  ("recipes.tag_use_soon", "곧 상할 재료 소진", "Uses expiring items"),
  ("recipes.tag_new_challenge", "새로운 도전", "New challenge"),
  ("recipes.tag_one_pan", "원팬", "one pan"),
- ("recipes.card_meta", "{{minutes}}분 · {{method}}", "{{minutes}} min · {{method}}"),
+ # 레시피 카드 메타: 시계 아이콘 + common.minutes, 불꽃 아이콘 + 방법(DB method, 공백으로 이어요)
  ("recipe.i_know_this", "할 줄 알아요", "I know this"),
- ("recipe.meta_one", "{{minutes}}분 · {{burners}}구 가능 · 믿쥐가 도와줄 순간 {{count}}번", "{{minutes}} min · {{burners}} burner OK · Mitzy helps at {{count}} moment"),
- ("recipe.meta_other", "{{minutes}}분 · {{burners}}구 가능 · 믿쥐가 도와줄 순간 {{count}}번", "{{minutes}} min · {{burners}} burner OK · Mitzy helps at {{count}} moments"),
+ # 제목 아래 정보 행: 라벨 위, 값 아래 (시간 = common.minutes, 믿쥐 도움 = common.times)
+ ("recipe.stat.time", "시간", "Time"),
+ ("recipe.stat.burners", "화구", "Burners"),
+ ("recipe.stat.burners_value_one", "{{count}}구", "{{count}} burner"),
+ ("recipe.stat.burners_value_other", "{{count}}구", "{{count}} burners"),
+ ("recipe.stat.help", "믿쥐 도움", "Mitzy helps"),
  ("recipe.ingredients", "재료", "Items"),
  ("recipe.prep", "불 켜기 전 준비", "Prep before the heat"),
  ("recipe.steps", "순서", "Steps"),
  ("recipe.start", "요리 시작", "Start cooking"),
 
  # ── 요리 중 ──
- ("cooking.header", "요리 중 · {{time}}", "Cooking · {{time}}"),
+ ("cooking.elapsed_a11y", "요리한 시간 {{time}}", "Cooking time {{time}}"),  # 화면엔 시계 아이콘 + 시간만. 이 문장은 VoiceOver용
+ ("cooking.step_count", "{{current}} / {{total}}", "{{current}} / {{total}}"),
  ("cooking.watching", "믿쥐가 보고 있어요", "Mitzy is watching"),
+ ("cooking.status_waiting", "믿쥐가 기다리고 있어요", "Mitzy is waiting"),
+ ("cooking.status_disconnected", "믿쥐 연결 끊김", "Mitzy disconnected"),
+ ("cooking.status_unsure", "믿쥐가 잘 안 보여요", "Mitzy can't see well"),
  ("cooking.pause", "일시정지", "Pause"),
  ("cooking.finish", "요리 끝", "Finish"),
  ("cooking.hold_to_finish", "길게 눌러서 끝내기", "Hold to finish"),
  ("cooking.knuckle_hint", "손가락 관절로 눌러도 돼요", "You can tap with a knuckle"),
  ("cooking.resume", "이어서 하기", "Resume"),
- ("cooking.paused_body", "믿쥐도 조용히 기다릴게요 · 불은 꺼두세요", "Mitzy will wait quietly · turn off the heat"),
+ ("cooking.paused_body", "믿쥐도 조용히 기다릴게요. 불은 꺼두세요", "Mitzy will wait quietly. Turn off the heat."),
  ("cooking.stop", "요리 그만두기", "Stop cooking"),
  ("cooking.hold_to_stop", "길게 눌러서 그만두기", "Hold to stop"),
  ("cooking.disconnected_title", "믿쥐와 연결이 끊겼어요", "Lost connection to Mitzy"),
@@ -140,11 +150,10 @@ T = [
 
  # ── 요리 끝 ──
  ("done.title", "완성!", "Done!"),
- ("done.pick_photo", "대표 사진을 골라주세요 · 믿쥐가 요리 중에 찍었어요", "Pick a cover photo · Mitzy took these while you cooked"),
- ("done.preview", "고른 사진 미리보기 · {{label}}", "Preview · {{label}}"),
+ ("done.pick_photo", "믿쥐가 요리 중에 찍은 사진에서 골라주세요", "Pick a cover from the photos Mitzy took while you cooked"),
  ("done.photo_finished", "완성", "Finished"),
  ("done.take_phone", "폰으로 찍기", "Take with phone"),
- ("report.header", "{{date}} · 믿쥐와 {{minutes}}분", "{{date}} · {{minutes}} min with Mitzy"),
+ ("report.with_mitzy", "믿쥐와 {{minutes}}분", "{{minutes}} min with Mitzy"),  # 제목 위 한 줄: 왼쪽 common.date, 오른쪽 이 문구
  ("report.learned", "오늘 배운 것", "What I learned today"),
  ("report.heat_note", "우리 집 {{type}} 중불은 {{level}}단", "My {{type}}'s medium heat is level {{level}}"),
  ("report.changed", "오늘 바뀐 점", "What changed today"),
@@ -159,18 +168,18 @@ T = [
 
  # ── 도감 ──
  ("collection.title", "내 요리 도감", "My Collection"),
- ("collection.progress", "지금 레벨 {{level}} · {{have}}/{{goal}}", "Level {{level}} · {{have}}/{{goal}}"),
- ("collection.progress_long", "지금 레벨 {{level}} · 도감 {{have}}/{{goal}}", "Level {{level}} · Collection {{have}}/{{goal}}"),
+ ("collection.progress_count", "새 요리 {{have}}/{{goal}}", "New dishes {{have}}/{{goal}}"),  # 진행 막대 위: 왼쪽 common.level, 오른쪽 이 문구
  ("collection.to_next_one", "새 요리 {{count}}가지만 더 만들면 레벨 {{next}}", "{{count}} more new dish to reach Level {{next}}"),
  ("collection.to_next_other", "새 요리 {{count}}가지만 더 만들면 레벨 {{next}}", "{{count}} more new dishes to reach Level {{next}}"),
  ("collection.times", "×{{count}}", "×{{count}}"),
  ("collection.already_knew", "원래 할 줄 알았어요", "Already knew this"),
  ("collection.add_known", "이미 할 줄 아는\n요리 추가", "Add dishes\nI already know"),
  ("collection.detail.change_photo", "사진 바꾸기", "Change photo"),
- ("collection.detail.made_one", "{{count}}번 만들었어요 · {{method}} 위주", "Made {{count}} time · mostly {{method}}"),
- ("collection.detail.made_other", "{{count}}번 만들었어요 · {{method}} 위주", "Made {{count}} times · mostly {{method}}"),
+ # 제목 아래 정보 행: 만든 횟수 = common.times, 주로 = 방법(DB method)
+ ("collection.detail.stat_made", "만든 횟수", "Times made"),
+ ("collection.detail.stat_method", "주로", "Mostly"),
  ("collection.detail.learned", "내가 배운 것", "What I learned"),
- ("collection.detail.my_version", "내 버전 레시피 · {{minutes}}분", "My version · {{minutes}} min"),
+ ("collection.detail.my_version", "내 버전 레시피", "My version"),  # 오른쪽에 common.minutes
  ("collection.detail.cook_again", "다시 만들기", "Cook again"),
  ("collection.photo.title", "대표 사진 바꾸기", "Change cover photo"),
  ("collection.photo.body", "이 요리를 만들 때 남은 사진이에요", "Photos from when you made this dish"),

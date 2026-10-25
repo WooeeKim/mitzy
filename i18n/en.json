@@ -15,6 +15,8 @@
     "days_ago_other": "{{count}} days ago",
     "date": "{{monthShort}} {{day}}",
     "level": "Level {{level}}",
+    "times_one": "{{count}} time",
+    "times_other": "{{count}} times",
     "optional": "(optional)",
     "language": "Language",
     "language_ko": "한국어",
@@ -43,7 +45,7 @@
     "tool_microwave": "Microwave",
     "tool_kettle": "Kettle",
     "tool_custom": "Add your own",
-    "summary": "{{burners}} burner · {{type}}"
+    "summary": "{{burners}}-burner {{type}}"
   },
   "onboarding": {
     "welcome": {
@@ -95,7 +97,6 @@
     "detail": {
       "category": "Category",
       "added": "Added",
-      "added_value": "{{date}} · {{ago}}",
       "use_by": "Use-by",
       "use_by_add": "Add date",
       "use_by_none": "Not set",
@@ -106,7 +107,7 @@
       "remove": "Remove from fridge"
     },
     "use_by": {
-      "hint": "Day {{day}} · {{storage_hint}}",
+      "since": "Day {{day}}",
       "title": "Enter the use-by date on the package",
       "month": "mo",
       "day": "day",
@@ -115,33 +116,41 @@
   },
   "recipes": {
     "title": "What should I eat?",
-    "basis": "{{kitchen}} · from my fridge",
+    "basis": "Picks for your fridge and {{kitchen}}",
     "group_ready": "Ready now",
     "group_one_more": "One more",
     "group_two_more": "Two more",
     "tag_use_soon": "Uses expiring items",
     "tag_new_challenge": "New challenge",
-    "tag_one_pan": "one pan",
-    "card_meta": "{{minutes}} min · {{method}}"
+    "tag_one_pan": "one pan"
   },
   "recipe": {
     "i_know_this": "I know this",
-    "meta_one": "{{minutes}} min · {{burners}} burner OK · Mitzy helps at {{count}} moment",
-    "meta_other": "{{minutes}} min · {{burners}} burner OK · Mitzy helps at {{count}} moments",
+    "stat": {
+      "time": "Time",
+      "burners": "Burners",
+      "burners_value_one": "{{count}} burner",
+      "burners_value_other": "{{count}} burners",
+      "help": "Mitzy helps"
+    },
     "ingredients": "Items",
     "prep": "Prep before the heat",
     "steps": "Steps",
     "start": "Start cooking"
   },
   "cooking": {
-    "header": "Cooking · {{time}}",
+    "elapsed_a11y": "Cooking time {{time}}",
+    "step_count": "{{current}} / {{total}}",
     "watching": "Mitzy is watching",
+    "status_waiting": "Mitzy is waiting",
+    "status_disconnected": "Mitzy disconnected",
+    "status_unsure": "Mitzy can't see well",
     "pause": "Pause",
     "finish": "Finish",
     "hold_to_finish": "Hold to finish",
     "knuckle_hint": "You can tap with a knuckle",
     "resume": "Resume",
-    "paused_body": "Mitzy will wait quietly · turn off the heat",
+    "paused_body": "Mitzy will wait quietly. Turn off the heat.",
     "stop": "Stop cooking",
     "hold_to_stop": "Hold to stop",
     "disconnected_title": "Lost connection to Mitzy",
@@ -151,13 +160,12 @@
   },
   "done": {
     "title": "Done!",
-    "pick_photo": "Pick a cover photo · Mitzy took these while you cooked",
-    "preview": "Preview · {{label}}",
+    "pick_photo": "Pick a cover from the photos Mitzy took while you cooked",
     "photo_finished": "Finished",
     "take_phone": "Take with phone"
   },
   "report": {
-    "header": "{{date}} · {{minutes}} min with Mitzy",
+    "with_mitzy": "{{minutes}} min with Mitzy",
     "learned": "What I learned today",
     "heat_note": "My {{type}}'s medium heat is level {{level}}",
     "changed": "What changed today",
@@ -174,8 +182,7 @@
   },
   "collection": {
     "title": "My Collection",
-    "progress": "Level {{level}} · {{have}}/{{goal}}",
-    "progress_long": "Level {{level}} · Collection {{have}}/{{goal}}",
+    "progress_count": "New dishes {{have}}/{{goal}}",
     "to_next_one": "{{count}} more new dish to reach Level {{next}}",
     "to_next_other": "{{count}} more new dishes to reach Level {{next}}",
     "times": "×{{count}}",
@@ -183,10 +190,10 @@
     "add_known": "Add dishes\nI already know",
     "detail": {
       "change_photo": "Change photo",
-      "made_one": "Made {{count}} time · mostly {{method}}",
-      "made_other": "Made {{count}} times · mostly {{method}}",
+      "stat_made": "Times made",
+      "stat_method": "Mostly",
       "learned": "What I learned",
-      "my_version": "My version · {{minutes}} min",
+      "my_version": "My version",
       "cook_again": "Cook again"
     },
     "photo": {

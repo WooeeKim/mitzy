@@ -15,6 +15,8 @@
     "days_ago_other": "{{count}}일 전",
     "date": "{{month}}월 {{day}}일",
     "level": "레벨 {{level}}",
+    "times_one": "{{count}}번",
+    "times_other": "{{count}}번",
     "optional": "(선택)",
     "language": "언어",
     "language_ko": "한국어",
@@ -43,7 +45,7 @@
     "tool_microwave": "전자레인지",
     "tool_kettle": "전기포트",
     "tool_custom": "직접 입력",
-    "summary": "{{burners}}구 · {{type}}"
+    "summary": "{{type}} {{burners}}구"
   },
   "onboarding": {
     "welcome": {
@@ -95,7 +97,6 @@
     "detail": {
       "category": "카테고리",
       "added": "등록한 날",
-      "added_value": "{{date}} · {{ago}}",
       "use_by": "소비기한",
       "use_by_add": "입력하기",
       "use_by_none": "입력 안 함",
@@ -106,7 +107,7 @@
       "remove": "냉장고에서 빼기"
     },
     "use_by": {
-      "hint": "등록 {{day}}일째 · {{storage_hint}}",
+      "since": "등록 {{day}}일째",
       "title": "포장지의 소비기한을 알려주세요",
       "month": "월",
       "day": "일",
@@ -115,33 +116,41 @@
   },
   "recipes": {
     "title": "오늘 뭐 먹지?",
-    "basis": "{{kitchen}} · 내 냉장고 기준",
+    "basis": "내 냉장고와 {{kitchen}}에 맞췄어요",
     "group_ready": "지금 가능",
     "group_one_more": "하나만 더",
     "group_two_more": "둘만 더",
     "tag_use_soon": "곧 상할 재료 소진",
     "tag_new_challenge": "새로운 도전",
-    "tag_one_pan": "원팬",
-    "card_meta": "{{minutes}}분 · {{method}}"
+    "tag_one_pan": "원팬"
   },
   "recipe": {
     "i_know_this": "할 줄 알아요",
-    "meta_one": "{{minutes}}분 · {{burners}}구 가능 · 믿쥐가 도와줄 순간 {{count}}번",
-    "meta_other": "{{minutes}}분 · {{burners}}구 가능 · 믿쥐가 도와줄 순간 {{count}}번",
+    "stat": {
+      "time": "시간",
+      "burners": "화구",
+      "burners_value_one": "{{count}}구",
+      "burners_value_other": "{{count}}구",
+      "help": "믿쥐 도움"
+    },
     "ingredients": "재료",
     "prep": "불 켜기 전 준비",
     "steps": "순서",
     "start": "요리 시작"
   },
   "cooking": {
-    "header": "요리 중 · {{time}}",
+    "elapsed_a11y": "요리한 시간 {{time}}",
+    "step_count": "{{current}} / {{total}}",
     "watching": "믿쥐가 보고 있어요",
+    "status_waiting": "믿쥐가 기다리고 있어요",
+    "status_disconnected": "믿쥐 연결 끊김",
+    "status_unsure": "믿쥐가 잘 안 보여요",
     "pause": "일시정지",
     "finish": "요리 끝",
     "hold_to_finish": "길게 눌러서 끝내기",
     "knuckle_hint": "손가락 관절로 눌러도 돼요",
     "resume": "이어서 하기",
-    "paused_body": "믿쥐도 조용히 기다릴게요 · 불은 꺼두세요",
+    "paused_body": "믿쥐도 조용히 기다릴게요. 불은 꺼두세요",
     "stop": "요리 그만두기",
     "hold_to_stop": "길게 눌러서 그만두기",
     "disconnected_title": "믿쥐와 연결이 끊겼어요",
@@ -151,13 +160,12 @@
   },
   "done": {
     "title": "완성!",
-    "pick_photo": "대표 사진을 골라주세요 · 믿쥐가 요리 중에 찍었어요",
-    "preview": "고른 사진 미리보기 · {{label}}",
+    "pick_photo": "믿쥐가 요리 중에 찍은 사진에서 골라주세요",
     "photo_finished": "완성",
     "take_phone": "폰으로 찍기"
   },
   "report": {
-    "header": "{{date}} · 믿쥐와 {{minutes}}분",
+    "with_mitzy": "믿쥐와 {{minutes}}분",
     "learned": "오늘 배운 것",
     "heat_note": "우리 집 {{type}} 중불은 {{level}}단",
     "changed": "오늘 바뀐 점",
@@ -174,8 +182,7 @@
   },
   "collection": {
     "title": "내 요리 도감",
-    "progress": "지금 레벨 {{level}} · {{have}}/{{goal}}",
-    "progress_long": "지금 레벨 {{level}} · 도감 {{have}}/{{goal}}",
+    "progress_count": "새 요리 {{have}}/{{goal}}",
     "to_next_one": "새 요리 {{count}}가지만 더 만들면 레벨 {{next}}",
     "to_next_other": "새 요리 {{count}}가지만 더 만들면 레벨 {{next}}",
     "times": "×{{count}}",
@@ -183,10 +190,10 @@
     "add_known": "이미 할 줄 아는\n요리 추가",
     "detail": {
       "change_photo": "사진 바꾸기",
-      "made_one": "{{count}}번 만들었어요 · {{method}} 위주",
-      "made_other": "{{count}}번 만들었어요 · {{method}} 위주",
+      "stat_made": "만든 횟수",
+      "stat_method": "주로",
       "learned": "내가 배운 것",
-      "my_version": "내 버전 레시피 · {{minutes}}분",
+      "my_version": "내 버전 레시피",
       "cook_again": "다시 만들기"
     },
     "photo": {
