@@ -47,7 +47,6 @@ python3 scripts/build.py && python3 scripts/preview.py
 
 ## 디자인 기준
 - **Figma 팀 파일 (기준)**: [시디 GUI](https://www.figma.com/design/o35yAGSYCSiuumWErSVqO3/GUI) — 화면 · 변수 · 컴포넌트는 여기만 고쳐요.
-- **개인 파일**: [w07 GUI](https://www.figma.com/design/Jo9yKP6UmTZn5xtd0doT2z/-w07--GUI) — 옮기기 전 원본이에요. 팀 파일은 더 이상 이 파일의 컴포넌트를 참조하지 않아요(`LG/*` 0개). 기록용으로만 남겨두고 여기서 작업하지 않아요.
 - **Figma 라이브러리**: 팀 파일에는 iOS and iPadOS 27만 켜 둬요. iOS 26 · macOS 키트는 쓰지 않아요.
 - **iOS 기준**: [iOS and iPadOS 27 (Community)](https://www.figma.com/design/NXgKUsG67Nu5Q2UddrTRQi/iOS-and-iPadOS-27--Community-) — 시스템 요소(Status Bar, Tab Bar, Toggle, Segmented Control, Liquid Glass 버튼·재질)는 이 키트 컴포넌트를 그대로 써요.
 - **폰트: 최종은 Pretendard, Figma 작업 중에는 Noto Sans KR**

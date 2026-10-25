@@ -2,7 +2,7 @@
 레포 원본(i18n_src.py, data/*.json)에서 [변수 이름, 한국어, 영어, 코드 위치] 목록을 만들어요.
 
   python3 scripts/copy_payload.py                          # 전체 목록 (JSON, 표준 출력)
-  python3 scripts/copy_payload.py --existing names.json    # data/* 는 Figma에 이미 있는 이름만
+  python3 scripts/copy_payload.py --existing figma-copy.json  # data/* 는 Figma에 이미 있는 것만 (read-copy.js 결과)
 
 이름 규칙: i18n 키의 "." → "/" (common.next → common/next), DB 이름은 data/… 아래.
 """
@@ -53,12 +53,13 @@ def build_rows():
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--existing", help="Figma Copy에 있는 변수 이름 목록(JSON 배열) 파일")
+    ap.add_argument("--existing", help="Figma Copy 값(read-copy.js 결과, JSON 객체) 또는 이름 목록(JSON 배열) 파일")
     a = ap.parse_args()
     rows = build_rows()
     out = {"rows": rows}
     if a.existing:
-        have = set(json.load(open(a.existing, encoding="utf-8")))
+        data = json.load(open(a.existing, encoding="utf-8"))
+        have = set(data.keys() if isinstance(data, dict) else data)
         repo_data = {x[0] for x in rows if x[0].startswith("data/")}
         out["rows"] = [x for x in rows if not x[0].startswith("data/") or x[0] in have]
         out["figma_only_data"] = sorted(n for n in have if n.startswith("data/") and n not in repo_data)

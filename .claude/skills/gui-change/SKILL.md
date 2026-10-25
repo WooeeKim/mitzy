@@ -59,7 +59,7 @@ scripts/gui-start.sh <짧은-이름>   # 예: recipe-button-text
 
 ### 4. 레포 문구를 Figma에 반영 (3a에서 바뀐 경우만)
 `copy-sync` 스킬 절차를 따라요.
-1. `scripts/copy_payload.py --existing <이름 목록>`으로 목록을 만들어요.
+1. `scripts/copy_payload.py --existing <figma-copy.json>`으로 목록을 만들어요.
 2. `apply-copy.js`의 `MODE`를 `'dry'`로 돌려 바뀔 내용을 확인해요. 그다음 `'apply'`로 한 번 더 돌려요. 이 절차는 팀원에게 묻지 않아요. 사람이 할 일이 아니라 AI가 확인하는 일이에요.
 
 ### 5. 검사

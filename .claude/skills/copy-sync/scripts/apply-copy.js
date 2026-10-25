@@ -1,5 +1,5 @@
 // copy-sync 2단계 — 레포 문구를 Figma Copy 변수에 맞춰요.
-// PAYLOAD 자리에 `python3 scripts/copy_payload.py --existing <이름 파일>` 출력(JSON)을 그대로 붙여 넣어요.
+// PAYLOAD 자리에 `python3 scripts/copy_payload.py --existing <figma-copy.json>` 출력(JSON)을 그대로 붙여 넣어요.
 // MODE = 'dry' 로 먼저 돌려 바뀔 내용을 보고, 사람이 확인한 뒤 'apply' 로 다시 돌려요.
 const MODE = 'dry';
 const CREATE_DATA = [];   // 새로 만들 data/* 이름의 앞부분. 예: ['data/recipe/omurice'] — 화면에 새 레시피를 넣을 때만

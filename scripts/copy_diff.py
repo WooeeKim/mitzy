@@ -2,7 +2,7 @@
 
   python3 scripts/copy_diff.py <figma-copy.json>
 
-figma-copy.json = .claude/skills/gui-change/scripts/read-copy.js 의 결과
+figma-copy.json = .claude/skills/gui-change/scripts/read-copy.js 의 결과 (copy-sync도 같은 파일을 써요)
   {"common/next": ["다음", "Next"], ...}   (sample/* 는 빠져 있어요)
 
 출력(JSON, 표준 출력):
