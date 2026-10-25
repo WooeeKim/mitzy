@@ -6,6 +6,18 @@
 - `data/preview.html` — 브라우저로 열면 레시피와 재료를 사진과 함께 볼 수 있어요. 오른쪽 위에서 한국어/English를 바꿔요.
 - `AGENTS.md` — 팀 작업 규칙이에요. 수정 요청은 AI에 한 줄로 쓰면 돼요.
 
+## 파일 찾기
+| 찾는 것 | 어디 | 고치는 법 |
+|---|---|---|
+| 재료·레시피 내용 | `scripts/ingredients_src.py`, `scripts/recipes_src.py`, `scripts/en_src.py` | AI에 요청 |
+| 화면 문구 (한/영) | `scripts/i18n_src.py` | AI에 요청 |
+| 사진 | `scripts/photos.json`, `data/images/` | 개발자에게 요청 |
+| 작업 규칙 | `AGENTS.md` | 팀 합의 후 PR |
+| 디자인 값 (색·간격·글꼴) | `design-tokens/` | Figma에서 바꾸고 AI에 요청 |
+| 생성 파일 (보기만) | `data/*.json`, `i18n/*.json`, `data/preview.html`, `design-tokens/tokens.css` | 직접 고치지 않음 (빌드가 만듦) |
+| 빌드·도구 스크립트 | `scripts/build.py`, `preview.py`, `copy_tool.py`, `tokens_css.py`, `gui.sh` | 개발자 |
+| AI 설정 | `.claude/`, `CLAUDE.md` | 몰라도 됨 (개발자용) |
+
 ## 폴더
 - `data/` — 재료·레시피 DB (생성 파일), 사진, 출처 ([설명](data/README.md))
 - `i18n/` — 앱 화면 문구 한국어·영어 (생성 파일, [설명](i18n/README.md))
