@@ -1,4 +1,4 @@
-# 맛있쥐 (MouseMouth) — AI 작업 규칙
+# 믿쥐 (Mitzy) — AI 작업 규칙
 
 팀원 누구의 AI든 이 레포를 고칠 때 이 파일을 먼저 따라요. Codex · Cursor 같은 AI는 이 파일을 바로 읽고, Claude Code는 `CLAUDE.md`가 이 파일을 불러와요. 폴더 설명은 [README.md](README.md), DB 칸 설명은 [data/README.md](data/README.md)에 있어요.
 
@@ -40,6 +40,7 @@ python3 scripts/build.py && python3 scripts/preview.py
 | 화면 규칙 검사 · 다크/영어 확인 | `ds-audit` | Figma를 고친 뒤, Figma를 바꾼 PR을 올리기 전 |
 | 레포 문구를 Figma `Copy`에 맞추기 | `copy-sync` | `i18n_src.py` · DB 문구를 바꾼 뒤 |
 | 디자인 토큰 내보내기 | `tokens-export` | Figma 변수 · 텍스트 스타일을 바꾼 뒤 |
+| 팀원 수정 요청 한 줄 | `gui-change` | 수정 요청이 들어왔을 때 (Figma와 레포를 같이 고치고 PR까지) |
 
 - Claude Code는 `/ds-audit`처럼 불러요. 다른 AI는 `.claude/skills/<이름>/SKILL.md`를 읽고 같은 순서로 해요. 셋 다 Figma MCP 연결이 필요해요.
 - Figma에 쓰는 실행 코드는 각 스킬의 `scripts/` 폴더에 있어요. 고칠 땐 스킬 파일을 고치고 PR로 올려요.
@@ -51,15 +52,15 @@ python3 scripts/build.py && python3 scripts/preview.py
 - **iOS 기준**: [iOS and iPadOS 27 (Community)](https://www.figma.com/design/NXgKUsG67Nu5Q2UddrTRQi/iOS-and-iPadOS-27--Community-) — 시스템 요소(Status Bar, Tab Bar, Toggle, Segmented Control, Liquid Glass 버튼·재질)는 이 키트 컴포넌트를 그대로 써요.
 - **폰트: 최종은 Pretendard, Figma 작업 중에는 Noto Sans KR**
   - AI가 Figma를 고치는 환경(Figma 원격 MCP)에는 Pretendard가 없어서 Pretendard 글자는 AI가 고칠 수 없어요. 그래서 Figma 텍스트 스타일은 작업하는 동안 Noto Sans KR로 둬요.
-  - 텍스트 스타일 15개는 모두 `Type` 변수에 묶여 있어요. 확정할 때 사람이 `font/family`를 `Pretendard`, `font/weight/semibold`를 `SemiBold`로 바꾸면 전부 바뀌어요. AI 작업이 다시 필요하면 되돌려요.
+  - 텍스트 스타일 13개는 모두 `Type` 변수에 묶여 있어요. 확정할 때 사람이 `font/family`를 `Pretendard`, `font/weight/semibold`를 `SemiBold`로 바꾸면 전부 바뀌어요. AI 작업이 다시 필요하면 되돌려요.
   - 웹은 Pretendard예요. jsDelivr의 `pretendard@v1.3.9` variable dynamic subset을 쓰고 `"Pretendard Variable", Pretendard, -apple-system, system-ui, sans-serif` 순서로 적어요.
   - SF Pro는 웹에 올리지 않아요 (Apple 라이선스).
 - **아이콘**: SF Symbols 글자(􀊄 같은)는 Figma 안에서만 써요. 웹에는 넣지 않아요 (라이선스, SF Pro 없으면 안 보임).
-- Figma 변수는 4묶음이에요: `Color`(iOS 27 시스템 색을 가리키는 별칭) · `Size`(space · radius · touch) · `Type`(글꼴) · `Copy`(ko/en, 화면 문구 = `i18n_src.py` 키 + DB 이름). 색 · 간격 · 모서리는 변수, 글자는 텍스트 스타일(iOS 27 이름 15개 + SF Symbols용 `Icon/*` 4개)로만 써요. 직접 값을 넣지 않아요.
+- Figma 변수는 4묶음이에요: `Color`(iOS 27 시스템 색을 가리키는 별칭) · `Size`(space · radius · touch) · `Type`(글꼴) · `Copy`(ko/en, 화면 문구 = `i18n_src.py` 키 + DB 이름). 색 · 간격 · 모서리는 변수, 글자는 텍스트 스타일(iOS 27 이름 13개 + SF Symbols용 `Icon/*` 4개)로만 써요. 직접 값을 넣지 않아요.
 - Light/Dark는 프레임의 iOS 27 `Colors` 모드 하나로 바꿔요. 우리 색, 키트 컴포넌트, Liquid Glass가 같이 바뀌어요. 요리 중 화면은 Dark예요.
 - 강조색 파랑 `color/accent`(→ iOS `Accents/Blue`)는 **사진 위 선택 표시(재료 타일 체크)에만** 써요. 파랑 위 체크 · 테두리는 `color/on-accent`(→ iOS `Grays/White`). 칩 · 버튼 등 나머지 "선택됨"은 검정 유리(`color/fg`)예요. 다른 곳에 파랑이 필요하면 먼저 이 규칙을 팀과 바꿔요.
 - 유리 재질은 iOS 27 키트의 Liquid Glass 컴포넌트로 써요. 따로 효과 스타일을 만들지 않아요.
-- 맛있쥐 전용 컴포넌트는 `02 Components`의 `Mitzy/*` 20개예요 (Button · Icon Button · Nav Button · Cooking Button · Chip · Ingredient Tile · Ingredient Token · Dish Tile · Recipe Card · List Row · Info Row · Step Row · Status Pill · Notice · Tab Bar · Segmented · Stat Row · Card · Photo Check · Search Field). Status Bar · Home Indicator · Grabber · 아이콘 내비 버튼(뒤로 · 닫기) · Toggle · 진행 막대 · 스크롤 끝 효과는 iOS 27 키트 컴포넌트를 그대로 써요. 글자 내비 버튼은 `Mitzy/Nav Button`, 탭 바는 `Mitzy/Tab Bar`, 목록 줄은 `Mitzy/List Row`, 라벨–값 줄은 `Mitzy/Info Row`, 보기 · 모드 전환은 `Mitzy/Segmented`(선택 = `color/fg` 알약), 제목 아래 사실 2–3개는 `Mitzy/Stat Row`, 검색창은 `Mitzy/Search Field`, 카드 안 목록 한 줄(준비 · 순서 · 배운 것)은 `Mitzy/Step Row`.
+- 믿쥐 전용 컴포넌트는 `02 Components`의 `Mitzy/*` 20개예요 (Button · Icon Button · Nav Button · Cooking Button · Chip · Ingredient Tile · Ingredient Token · Dish Tile · Recipe Card · List Row · Info Row · Step Row · Status Pill · Notice · Tab Bar · Segmented · Stat Row · Card · Photo Check · Search Field). Status Bar · Home Indicator · Grabber · 아이콘 내비 버튼(뒤로 · 닫기) · Toggle · 진행 막대 · 스크롤 끝 효과는 iOS 27 키트 컴포넌트를 그대로 써요. 글자 내비 버튼은 `Mitzy/Nav Button`, 탭 바는 `Mitzy/Tab Bar`, 목록 줄은 `Mitzy/List Row`, 라벨–값 줄은 `Mitzy/Info Row`, 보기 · 모드 전환은 `Mitzy/Segmented`(선택 = `color/fg` 알약), 제목 아래 사실 2–3개는 `Mitzy/Stat Row`, 검색창은 `Mitzy/Search Field`, 카드 안 목록 한 줄(준비 · 순서 · 배운 것)은 `Mitzy/Step Row`.
 - 직접 만드는 판(정보 카드, 시트, 트레이, 말풍선 같은 것)은 프레임(배치 · 여백 토큰) + 맨 아래 `Mitzy/Card`(유리 배경, STRETCH)로 만들어요. 모양은 Card(작은 유리, 기본 `radius/card`) · Panel(큰 유리: 시트 · 트레이 · 메뉴, 기본 `radius/panel`) · Pill(`radius/full`) · Thumb(`radius/thumb`). 판 모서리가 기본값과 다르면 인스턴스의 유리 모서리도 같은 값으로 맞춰요. 검은 배지처럼 강조된 유리는 키트 Prominent 유리를 그대로 써요.
 - 화면 아래 버튼: 하나만 있으면 `Mitzy/Button` Prominent(검정, 다크에선 흰색)예요. 두 개면 주 행동만 Prominent, 보조 행동은 Glass(예: 날짜 모름 / 저장, 자랑하기 / 도감 보기). 빼기 같은 행동도 화면의 유일한 행동이면 Prominent예요.
 - 크기: 누르는 것의 높이는 `touch/min`(44: 칩 · 세그먼트 · 목록 줄 최소)과 `touch/control`(50: Button · Nav Button · Icon Button · Search Field, 키트 유리 버튼과 같은 높이) 두 가지예요. 요리 중 버튼은 `touch/cooking`(135).

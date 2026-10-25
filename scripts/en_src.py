@@ -1,5 +1,5 @@
 # 영어 원본 — recipes_src.py / ingredients_src.py 와 순서·개수가 같아야 함 (build.py 가 검사)
-# 레시피 이름·표현은 Figma 영어 GUI(iOS 26 Liquid Glass (EN))에 맞춤
+# 레시피 이름·표현은 Figma 팀 파일의 영어 화면(Copy 영어 모드)에 맞춤
 
 # 재료: id → (name_en, storage_en, note_en)
 EN_ING = {

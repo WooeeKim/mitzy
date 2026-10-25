@@ -1,4 +1,4 @@
-# 맛있쥐 DB — 재료 · 레시피 · 사진
+# 믿쥐 DB — 재료 · 레시피 · 사진
 
 앱 화면(FigJam "[시디] Ideation" 보드의 GUI 섹션)과 믿쥐 AI가 같이 읽는 데이터예요.
 JSON이 원본이고, `csv/` 폴더는 팀원이 엑셀·구글 시트로 열어보는 용도예요.
@@ -29,7 +29,7 @@ t(step.sous_chef, "say")     // 믿쥐 대사
 | `onboarding_dishes.json` | `chip_en` `skills_en` |
 | `meta.json` | `moment_types_en` `levels_en` `categories_en`, `methods`·`tools`(한↔영 표) |
 
-- 영어 이름·문구는 Figma 영어 GUI(iOS 26 Liquid Glass (EN))에 맞췄어요. 이름은 한국어 **믿쥐**, 영어 **Mitzy**예요.
+- 영어 이름·문구는 Figma 팀 파일의 영어 화면(Copy 영어 모드)에 맞췄어요. 이름은 한국어 **믿쥐**, 영어 **Mitzy**예요.
 - 영어 원본은 `scripts/en_src.py`예요. 한국어 단계 수와 영어 단계 수가 다르거나, 믿쥐 순간이 한쪽에만 있으면 `build.py`가 멈추고 알려줘요.
 - 버튼·제목 같은 **화면 문구**는 DB가 아니라 저장소 맨 위 `i18n/` 폴더에 있어요.
 

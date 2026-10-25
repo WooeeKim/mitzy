@@ -1,5 +1,5 @@
 # 앱 화면 문구 — 한국어·영어를 한 줄에 같이 적어서 짝이 안 어긋나게 함
-# 원본: Figma "[w07] GUI" 의 iOS 26 Liquid Glass(한국어) / iOS 26 Liquid Glass (EN) 페이지
+# 원본: 이 파일. Figma 팀 파일(시디 GUI)의 Copy 변수가 여기서 옮겨져요 (copy-sync 스킬)
 # build.py 가 i18n/ko.json, i18n/en.json 으로 나눠 씀 (i18next 형식)
 #   {{name}}  = 앱이 채워 넣는 값
 #   키 끝 _one / _other = 개수에 따라 영어 단수·복수 (한국어는 _other 만 써도 됨)

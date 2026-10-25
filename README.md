@@ -1,4 +1,4 @@
-# 맛있쥐 (MouseMouth) — Team 3 · ID40003 Interactive System Design
+# 믿쥐 (Mitzy) — Team 3 · ID40003 Interactive System Design
 
 20대 자취생의 요리를 옆에서 봐주는 보조 셰프 **믿쥐(Mitzy)** 과 앱.
 
@@ -18,7 +18,7 @@
 3. `data/` 안의 JSON·CSV·미리보기, `i18n/` 이 같이 갱신돼요 (`preview.html` 오른쪽 위에서 한국어/English 전환)
 
 ## 한/영 전환 (i18n)
-Figma GUI의 한국어 페이지(iOS 26 Liquid Glass)와 영어 페이지(iOS 26 Liquid Glass (EN))에서 화면별 문구를 뽑아 짝을 맞췄어요.
+Figma 팀 파일(시디 GUI)의 화면 문구를 한국어·영어 짝으로 맞춰요. Figma에서는 `Copy` 변수로 연결돼 있어요.
 
 - **화면 문구** → `i18n/ko.json` · `i18n/en.json`. 키는 화면 단위예요 (`onboarding.welcome.title`, `fridge.use_soon`, `cooking.watching` …). 한국어·영어는 `scripts/i18n_src.py` 한 파일에 나란히 적혀 있어서 같이 고치면 돼요.
 - **레시피·재료 내용** → DB의 `_en` 칸 ([`data/README.md`](data/README.md#한영-전환)).

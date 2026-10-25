@@ -36,7 +36,7 @@ tiles = "".join(f'<div class="tile">{img(i["photo"], "timg")}<b>{L(i["name"], i[
                   i["category_en"] + (f' · {i["shelf_days"]}d' if i["shelf_days"] else "")) + "</small></div>" for i in ing)
 
 page = f'''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>맛있쥐 DB 미리보기</title>
+<title>믿쥐 DB 미리보기</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"><style>
 :root{{--bg:#faf8f5;--fg:#1d1d1f;--mut:#6e6e73;--card:#fff;--line:#e5e5ea;--acc:#c2410c}}
 @media (prefers-color-scheme:dark){{:root{{--bg:#111;--fg:#f2f2f2;--mut:#a1a1a6;--card:#1c1c1e;--line:#333;--acc:#fb923c}}}}
@@ -59,7 +59,7 @@ html[lang=ko] .en, html[lang=en] .ko{{display:none}}
 .sw button{{border:0;background:var(--card);color:var(--fg);padding:8px 14px;font:inherit;cursor:pointer}}
 .sw button[aria-pressed=true]{{background:var(--acc);color:#fff}}
 </style></head><body><main>
-<div class="top"><div><h1>{L("맛있쥐 DB 미리보기", "MouseMouth DB preview")}</h1><p class="sub">{L(f"레시피 {len(rec)}개 · 재료 {len(ing)}개 · 사진 출처는 data/CREDITS.md", f"{len(rec)} recipes · {len(ing)} ingredients · photo credits in data/CREDITS.md")}</p></div>
+<div class="top"><div><h1>{L("믿쥐 DB 미리보기", "Mitzy DB preview")}</h1><p class="sub">{L(f"레시피 {len(rec)}개 · 재료 {len(ing)}개 · 사진 출처는 data/CREDITS.md", f"{len(rec)} recipes · {len(ing)} ingredients · photo credits in data/CREDITS.md")}</p></div>
 <div class="sw" role="group" aria-label="Language"><button data-l="ko">한국어</button><button data-l="en">English</button></div></div>
 <h2>{L("레시피", "Recipes")}</h2><div class="grid">{"".join(cards)}</div>
 <h2>{L("재료", "Ingredients")}</h2><div class="tiles">{tiles}</div>
