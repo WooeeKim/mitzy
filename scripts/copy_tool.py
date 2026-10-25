@@ -1,12 +1,15 @@
-"""Figma Copy 변수 목록 만들기 — copy-sync · gui-change 스킬이 씀
-레포 원본(i18n_src.py, data/*.json)에서 [변수 이름, 한국어, 영어, 코드 위치] 목록을 만들어요.
+"""Figma Copy 문구 도구 — copy-sync · gui-change 스킬이 씀 (파일을 고치지 않아요)
 
-  python3 scripts/copy_payload.py                          # 전체 목록 (JSON, 표준 출력)
-  python3 scripts/copy_payload.py --existing figma-copy.json  # data/* 는 Figma에 이미 있는 것만 (read-copy.js 결과)
+  python3 scripts/copy_tool.py payload [figma-copy.json]
+      레포 원본의 문구 목록을 JSON으로 출력해요. figma-copy.json을 주면 그 안에 있는 data/* 만 남겨요.
+  python3 scripts/copy_tool.py diff figma-copy.json
+      Figma 값과 레포 원본을 비교해서 다른 문구(changed)와 Figma에만 있는 이름(only_figma)을 출력해요.
 
+figma-copy.json = .claude/skills/gui-change/scripts/read-copy.js 의 결과 (이름: [한국어, 영어])
 이름 규칙: i18n 키의 "." → "/" (common.next → common/next), DB 이름은 data/… 아래.
 """
-import argparse, json, os, re, sys
+import json, os, re, sys
+
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 D = os.path.join(ROOT, "data")
 sys.path.insert(0, os.path.dirname(__file__))
@@ -21,7 +24,7 @@ def slug(s):  # "Dairy & eggs" → dairy_eggs
 
 
 def build_rows():
-    """[이름, 한국어, 영어, 코드 위치] 목록. 한 번 불러올 때마다 i18n_src.py를 새로 읽어요."""
+    """[이름, 한국어, 영어, 코드 위치] 목록. 부를 때마다 원본을 새로 읽어요."""
     from i18n_src import T
     rows = [[k.replace(".", "/"), ko, en, f't("{k}")'] for k, ko, en in T]
     ing = load("ingredients.json")
@@ -51,18 +54,49 @@ def build_rows():
     return rows
 
 
-if __name__ == "__main__":
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--existing", help="Figma Copy 값(read-copy.js 결과, JSON 객체) 또는 이름 목록(JSON 배열) 파일")
-    a = ap.parse_args()
+def payload(existing=None):
     rows = build_rows()
     out = {"rows": rows}
-    if a.existing:
-        data = json.load(open(a.existing, encoding="utf-8"))
+    if existing:
+        data = json.load(open(existing, encoding="utf-8"))
         have = set(data.keys() if isinstance(data, dict) else data)
         repo_data = {x[0] for x in rows if x[0].startswith("data/")}
         out["rows"] = [x for x in rows if not x[0].startswith("data/") or x[0] in have]
         out["figma_only_data"] = sorted(n for n in have if n.startswith("data/") and n not in repo_data)
         out["repo_only_data"] = len(repo_data - have)
-    json.dump(out, sys.stdout, ensure_ascii=False)
-    print(f"\nCopy 목록 {len(out['rows'])}개" + (f", Figma에만 있는 data {len(out['figma_only_data'])}개, 레포에만 있는 data {out['repo_only_data']}개" if a.existing else ""), file=sys.stderr)
+    return out
+
+
+def diff(path):
+    figma = {k: v for k, v in json.load(open(path, encoding="utf-8")).items() if not k.startswith("sample/")}
+    repo = {r[0]: r for r in build_rows()}
+    changed, only_figma, same = [], [], 0
+    for name, (fko, fen) in sorted(figma.items()):
+        if name not in repo:
+            only_figma.append(name)
+            continue
+        _, rko, ren, ref = repo[name]
+        if (rko, ren) == (fko, fen):
+            same += 1
+        else:
+            changed.append({"name": name, "repo": [rko, ren], "figma": [fko, fen], "ref": ref})
+    return {"changed": changed, "only_figma": only_figma, "same": same}
+
+
+def main(argv):
+    if len(argv) >= 2 and argv[1] == "payload":
+        result = payload(argv[2] if len(argv) > 2 else None)
+        json.dump(result, sys.stdout, ensure_ascii=False)
+        print(f"\nCopy 목록 {len(result['rows'])}개", file=sys.stderr)
+    elif len(argv) == 3 and argv[1] == "diff":
+        result = diff(argv[2])
+        json.dump(result, sys.stdout, ensure_ascii=False, indent=1)
+        print(f"\n차이 {len(result['changed'])}개 · Figma에만 {len(result['only_figma'])}개 · 같음 {result['same']}개", file=sys.stderr)
+    else:
+        print(__doc__, file=sys.stderr)
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

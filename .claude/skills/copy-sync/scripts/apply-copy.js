@@ -1,5 +1,5 @@
 // copy-sync 2단계 — 레포 문구를 Figma Copy 변수에 맞춰요.
-// PAYLOAD 자리에 `python3 scripts/copy_payload.py --existing <figma-copy.json>` 출력(JSON)을 그대로 붙여 넣어요.
+// PAYLOAD 자리에 `python3 scripts/copy_tool.py payload <figma-copy.json>` 출력(JSON)을 그대로 붙여 넣어요.
 // MODE = 'dry' 로 먼저 돌려 바뀔 내용을 보고, 사람이 확인한 뒤 'apply' 로 다시 돌려요.
 const MODE = 'dry';
 const CREATE_DATA = [];   // 새로 만들 data/* 이름의 앞부분. 예: ['data/recipe/omurice'] — 화면에 새 레시피를 넣을 때만
@@ -14,7 +14,7 @@ const want = new Map(PAYLOAD.rows.map(r => [r[0], r]));
 // 안전장치: PAYLOAD가 일부만 붙여 넣어졌으면 나머지 문구를 "없어진 것"으로 보고 지워버릴 수 있어요. 그럴 땐 멈춰요.
 const i18nWant = PAYLOAD.rows.filter(r => !r[0].startsWith('data/')).length;
 const i18nHave = [...have.keys()].filter(n => !n.startsWith('data/') && !n.startsWith('sample/')).length;
-if (i18nWant < i18nHave * 0.8) throw new Error(`PAYLOAD의 화면 문구가 ${i18nWant}개뿐이에요 (Figma ${i18nHave}개). copy_payload.py 출력을 통째로 붙여 넣었는지 확인해요.`);
+if (i18nWant < i18nHave * 0.8) throw new Error(`PAYLOAD의 화면 문구가 ${i18nWant}개뿐이에요 (Figma ${i18nHave}개). copy_tool.py payload 출력을 통째로 붙여 넣었는지 확인해요.`);
 const report = { mode: MODE, create: [], update: [], skippedNewData: 0, deleted: [], keptInUse: [] };
 
 for (const [name, k, e, ref] of PAYLOAD.rows) {

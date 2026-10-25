@@ -25,7 +25,7 @@ description: Apply one teammate's GUI change request end to end — a Mitzy (믿
 
 ### 1. 작업 브랜치 만들기
 ```bash
-scripts/gui-start.sh <짧은-이름>   # 예: recipe-button-text
+scripts/gui.sh start <짧은-이름>   # 예: recipe-button-text
 ```
 커밋 안 된 변경이 있으면 멈춰요. 그 경우 팀원에게 "작업 중인 변경이 있어요"라고만 알리고 끝내요.
 
@@ -52,14 +52,14 @@ scripts/gui-start.sh <짧은-이름>   # 예: recipe-button-text
 
 ### 3d. Figma에서 고친 문구를 레포로 가져오기
 1. `read-copy.js`를 `use_figma`로 실행하고, 결과를 스크래치 폴더에 `figma-copy.json`으로 저장해요.
-2. `python3 scripts/copy_diff.py <figma-copy.json>`을 돌려요. `changed`는 Figma와 레포 값이 다른 문구예요.
+2. `python3 scripts/copy_tool.py diff <figma-copy.json>`을 돌려요. `changed`는 Figma와 레포 값이 다른 문구예요.
 3. 요청에서 Figma가 새 값이라는 게 분명하면 `changed`의 `figma` 값을 `ref` 위치의 원본에 그대로 넣어요. 고친 뒤 2를 다시 돌려 `changed`가 비었는지 확인해요.
 4. `only_figma`(레포에 없는 이름)가 있으면 레포에 새로 만들지 팀원에게 한 번만 물어요. 답이 없으면 그 이름은 건드리지 않아요.
 5. 레포가 바뀌었으니 2단계 빌드를 해요. Figma 값은 이미 새 값이라 4단계는 필요 없어요.
 
 ### 4. 레포 문구를 Figma에 반영 (3a에서 바뀐 경우만)
 `copy-sync` 스킬 절차를 따라요.
-1. `scripts/copy_payload.py --existing <figma-copy.json>`으로 목록을 만들어요.
+1. `scripts/copy_tool.py payload <figma-copy.json>`으로 목록을 만들어요.
 2. `apply-copy.js`의 `MODE`를 `'dry'`로 돌려 바뀔 내용을 확인해요. 그다음 `'apply'`로 한 번 더 돌려요. 이 절차는 팀원에게 묻지 않아요. 사람이 할 일이 아니라 AI가 확인하는 일이에요.
 
 ### 5. 검사
@@ -69,7 +69,7 @@ scripts/gui-start.sh <짧은-이름>   # 예: recipe-button-text
 
 ### 6. 올리기
 ```bash
-scripts/gui-finish.sh "<PR 제목>" <PR 설명 파일>
+scripts/gui.sh finish "<PR 제목>" <PR 설명 파일>
 ```
 - 레포에 바뀐 파일이 없으면 "Figma에서만 바뀌었어요"라고 끝나요. PR은 만들지 않아요.
 - 허용되지 않은 파일이 바뀌었으면 멈춰요. 그 파일을 원래대로 되돌리고 다시 해요.
@@ -87,5 +87,5 @@ scripts/gui-finish.sh "<PR 제목>" <PR 설명 파일>
 ## 주의
 - 같은 항목을 Figma와 레포에서 둘 다 고쳤으면(`changed`인데 요청이 한쪽만 말하지 않을 때) 어느 쪽이 맞는지 팀원에게 한 번만 물어요. 나머지는 묻지 않아요.
 - 생성 파일(`data/*.json`, `i18n/*.json`, `data/preview.html`, `design/tokens.*`)은 손으로 고치지 않아요. 항상 원본에서 다시 만들어요.
-- `main`에 직접 올리지 않아요. 항상 `scripts/gui-start.sh`로 만든 브랜치에서 작업해요.
+- `main`에 직접 올리지 않아요. 항상 `scripts/gui.sh start`로 만든 브랜치에서 작업해요.
 - 한 번에 한 요청만 처리해요. 두 요청이 같은 화면이면 먼저 온 요청을 끝낸 뒤 다음 요청을 시작해요.
