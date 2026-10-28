@@ -1,0 +1,258 @@
+<!doctype html>
+<!-- [레시피] 레시피 상세 — Figma 03 Screens의 "레시피 상세 (위)" · "(스크롤 후)"를 웹으로 옮긴 화면.
+     데이터는 data/*.json, 문구는 i18n/*.json, 색·간격·글꼴은 design-tokens/tokens.css에서 읽어요.
+     주소: /screens/recipe.html?id=<레시피 id>&lang=ko|en&theme=light|dark -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>믿쥐 · 레시피 상세</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../design-tokens/tokens.css">
+<style>
+/* 유리 재질은 iOS 27 Liquid Glass를 흉내 낸 값이에요. Figma 키트 값이 토큰으로 나오면 바꿔요. */
+:root {
+  --glass-bg: rgb(255 255 255 / 0.72);
+  --glass-edge: rgb(255 255 255 / 0.9);
+  --glass-shadow: 0 1px 2px rgb(0 0 0 / 0.06), 0 6px 20px rgb(0 0 0 / 0.08);
+  --prominent-bg: var(--color-fg);
+  --prominent-fg: var(--color-bg);
+  --hero-h: 340px;
+  --home-indicator: 34px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --glass-bg: rgb(44 44 46 / 0.72);
+    --glass-edge: rgb(255 255 255 / 0.12);
+    --glass-shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 6px 20px rgb(0 0 0 / 0.4);
+  }
+}
+:root[data-theme="dark"] {
+  --glass-bg: rgb(44 44 46 / 0.72);
+  --glass-edge: rgb(255 255 255 / 0.12);
+  --glass-shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 6px 20px rgb(0 0 0 / 0.4);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--color-bg); color: var(--color-fg); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+h1, h2, p, ol { margin: 0; }
+button { font: inherit; color: inherit; border: 0; background: none; padding: 0; cursor: pointer; }
+
+/* 화면 틀: 폰에서는 꽉 차게, 넓은 화면에서는 402×874 기기 크기로 가운데 */
+.screen { position: relative; width: 100%; height: 100dvh; overflow: hidden; background: var(--color-bg); }
+.scroll { height: 100%; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none; }
+.scroll::-webkit-scrollbar { display: none; }
+@media (min-width: 560px) {
+  body { display: grid; place-items: center; min-height: 100dvh; background: rgb(142 142 147 / 0.35); padding: var(--space-32) 0; }
+  .screen { width: 402px; height: 874px; border-radius: 50px; box-shadow: 0 20px 60px rgb(0 0 0 / 0.25); zoom: var(--fit, 1); }
+}
+
+.glass {
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  backdrop-filter: blur(20px) saturate(1.8);
+  box-shadow: inset 0 0 0 0.5px var(--glass-edge), var(--glass-shadow);
+}
+
+/* 사진: 아래로 갈수록 배경색으로 녹아요 */
+.hero { position: relative; height: var(--hero-h); }
+.hero img { width: 100%; height: 100%; object-fit: cover; display: block;
+  -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent 95%); mask-image: linear-gradient(to bottom, #000 40%, transparent 95%); }
+
+/* 위 내비: 처음엔 사진 위 유리 버튼, 스크롤 후엔 가운데 제목이 붙은 바 */
+.nav { position: absolute; top: 0; left: 0; right: 0; z-index: 3; display: flex; align-items: center; justify-content: space-between;
+  gap: var(--space-8); padding: 54px var(--space-16) var(--space-8); pointer-events: none; transition: background .2s; }
+.nav > * { pointer-events: auto; }
+.nav-title { position: absolute; left: 76px; right: 76px; bottom: var(--space-8); height: var(--touch-min); display: flex; align-items: center;
+  justify-content: center; opacity: 0; transition: opacity .2s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nav-title span { overflow: hidden; text-overflow: ellipsis; }
+.nav::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: var(--space-16); background: linear-gradient(var(--color-bg), transparent);
+  opacity: 0; transition: opacity .2s; }
+.screen.scrolled .nav { background: var(--color-bg); }
+.screen.scrolled .nav::after { opacity: 1; }
+.screen.scrolled .nav-title { opacity: 1; }
+.icon-btn { width: var(--touch-min); height: var(--touch-min); border-radius: var(--radius-full); display: grid; place-items: center; }
+.pill-btn { height: var(--touch-min); border-radius: var(--radius-full); padding: 0 var(--space-16); display: inline-flex; align-items: center; gap: var(--space-4); }
+.screen.scrolled .pill-btn { opacity: 0; pointer-events: none; }
+.icon { width: 20px; height: 20px; flex: none; }
+
+.body { position: relative; z-index: 1; margin-top: -56px; padding: 0 var(--space-16) calc(var(--touch-control) + var(--space-16) + var(--home-indicator) + var(--space-24)); }
+
+/* 제목 + Stat Row (라벨 위, 값 아래, 라벨–값 0) */
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: var(--space-12); }
+.stat { display: flex; flex-direction: column; align-items: center; }
+.stat + .stat { border-left: 0.5px solid var(--color-line); }
+.stat .label { color: var(--color-fg-muted); }
+
+.section { margin-top: var(--space-24); }
+.section h2 { margin-bottom: var(--space-12); }
+
+/* 재료 칩 */
+.chips { display: flex; flex-wrap: wrap; gap: var(--space-8); }
+.chip { height: var(--touch-min); border-radius: var(--radius-full); display: inline-flex; align-items: center; gap: var(--space-8);
+  padding: 0 var(--space-16) 0 var(--space-4); }
+.chip img { width: 36px; height: 36px; border-radius: var(--radius-full); object-fit: cover; }
+
+/* 할 일 목록: 유리 카드(세로 4, 가로 16) 안에 Step Row, 구분선은 글자 시작점부터 */
+.list { border-radius: var(--radius-card); padding: var(--space-4) var(--space-16); list-style: none; }
+.row { display: flex; gap: var(--space-12); padding: var(--space-12) 0; align-items: flex-start; }
+.row + .row .text { position: relative; }
+.row + .row .text::before { content: ""; position: absolute; left: 0; right: 0; top: calc(-1 * var(--space-12)); border-top: 0.5px solid var(--color-line); }
+.num { width: 24px; height: 24px; flex: none; border-radius: var(--radius-full); display: grid; place-items: center; margin-top: -1px; }
+.num.prep { background: var(--color-fill); color: var(--color-fg-muted); }
+.num.step { background: var(--color-fg); color: var(--color-bg); }
+.text { flex: 1; min-width: 0; }
+.help { display: flex; align-items: center; gap: var(--space-4); color: var(--color-fg-muted); margin-top: var(--space-4); }
+.help .icon { width: 16px; height: 16px; }
+
+/* 아래 버튼: 하나뿐이라 Prominent */
+.bottom { position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; padding: var(--space-24) var(--space-16) var(--home-indicator);
+  background: linear-gradient(to bottom, transparent, var(--color-bg) 40%); }
+.prominent { width: 100%; height: var(--touch-control); border-radius: var(--radius-full); background: var(--prominent-bg); color: var(--prominent-fg);
+  display: flex; align-items: center; justify-content: center; gap: var(--space-8); }
+.home-bar { position: absolute; left: 50%; bottom: 8px; width: 134px; height: 5px; border-radius: var(--radius-full); background: var(--color-fg); transform: translateX(-50%); }
+
+/* 디자인 확인용 도구 (화면 밖) */
+.tools { position: fixed; top: var(--space-16); right: var(--space-16); display: none; gap: var(--space-8); z-index: 10; }
+@media (min-width: 900px) { .tools { display: flex; } }
+.tools select, .tools button { height: 32px; border-radius: var(--radius-full); padding: 0 var(--space-12); border: 0.5px solid var(--color-line);
+  background: var(--color-bg); color: var(--color-fg); font: inherit; font-size: 13px; }
+.err { padding: var(--space-48) var(--space-16); color: var(--color-fg-muted); }
+</style>
+</head>
+<body>
+<div class="tools" aria-label="미리보기 설정">
+  <select id="pick" aria-label="레시피"></select>
+  <button id="lang" type="button"></button>
+  <button id="theme" type="button"></button>
+</div>
+
+<div class="screen" id="screen">
+  <nav class="nav">
+    <button class="icon-btn glass" type="button" id="back" aria-label="">
+      <svg class="icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.5 4 6.5 10l6 6"/></svg>
+    </button>
+    <div class="nav-title text-headline-regular"><span id="navTitle"></span></div>
+    <button class="pill-btn glass text-headline-regular" type="button" id="know">
+      <svg class="icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg>
+      <span id="knowLabel"></span>
+    </button>
+  </nav>
+
+  <div class="scroll" id="scroll">
+    <div class="hero"><img id="heroImg" alt=""></div>
+    <main class="body" id="body"></main>
+  </div>
+
+  <div class="bottom">
+    <button class="prominent text-headline-regular" type="button" id="start">
+      <svg class="icon" viewBox="0 0 20 20" fill="currentColor"><path d="M6 3.8v12.4c0 .7.8 1.2 1.4.8l9.6-6.2a1 1 0 0 0 0-1.6L7.4 3c-.6-.4-1.4.1-1.4.8Z"/></svg>
+      <span id="startLabel"></span>
+    </button>
+    <div class="home-bar" aria-hidden="true"></div>
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const lang = params.get("lang") === "en" ? "en" : "ko";
+const theme = params.get("theme");
+document.documentElement.lang = lang;
+if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+
+// 창이 기기보다 낮으면 기기 틀을 줄여서 한눈에 보이게
+const fit = () => document.documentElement.style.setProperty("--fit", Math.min(1, (innerHeight - 64) / 874));
+addEventListener("resize", fit);
+fit();
+
+const en = lang === "en";
+const pick = (o, k) => (en ? o[k + "_en"] : o[k]);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+// i18n: "a.b.c" 키, {{name}} 자리표시, 영어 _one/_other 복수형
+function t(dict, key, vars = {}) {
+  const get = (k) => k.split(".").reduce((o, p) => o?.[p], dict);
+  let s = get(key);
+  if ("count" in vars) s = get(key + (vars.count === 1 ? "_one" : "_other")) ?? s;
+  return (s ?? key).replace(/\{\{(\w+)\}\}/g, (_, v) => vars[v] ?? "");
+}
+
+const MITZY_ICON = '<svg class="icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4.5" r="2.5"/><circle cx="12" cy="4.5" r="2.5"/><ellipse cx="8" cy="9.5" rx="5.5" ry="5"/></svg>';
+
+Promise.all(["../data/recipes.json", "../data/ingredients.json", `../i18n/${lang}.json`].map((u) => fetch(u).then((r) => r.json())))
+  .then(([recipes, ingredients, copy]) => render(recipes, ingredients, copy))
+  .catch(() => {
+    document.getElementById("body").innerHTML = '<p class="err text-body-regular">data/*.json을 못 읽었어요. 레포 루트에서 서버를 켜고 /screens/recipe.html로 열어요.</p>';
+  });
+
+function render(recipes, ingredients, copy) {
+  const r = recipes.find((x) => x.id === params.get("id")) ?? recipes[0];
+  const ing = Object.fromEntries(ingredients.map((i) => [i.id, i]));
+  const name = pick(r, "name");
+  document.title = `${en ? "Mitzy" : "믿쥐"} · ${name}`;
+
+  // 내비 · 아래 버튼
+  document.getElementById("navTitle").textContent = name;
+  document.getElementById("knowLabel").textContent = t(copy, "recipe.i_know_this");
+  document.getElementById("startLabel").textContent = t(copy, "recipe.start");
+  document.getElementById("back").setAttribute("aria-label", en ? "Back" : "뒤로");
+  const hero = document.getElementById("heroImg");
+  if (r.photo) { hero.src = r.photo.url; hero.alt = r.photo.alt ?? ""; }
+
+  const stats = [
+    [t(copy, "recipe.stat.time"), t(copy, "common.minutes", { count: r.minutes })],
+    [t(copy, "recipe.stat.burners"), t(copy, "recipe.stat.burners_value", { count: r.burners })],
+    [t(copy, "recipe.stat.help"), t(copy, "common.times", { count: r.sous_chef_moments })],
+  ];
+
+  // 칩 이름: 한국어는 "이름 양", 영어는 DB의 label_en
+  const chipLabel = (x) => (en ? x.label_en : `${ing[x.id]?.name ?? x.id} ${x.amount}`) + (x.optional ? ` ${t(copy, "common.optional")}` : "");
+  const chips = r.ingredients.map((x) => {
+    const p = ing[x.id]?.photo;
+    return `<span class="chip glass text-subheadline-emphasized">${p ? `<img src="${esc(p.thumb)}" alt="" loading="lazy">` : ""}${esc(chipLabel(x))}</span>`;
+  }).join("");
+
+  const prep = pick(r, "prep").map((s, i) => `
+    <li class="row"><span class="num prep text-footnote-emphasized">${i + 1}</span><div class="text text-body-regular">${esc(s)}</div></li>`).join("");
+
+  const steps = r.steps.map((s) => `
+    <li class="row"><span class="num step text-footnote-emphasized">${s.n}</span><div class="text">
+      <p class="text-body-regular">${esc(pick(s, "text"))}</p>
+      ${s.sous_chef ? `<p class="help text-footnote-regular">${MITZY_ICON}${esc(pick(s.sous_chef, "label"))}</p>` : ""}
+    </div></li>`).join("");
+
+  document.getElementById("body").innerHTML = `
+    <h1 class="text-title1-emphasized">${esc(name)}</h1>
+    <div class="stats">${stats.map(([l, v]) => `<div class="stat"><span class="label text-caption1-emphasized">${esc(l)}</span><span class="text-headline-regular">${esc(v)}</span></div>`).join("")}</div>
+    <section class="section"><h2 class="text-title3-emphasized">${esc(t(copy, "recipe.ingredients"))}</h2><div class="chips">${chips}</div></section>
+    <section class="section"><h2 class="text-title3-emphasized">${esc(t(copy, "recipe.prep"))}</h2><ol class="list glass">${prep}</ol></section>
+    <section class="section"><h2 class="text-title3-emphasized">${esc(t(copy, "recipe.steps"))}</h2><ol class="list glass">${steps}</ol></section>`;
+
+  // 스크롤하면 제목이 내비로 올라가요
+  const screen = document.getElementById("screen");
+  const scroll = document.getElementById("scroll");
+  const title = document.querySelector(".body h1");
+  const onScroll = () => screen.classList.toggle("scrolled", title.getBoundingClientRect().bottom < screen.getBoundingClientRect().top + 100);
+  scroll.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  setupTools(recipes, r);
+}
+
+function setupTools(recipes, current) {
+  const go = (k, v) => { params.set(k, v); location.search = params.toString(); };
+  const sel = document.getElementById("pick");
+  sel.innerHTML = recipes.map((x) => `<option value="${esc(x.id)}"${x.id === current.id ? " selected" : ""}>${esc(pick(x, "name"))}</option>`).join("");
+  sel.onchange = () => go("id", sel.value);
+  const langBtn = document.getElementById("lang");
+  langBtn.textContent = en ? "한국어" : "English";
+  langBtn.onclick = () => go("lang", en ? "ko" : "en");
+  const themeBtn = document.getElementById("theme");
+  const dark = theme === "dark" || (!theme && matchMedia("(prefers-color-scheme: dark)").matches);
+  themeBtn.textContent = dark ? "Light" : "Dark";
+  themeBtn.onclick = () => go("theme", dark ? "light" : "dark");
+}
+</script>
+</body>
+</html>
