@@ -1,0 +1,9 @@
+<!doctype html>
+<!-- 예전 주소 호환: 레시피 상세는 이제 index.html 프로토타입 안에 있어요. -->
+<meta charset="utf-8">
+<script>
+  const q = new URLSearchParams(location.search);
+  const id = q.get("id") ?? "garlic_chicken_fried_rice";
+  q.delete("id");
+  location.replace("index.html" + (q.toString() ? "?" + q : "") + "#/recipe/" + id);
+</script>

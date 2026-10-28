@@ -14,6 +14,7 @@
 | 사진 | `scripts/photos.json`, `data/images/` | 개발자에게 요청 |
 | 작업 규칙 | `AGENTS.md` | 팀 합의 후 PR |
 | 디자인 값 (색·간격·글꼴) | `design-tokens/` | Figma에서 바꾸고 AI에 요청 |
+| 화면 프로토타입 (웹) | `screens/` — Figma 03 Screens를 옮겨서 눌러볼 수 있게 만든 것. 미리보기 서버에서 `/screens/index.html` | 개발자 |
 | 생성 파일 (보기만) | `data/*.json`, `i18n/*.json`, `data/preview.html`, `design-tokens/tokens.css` | 직접 고치지 않음 (빌드가 만듦) |
 | 빌드·도구 스크립트 | `scripts/build.py`, `preview.py`, `copy_tool.py`, `tokens_css.py`, `gui.sh` | 개발자 |
 | AI 설정 | `.claude/`, `CLAUDE.md` | 몰라도 됨 (개발자용) |
