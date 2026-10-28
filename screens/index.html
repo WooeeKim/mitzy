@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- 믿쥐 웹 프로토타입 — Figma 03 Screens를 옮긴 화면들을 이어서 눌러볼 수 있어요.
+     데이터는 data/*.json, 문구는 i18n/*.json, 색·간격·글꼴은 design-tokens/tokens.css에서 읽어요.
+     주소: /screens/index.html#/welcome  (?lang=en · ?theme=dark) -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>믿쥐 프로토타입</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../design-tokens/tokens.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="tools" aria-label="미리보기 설정">
+  <div class="row"><select id="jump" aria-label="화면으로 이동"></select></div>
+  <div class="row">
+    <button id="lang" type="button"></button>
+    <button id="theme" type="button"></button>
+    <button id="reset" type="button"></button>
+  </div>
+</div>
+
+<div class="screen" id="screen">
+  <div class="status" aria-hidden="true">
+    <svg viewBox="0 0 40 13"><text x="0" y="12" font-size="15" font-weight="600" fill="currentColor" font-family="-apple-system,system-ui">9:41</text></svg>
+    <svg viewBox="0 0 70 13" fill="currentColor"><rect x="0" y="8" width="3" height="5" rx="1"/><rect x="5" y="6" width="3" height="7" rx="1"/><rect x="10" y="3" width="3" height="10" rx="1"/><rect x="15" y="0" width="3" height="13" rx="1"/><path d="M33 3.5a9 9 0 0 1 12 0l-1.4 1.5a7 7 0 0 0-9.2 0Zm2.6 2.8a5 5 0 0 1 6.8 0L41 7.7a3 3 0 0 0-4 0ZM39 12l-1.6-1.8a2.3 2.3 0 0 1 3.2 0Z"/><rect x="50" y="1" width="19" height="11" rx="3" fill="none" stroke="currentColor" opacity=".4"/><rect x="52" y="3" width="15" height="7" rx="1.5"/></svg>
+  </div>
+  <div id="app"></div>
+  <div class="home-bar" aria-hidden="true"></div>
+</div>
+
+<script src="core.js"></script>
+<script src="screens.js"></script>
+</body>
+</html>
