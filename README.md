@@ -3,7 +3,8 @@
 20대 자취생의 요리를 옆에서 봐주는 보조 셰프 **믿쥐(Mitzy)** 과 앱.
 
 ## 여기서 볼 것
-- `data/preview.html` — 브라우저로 열면 레시피와 재료를 사진과 함께 볼 수 있어요. 오른쪽 위에서 한국어/English를 바꿔요.
+- **[화면 프로토타입](https://wooeekim.github.io/mitzy/screens/index.html)** — Figma 화면을 눌러볼 수 있게 옮긴 웹 프로토타입이에요. `main`에 머지되면 자동으로 바뀌어요. (원본 `screens/`)
+- **[DB 미리보기](https://wooeekim.github.io/mitzy/data/preview.html)** · `data/preview.html` — 브라우저로 열면 레시피와 재료를 사진과 함께 볼 수 있어요. 오른쪽 위에서 한국어/English를 바꿔요.
 - `AGENTS.md` — 팀 작업 규칙이에요. 수정 요청은 AI에 한 줄로 쓰면 돼요.
 
 ## 파일 찾기
