@@ -176,6 +176,21 @@ SCREENS["fridge-add"] = {
     let cat = "all";
     let q = "";
     const cats = DB.meta.categories.map((c, i) => [c, en ? DB.meta.categories_en[i] : c]);
+    // 검색창은 한 번만 그려요. 다시 그리면 한글 조합이 끊겨서 "ㅂㅓㅌㅓ"처럼 쳐져요.
+    view.innerHTML = `
+      ${navHTML({ left: from === "onboarding" ? "back" : "close", title: t("fridge.search.title"), solid: true })}
+      <div class="scroll"><div class="page with-nav" id="page">
+        <div style="display:flex;gap:var(--space-8)">
+          <label class="search glass">${I.search("icon muted")}<input id="q" placeholder="${esc(t("fridge.search.placeholder"))}"></label>
+          <button class="icon-btn l glass" type="button" id="cam" aria-label="${esc(t("fridge.add_photo"))}">${I.camera()}</button>
+        </div>
+        <div class="chips" id="cats" style="flex-wrap:nowrap;overflow-x:auto;margin:var(--space-16) calc(-1 * var(--space-16)) 0;padding:var(--space-4) var(--space-16);scrollbar-width:none"></div>
+        <div class="grid c4" id="grid" style="margin-top:var(--space-16)"></div>
+      </div></div>
+      <div id="tray"></div>`;
+    bindNav(view, from === "onboarding" ? "/summary" : "/fridge");
+    $(view, "#q").addEventListener("input", (e) => { q = e.target.value; draw(); });
+    $(view, "#cam").onclick = () => go("/fridge-camera");
     const draw = () => {
       const list = DB.ingredients.filter((i) => (cat === "all" || i.category === cat) && (!q || (i.name + i.name_en).toLowerCase().includes(q.toLowerCase())));
       const tiles = list.map((i) => {
@@ -185,28 +200,15 @@ SCREENS["fridge-add"] = {
           <span class="name text-footnote-${sel ? "emphasized" : "regular"} ${sel ? "" : "muted"}">${esc(pick(i, "name"))}</span></button>`;
       }).join("");
       const tray = [...picked].map((id) => `<button class="chip with-thumb glass text-footnote-emphasized" type="button" data-un="${id}"><img class="thumb" src="${esc(thumb(id))}" alt="">${esc(ingName(id))}<span class="muted">${I.close("icon-s")}</span></button>`).join("");
-      view.innerHTML = `
-        ${navHTML({ left: from === "onboarding" ? "back" : "close", title: t("fridge.search.title"), solid: true })}
-        <div class="scroll"><div class="page with-nav" style="padding-bottom:${picked.size ? 300 : 140}px">
-          <div style="display:flex;gap:var(--space-8)">
-            <label class="search glass">${I.search("icon muted")}<input id="q" placeholder="${esc(t("fridge.search.placeholder"))}" value="${esc(q)}"></label>
-            <button class="icon-btn l glass" type="button" id="cam" aria-label="${esc(t("fridge.add_photo"))}">${I.camera()}</button>
-          </div>
-          <div class="chips" style="flex-wrap:nowrap;overflow-x:auto;margin:var(--space-16) calc(-1 * var(--space-16)) 0;padding:var(--space-4) var(--space-16);scrollbar-width:none">
-            ${glassChip(esc(t("fridge.search.all")), { on: cat === "all", attrs: 'data-cat="all"' })}
-            ${cats.map(([c, label]) => glassChip(esc(label), { on: cat === c, attrs: `data-cat="${esc(c)}"` })).join("")}
-          </div>
-          <div class="grid c4" style="margin-top:var(--space-16)">${tiles}</div>
-        </div></div>
-        ${picked.size ? `<div class="glass" style="position:absolute;left:0;right:0;bottom:0;z-index:10;border-radius:var(--radius-panel) var(--radius-panel) 50px 50px;padding:var(--space-16) var(--space-16) var(--home-indicator)">
+      $(view, "#page").style.paddingBottom = (picked.size ? 300 : 140) + "px";
+      $(view, "#cats").innerHTML = glassChip(esc(t("fridge.search.all")), { on: cat === "all", attrs: 'data-cat="all"' }) +
+        cats.map(([c, label]) => glassChip(esc(label), { on: cat === c, attrs: `data-cat="${esc(c)}"` })).join("");
+      $(view, "#grid").innerHTML = tiles;
+      $(view, "#tray").innerHTML = picked.size ? `<div class="glass" style="position:absolute;left:0;right:0;bottom:0;z-index:10;border-radius:var(--radius-panel) var(--radius-panel) 50px 50px;padding:var(--space-16) var(--space-16) var(--home-indicator)">
           <p class="text-footnote-emphasized muted" style="margin-bottom:var(--space-8)">${esc(t("fridge.search.selected", { count: picked.size }))}</p>
           <div class="chips" style="max-height:104px;overflow-y:auto;padding:var(--space-4)">${tray}</div>
           <button class="btn prominent text-headline-regular" type="button" id="cta" style="margin-top:var(--space-12)">${esc(t("fridge.search.add", { count: picked.size }))}</button>
-        </div>` : ""}`;
-      bindNav(view, from === "onboarding" ? "/summary" : "/fridge");
-      const input = $(view, "#q");
-      input.oninput = () => { q = input.value; const pos = input.selectionStart; draw(); const n = $(view, "#q"); n.focus(); n.setSelectionRange(pos, pos); };
-      $(view, "#cam").onclick = () => go("/fridge-camera");
+        </div>` : "";
       on(view, "[data-cat]", (el) => { cat = el.dataset.cat; draw(); });
       on(view, "[data-id]", (el) => { const id = el.dataset.id; picked.has(id) ? picked.delete(id) : picked.add(id); draw(); });
       on(view, "[data-un]", (el) => { picked.delete(el.dataset.un); draw(); });
@@ -736,27 +738,29 @@ SCREENS.known = {
     const picked = new Set();
     let q = "";
     const stage = (r) => (r.method.some((m) => m === "끓이기" || m === "졸이기") ? "stage_heat" : "stage_flip");
+    // 검색창은 한 번만 그려요. 다시 그리면 한글 조합이 끊겨서 "ㅂㅓㅌㅓ"처럼 쳐져요.
+    view.innerHTML = `
+      ${navHTML({ left: "close", title: t("collection.known.title"), solid: true })}
+      <div class="scroll"><div class="page with-nav">
+        <p class="text-footnote-regular muted">${esc(t("collection.known.body"))}</p>
+        <label class="search glass" style="margin-top:var(--space-16)">${I.search("icon muted")}<input id="q" placeholder="${esc(t("collection.known.search"))}"></label>
+        <ul class="card glass info" id="list" style="margin-top:var(--space-16)"></ul>
+        <button class="chip dashed text-headline-regular" type="button" id="custom" style="width:100%;justify-content:center;margin-top:var(--space-16);min-height:var(--touch-control)">${I.plus()}${esc(t("collection.known.custom_title"))}</button>
+        <p class="text-footnote-regular muted" style="text-align:center;margin-top:var(--space-8)">${esc(t("collection.known.custom_body"))}</p>
+      </div></div>
+      <div class="bottom"><button class="btn prominent text-headline-regular" type="button" id="cta"></button></div>`;
+    bindNav(view, "/dex");
+    $(view, "#q").addEventListener("input", (e) => { q = e.target.value; draw(); });
+    $(view, "#custom").onclick = () => toast(p("not_ready"));
+    $(view, "#cta").onclick = () => { picked.forEach((id) => S.dex.push({ id, count: 0, known: true, photo: null })); save(); go("/dex"); };
     const draw = () => {
       const list = DB.recipes.filter((r) => !dexEntry(r.id) && (!q || (r.name + r.name_en).toLowerCase().includes(q.toLowerCase())));
-      view.innerHTML = `
-        ${navHTML({ left: "close", title: t("collection.known.title"), solid: true })}
-        <div class="scroll"><div class="page with-nav">
-          <p class="text-footnote-regular muted">${esc(t("collection.known.body"))}</p>
-          <label class="search glass" style="margin-top:var(--space-16)">${I.search("icon muted")}<input id="q" placeholder="${esc(t("collection.known.search"))}" value="${esc(q)}"></label>
-          <ul class="card glass info" style="margin-top:var(--space-16)">
-            ${list.map((r) => `<li class="row" data-id="${r.id}" style="cursor:pointer"><span class="check-circle ${picked.has(r.id) ? "on" : ""}">${picked.has(r.id) ? I.check("icon-s") : ""}</span>
-              <div class="text"><span class="text-body-regular">${esc(pick(r, "name"))}</span><span class="text-subheadline-regular muted">${esc(t("collection.known." + stage(r)))}</span></div></li>`).join("")}
-          </ul>
-          <button class="chip dashed text-headline-regular" type="button" id="custom" style="width:100%;justify-content:center;margin-top:var(--space-16);min-height:var(--touch-control)">${I.plus()}${esc(t("collection.known.custom_title"))}</button>
-          <p class="text-footnote-regular muted" style="text-align:center;margin-top:var(--space-8)">${esc(t("collection.known.custom_body"))}</p>
-        </div></div>
-        <div class="bottom"><button class="btn prominent text-headline-regular" type="button" id="cta" ${picked.size ? "" : "disabled"}>${esc(t("collection.known.add", { count: picked.size }))}</button></div>`;
-      bindNav(view, "/dex");
-      const input = $(view, "#q");
-      input.oninput = () => { q = input.value; const pos = input.selectionStart; draw(); const n = $(view, "#q"); n.focus(); n.setSelectionRange(pos, pos); };
-      on(view, "[data-id]", (el) => { const id = el.dataset.id; picked.has(id) ? picked.delete(id) : picked.add(id); const y = $(view, ".scroll").scrollTop; draw(); $(view, ".scroll").scrollTop = y; });
-      $(view, "#custom").onclick = () => toast(p("not_ready"));
-      $(view, "#cta").onclick = () => { picked.forEach((id) => S.dex.push({ id, count: 0, known: true, photo: null })); save(); go("/dex"); };
+      $(view, "#list").innerHTML = list.map((r) => `<li class="row" data-id="${r.id}" style="cursor:pointer"><span class="check-circle ${picked.has(r.id) ? "on" : ""}">${picked.has(r.id) ? I.check("icon-s") : ""}</span>
+        <div class="text"><span class="text-body-regular">${esc(pick(r, "name"))}</span><span class="text-subheadline-regular muted">${esc(t("collection.known." + stage(r)))}</span></div></li>`).join("");
+      const cta = $(view, "#cta");
+      cta.disabled = !picked.size;
+      cta.textContent = t("collection.known.add", { count: picked.size });
+      on($(view, "#list"), "[data-id]", (el) => { const id = el.dataset.id; picked.has(id) ? picked.delete(id) : picked.add(id); draw(); });
     };
     draw();
   },
